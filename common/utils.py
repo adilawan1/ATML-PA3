@@ -49,6 +49,29 @@ def append_jsonl(obj, path):
         f.write(json.dumps(obj, ensure_ascii=False, default=_json_default) + "\n")
 
 
+def atomic_torch_save(obj, path):
+    """Write to a temp file then rename, so an interrupted save never leaves a truncated checkpoint."""
+    import torch
+
+    path = Path(path)
+    tmp = path.with_name(path.name + ".tmp")
+    torch.save(obj, tmp)
+    os.replace(tmp, path)
+
+
+def truncate_jsonl(path, key, max_value):
+    """Drop log lines with record[key] > max_value (entries written after the checkpoint we resume from)."""
+    path = Path(path)
+    if not path.exists():
+        return 0
+    rows = read_jsonl(path)
+    keep = [r for r in rows if r.get(key, 0) <= max_value]
+    with open(path, "w", encoding="utf-8") as f:
+        for r in keep:
+            f.write(json.dumps(r, ensure_ascii=False, default=_json_default) + "\n")
+    return len(rows) - len(keep)
+
+
 def read_jsonl(path):
     with open(path, "r", encoding="utf-8") as f:
         return [json.loads(line) for line in f if line.strip()]

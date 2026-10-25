@@ -7,6 +7,7 @@ Run dir $PA3_OUT/task2/runs/<run>/ : train_log.jsonl, dev_log.jsonl, ckpt_u{U}/ 
 stage{k}_weights.pt (connector + adapters after each stage), summary.json
 """
 import argparse
+import shutil
 import time
 from collections import Counter
 
@@ -14,8 +15,9 @@ import numpy as np
 import torch
 
 from common import lora as L
-from common.utils import (REPO_ROOT, append_jsonl, count_params, get_rng_state, gpu_info, load_config, out_root,
-                          peak_mem_gb, results_root, save_json, set_rng_state, set_seed)
+from common.utils import (REPO_ROOT, append_jsonl, atomic_torch_save, count_params, get_rng_state, gpu_info,
+                          load_config, out_root, peak_mem_gb, results_root, save_json, set_rng_state, set_seed,
+                          truncate_jsonl)
 from task2.data import load_all, pair_examples
 from task2.vlm import FeatureStore, add_lora, build_vlm, calibrate_scale, lr_lambda
 
@@ -124,9 +126,10 @@ def interface_checks(vlm, trainable):
 
 def save_ckpt(path, vlm, opt, sched, scaler, sampler, st):
     path.mkdir(parents=True, exist_ok=True)
-    torch.save({"connector": vlm.connector.state_dict(), "lora": L.adapter_state_dict(vlm.llm),
-                "optimizer": opt.state_dict(), "scheduler": sched.state_dict(), "scaler": scaler.state_dict(),
-                "rng": get_rng_state(), "sampler_rng": sampler.rng.bit_generator.state, "state": st}, path / "state.pt")
+    atomic_torch_save({"connector": vlm.connector.state_dict(), "lora": L.adapter_state_dict(vlm.llm),
+                       "optimizer": opt.state_dict(), "scheduler": sched.state_dict(), "scaler": scaler.state_dict(),
+                       "rng": get_rng_state(), "sampler_rng": sampler.rng.bit_generator.state, "state": st},
+                      path / "state.pt")
 
 
 def main():
@@ -160,7 +163,7 @@ def main():
     eff = tc["micro_bs"] * tc["grad_accum"]
 
     # resume
-    cks = sorted(rd.glob("ckpt_u*"), key=lambda p: int(p.name[6:]))
+    cks = sorted((c for c in rd.glob("ckpt_u*") if (c / "state.pt").exists()), key=lambda p: int(p.name[6:]))
     st = {"update": 0, "stage_time_s": {}, "stage_peak_mem": {}, "mixture_counts": {}, "skipped": [],
           "trainable_params": {}, "dev_done": []}
     resume = torch.load(cks[-1] / "state.pt", map_location="cpu", weights_only=False) if cks else None
@@ -184,7 +187,9 @@ def main():
         set_rng_state(resume["rng"])
         sampler.rng.bit_generator.state = resume["sampler_rng"]
         pending_opt = (resume["optimizer"], resume["scheduler"])
-        print(f"resumed at update {st['update']}", flush=True)
+        dropped = truncate_jsonl(rd / "train_log.jsonl", "update", st["update"])
+        dropped += truncate_jsonl(rd / "dev_log.jsonl", "update", st["update"])
+        print(f"resumed at update {st['update']}; dropped {dropped} log lines past the checkpoint", flush=True)
     opt = sched = None
     vlm.train()
     u = st["update"]
@@ -262,8 +267,7 @@ def main():
         if u % tc["ckpt_every"] == 0 or u == end:
             save_ckpt(rd / f"ckpt_u{u}", vlm, opt, sched, scaler, sampler, st)
             for old in sorted(rd.glob("ckpt_u*"), key=lambda p: int(p.name[6:]))[:-1]:
-                (old / "state.pt").unlink(missing_ok=True)
-                old.rmdir()
+                shutil.rmtree(old, ignore_errors=True)
 
     summary = {"run": run, "n_visual_tokens": n_vis, **gpu_info(), **{k: v for k, v in st.items() if k != "dev_done"},
                "total_train_time_s": sum(st["stage_time_s"].values()), "completed_updates": u,

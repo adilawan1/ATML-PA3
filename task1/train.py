@@ -20,8 +20,9 @@ import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer, get_cosine_schedule_with_warmup
 
 from common import lora as L
-from common.utils import (REPO_ROOT, append_jsonl, count_params, dir_size_bytes, get_rng_state, gpu_info,
-                          load_config, load_json, out_root, peak_mem_gb, save_json, set_rng_state, set_seed)
+from common.utils import (REPO_ROOT, append_jsonl, atomic_torch_save, count_params, dir_size_bytes, get_rng_state,
+                          gpu_info, load_config, load_json, out_root, peak_mem_gb, save_json, set_rng_state,
+                          set_seed, truncate_jsonl)
 
 
 # ----------------------------------------------------------------------------- data
@@ -113,9 +114,10 @@ def save_checkpoint(run_dir, u, model, method, opt, sched, scaler, state, keep_m
     else:
         torch.save(L.adapter_state_dict(model), ck / "adapter_raw.pt")
         torch.save(L.export_effective_factors(model), ck / "adapter_effective.pt")
-    torch.save({"optimizer": opt.state_dict(), "scheduler": sched.state_dict(), "scaler": scaler.state_dict(),
-                "rng": get_rng_state(), "update": u, "examples_seen": state["examples_seen"],
-                "state": state}, ck / "state.pt")
+    # state.pt is written last and atomically: a checkpoint counts as complete only once it exists
+    atomic_torch_save({"optimizer": opt.state_dict(), "scheduler": sched.state_dict(), "scaler": scaler.state_dict(),
+                       "rng": get_rng_state(), "update": u, "examples_seen": state["examples_seen"],
+                       "state": state}, ck / "state.pt")
     sizes = {"model_bytes": dir_size_bytes(ck / "model") if method == "full" else
              (ck / "adapter_raw.pt").stat().st_size,
              "state_bytes": (ck / "state.pt").stat().st_size, "keep_model": keep_model}
@@ -214,7 +216,8 @@ def main():
         state = s["state"]
         state["resumes"] += 1
         start = s["update"]
-        print(f"resumed from {ck.name} (update {start})", flush=True)
+        dropped = truncate_jsonl(run_dir / "train_log.jsonl", "update", start)
+        print(f"resumed from {ck.name} (update {start}); dropped {dropped} log lines past the checkpoint", flush=True)
 
     n_trainable = count_params(trainable)
     meta = {"variant": args.variant, "method": method, "lr": vcfg["lr"], "l2sp_lambda": lam,

@@ -13,6 +13,11 @@ All three tasks have complete pipelines that run end to end in CPU smoke tests: 
 2. ❓ Get the `ATML-PA3-Data` rollouts (not on the HF Hub under that name). Then run `python -m task3.data --dataset math --inspect`, check the column names against `configs/task3.yaml → columns`, and set `live.revision` and `live.separator` from the supplied README.MD.
 3. On Colab, run `notebooks/task1_finetuning.ipynb` first; it's the longest job. Task 3 offline analysis can run on a CPU runtime (or locally) in parallel.
 
+## Disconnect safety (added 2026-10-26)
+- Checkpoint `state.pt` is written last and atomically (temp file + rename); only checkpoints with a complete `state.pt` are resumed from.
+- On resume, `train_log.jsonl` (and the Task 2 `dev_log.jsonl`) are trimmed to the checkpoint's update, so updates are never logged twice.
+- Notebooks set `PA3_RESULTS` to Drive (`MyDrive/ATML-PA3/results`), seeded from the committed `results/`; the save cell rsyncs Drive → repo before committing. A disconnect therefore loses at most the training since the last checkpoint and the condition being evaluated.
+
 ## GPU run plan (Colab Pro; use one GPU type for all timed runs, ideally L4)
 Times are rough estimates for an L4, not measurements.
 | Order | Job | Notebook cell | Est. time | Notes |
