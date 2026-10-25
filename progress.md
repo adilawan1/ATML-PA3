@@ -9,7 +9,7 @@ _Last updated: 2026-10-25 (autonomous session)_
 All three tasks have complete pipelines that run end to end in CPU smoke tests: data → training → evaluation → tables/figures. No GPU work has been done; local runs were only smoke tests. The real data selections for Task 1 and Task 2 are deterministic and were produced locally; Task 3 is waiting on the supplied rollout data.
 
 **Next actions for you**
-1. Create the public GitHub repo, push this folder (nothing has been committed yet; `git init` is done), and set `REPO` in the notebooks.
+1. ✅ Public repo created and pushed: https://github.com/adilawan1/ATML-PA3 (`REPO` set in the notebooks, the report abstract link is set).
 2. ❓ Get the `ATML-PA3-Data` rollouts (not on the HF Hub under that name). Then run `python -m task3.data --dataset math --inspect`, check the column names against `configs/task3.yaml → columns`, and set `live.revision` and `live.separator` from the supplied README.MD.
 3. On Colab, run `notebooks/task1_finetuning.ipynb` first; it's the longest job. Task 3 offline analysis can run on a CPU runtime (or locally) in parallel.
 
