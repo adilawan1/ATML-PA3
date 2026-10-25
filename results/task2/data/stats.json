@@ -1,0 +1,54 @@
+{
+  "n_train_images": 8730,
+  "n_val_images": 528,
+  "vqa_train_candidates": {
+    "other": 17375,
+    "yes/no": 44033,
+    "number": 10561
+  },
+  "vqa_val_candidates": {
+    "yes/no": 20963,
+    "other": 8039,
+    "number": 4923
+  },
+  "captions_train": 18000,
+  "captions_dev": 96,
+  "pool_sizes": {
+    "presence": 20000,
+    "counting": 20000
+  },
+  "pool_unique_pairs": {
+    "presence": 19996,
+    "counting": 16113
+  },
+  "pool_answer_counts": {
+    "presence": {
+      "yes": 20000,
+      "no": 20000
+    },
+    "counting": {
+      "3": 9105,
+      "4": 6998,
+      "2": 11769,
+      "1": 12128
+    }
+  },
+  "eval_answer_counts": {
+    "grounding_test": {
+      "yes": 32,
+      "no": 32,
+      "2": 16,
+      "1": 20,
+      "3": 10,
+      "4": 18
+    },
+    "grounding_dev": {
+      "yes": 12,
+      "no": 12,
+      "1": 7,
+      "2": 5,
+      "3": 5,
+      "4": 7
+    }
+  }
+}

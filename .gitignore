@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+outputs/
+cache/
+*.safetensors
+*.pt
+*.bin
+*.parquet
+data/raw/
+data/coco/
+.ipynb_checkpoints/

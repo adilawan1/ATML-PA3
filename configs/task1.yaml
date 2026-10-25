@@ -1,0 +1,64 @@
+# Task 1: LLM fine-tuning on MetaMathQA (all values from the assignment spec unless marked "choice")
+model: Qwen/Qwen3-0.6B
+seed: 6304
+
+data:
+  source: meta-math/MetaMathQA
+  gsm8k: openai/gsm8k        # config "main"; test split used for decontamination
+  n_examples: 40000
+  max_len: 2048              # formatted length (prompt + response + <|im_end|>)
+
+train:
+  micro_bs: 2
+  grad_accum: 16             # effective batch 32
+  updates: 1250
+  warmup: 38
+  schedule: cosine           # choice: transformers get_cosine_schedule_with_warmup (decays to 0)
+  weight_decay: 0.01         # not applied to biases / params with < 2 dims
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  clip: 1.0
+  grad_checkpointing: true
+  init_scale: 65536.0        # GradScaler default
+  ckpt_updates: [312, 625, 937, 1250]
+  eval_updates: [625, 1250]  # weights kept for evaluation (midpoint only used for full_ft)
+  keep_recovery: 1           # choice: keep only the newest recovery checkpoint (Drive space); sizes still logged
+
+lora:
+  dropout: 0.05
+  targets: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+variants:
+  full_ft:      {method: full,   lr: 2.0e-5, l2sp: 0.0}
+  full_ft_l2sp: {method: full,   lr: 2.0e-5, l2sp: 1.0e-3}
+  lora4:        {method: lora,   lr: 2.0e-4, r: 4,  alpha: 8}
+  lora16:       {method: lora,   lr: 2.0e-4, r: 16, alpha: 32}
+  oplora16:     {method: oplora, lr: 2.0e-4, r: 16, alpha: 32, k: 128}
+
+eval:
+  conditions:   # the seven evaluation conditions
+    - {name: baseline,         variant: null,         update: 0}
+    - {name: full_ft_mid,      variant: full_ft,      update: 625}
+    - {name: full_ft,          variant: full_ft,      update: 1250}
+    - {name: full_ft_l2sp,     variant: full_ft_l2sp, update: 1250}
+    - {name: lora4,            variant: lora4,        update: 1250}
+    - {name: lora16,           variant: lora16,       update: 1250}
+    - {name: oplora16,         variant: oplora16,     update: 1250}
+  gsm8k_task: gsm8k_cot
+  gsm8k_max_gen_toks: 1024
+  likelihood_tasks: [hellaswag, boolq, arc_easy]
+  backend: hf                # hf | vllm (GSM8K generation only)
+  gsm8k_batch_size: 64       # choice: fixed batch for 1,024-token greedy generation (auto can OOM)
+  batch_size: auto           # likelihood tasks
+
+diagnostics:
+  layers: [0, 13, 27]
+  module: down_proj
+  k: 128
+  n_probe_math: 32
+  n_probe_nonmath: 32
+
+qualitative:
+  file: data/task1/first_plot_questions.yaml
+  max_new_tokens: 512
+  annotate_ids: [what_is_your_wish, enough_of_my_husband]   # first & last plain questions in file order

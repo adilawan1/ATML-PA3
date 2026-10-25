@@ -1,0 +1,91 @@
+# CPU smoke-test config (tiny LLM, synthetic data). Not used for reported results.
+seed: 6304
+llm: outputs/tiny/qwen3-tiny
+vision: google/siglip-base-patch16-224
+n_visual_tokens: 196
+data:
+  coco_root: data/coco
+  captions_train_images: 40
+  captions_per_train_image: 3
+  captions_dev_images: 96
+  vqa_min_agreement: 8
+  vqa_pairs:
+    train:
+      yes/no: 640
+      number: 256
+      other: 640
+    dev:
+      yes/no: 12
+      number: 8
+      other: 12
+    test:
+      yes/no: 36
+      number: 24
+      other: 36
+  grounding_pairs:
+    dev:
+      presence: 12
+      counting: 12
+    test:
+      presence: 32
+      counting: 32
+  grounding_pool_size:
+    presence: 20000
+    counting: 20000
+  min_instance_area_frac: 0.005
+  max_count: 4
+prompts:
+  caption: Write a short caption for this image.
+  answer_suffix: Answer the question using a single word or number.
+train:
+  micro_bs: 4
+  grad_accum: 2
+  weight_decay: 0.01
+  clip: 1.0
+  warmup_frac: 0.05
+  min_lr_frac: 0.1
+  grad_checkpointing: true
+  caps:
+    question: 80
+    caption: 64
+    answer: 16
+  ckpt_every: 4
+  dev_eval_every: 6
+  stages:
+  - name: caption_alignment
+    updates: 6
+    connector_lr: 0.001
+    lora_lr: null
+    mixture:
+      caption: 1.0
+  - name: visual_instruction
+    updates: 4
+    connector_lr: 0.0001
+    lora_lr: 2.0e-05
+    mixture:
+      presence: 0.5
+      counting: 0.25
+      caption: 0.25
+  - name: natural_vqa
+    updates: 3
+    connector_lr: 5.0e-05
+    lora_lr: 1.0e-05
+    mixture:
+      vqa: 0.7
+      presence: 0.1
+      counting: 0.1
+      caption: 0.1
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  targets:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+eval:
+  max_new_tokens: 4
+  batch_size: 8
+  bootstrap: 200
+  n_qualitative_per_type: 2

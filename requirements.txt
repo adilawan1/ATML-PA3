@@ -1,0 +1,17 @@
+# Tested versions (local CPU smoke tests); on Colab keep the preinstalled torch (CUDA build).
+torch>=2.4
+transformers>=4.56          # tested with 5.20.2 (uses the `dtype=` loading argument)
+accelerate>=1.0
+datasets>=3.0
+safetensors
+lm_eval==0.4.13             # pinned: task definitions must stay fixed across all evaluations
+math-verify==0.9.0          # Task 3 scorer (version recorded in results/task3/*/data_checks.json)
+numpy
+pandas
+pyarrow
+scipy
+matplotlib
+tabulate
+pyyaml
+Pillow
+# optional, faster GSM8K generation: pip install "lm_eval[vllm]==0.4.13" and set eval.backend: vllm
