@@ -17,6 +17,7 @@ from pathlib import Path
 import numpy as np
 import torch
 import torch.nn.functional as F
+import torch.utils.checkpoint
 from transformers import AutoModelForCausalLM, AutoTokenizer, get_cosine_schedule_with_warmup
 
 from common import lora as L
@@ -52,13 +53,28 @@ class TokenData:
         return input_ids, attn, labels
 
 
-def sum_ce_loss(model, input_ids, attn, labels):
-    """Summed next-token CE over supervised positions. LM head is applied only where labels exist."""
+def _head_ce_sum(model, h, t):
+    return F.cross_entropy(model.lm_head(h).float(), t, reduction="sum")
+
+
+def sum_ce_loss(model, input_ids, attn, labels, chunk=0):
+    """Summed next-token CE over supervised positions. LM head is applied only where labels exist.
+
+    chunk > 0 (memory option for 16 GB GPUs): the LM head + CE run over blocks of `chunk` supervised positions,
+    each under activation checkpointing, so the [positions x vocab] logits are never all held at once. Same
+    objective; only the floating-point summation order differs.
+    """
     h = model.model(input_ids=input_ids, attention_mask=attn).last_hidden_state
     tgt = labels[:, 1:]
     sel = tgt != -100
-    logits = model.lm_head(h[:, :-1][sel])
-    return F.cross_entropy(logits.float(), tgt[sel], reduction="sum")
+    hs, ts = h[:, :-1][sel], tgt[sel]
+    if chunk <= 0 or hs.shape[0] <= chunk:
+        return _head_ce_sum(model, hs, ts)
+    total = 0.0
+    for i in range(0, hs.shape[0], chunk):
+        total = total + torch.utils.checkpoint.checkpoint(_head_ce_sum, model, hs[i:i + chunk], ts[i:i + chunk],
+                                                          use_reentrant=False)
+    return total
 
 
 # ----------------------------------------------------------------------------- model setup
@@ -150,6 +166,10 @@ def main():
     ap.add_argument("--data", default=None)
     ap.add_argument("--run_dir", default=None)
     ap.add_argument("--max_updates", type=int, default=None, help="stop early (smoke tests)")
+    # memory options for 16 GB GPUs (Kaggle/Colab T4); defaults reproduce the original behaviour
+    ap.add_argument("--loss_chunk", type=int, default=0, help="LM-head/CE block size in positions (0 = one block)")
+    ap.add_argument("--theta0_device", choices=["gpu", "cpu"], default="gpu",
+                    help="where the L2-SP reference copy lives (cpu: pinned host memory, copied in per update)")
     args = ap.parse_args()
 
     cfg = load_config(args.config)
@@ -184,12 +204,15 @@ def main():
     theta0, overhead = None, {}
     if method == "full":
         t0 = time.perf_counter()
-        theta0 = [p.detach().clone().float().to(device if lam > 0 else "cpu") for p in unique_params(model)]
+        on_gpu = lam > 0 and args.theta0_device == "gpu"
+        theta0 = [p.detach().clone().float().to(device if on_gpu else "cpu") for p in unique_params(model)]
+        if lam > 0 and not on_gpu and device == "cuda":
+            theta0 = [t.pin_memory() for t in theta0]
         if amp:
             torch.cuda.synchronize()
         overhead["theta0_copy_s"] = time.perf_counter() - t0
         overhead["theta0_bytes"] = sum(t.numel() * 4 for t in theta0)
-        overhead["theta0_device"] = "gpu" if lam > 0 else "cpu"
+        overhead["theta0_device"] = "gpu" if on_gpu else "cpu"
 
     state = {"examples_seen": 0, "train_time_s": 0.0, "penalty_time_s": 0.0,
              "skipped_updates": [], "peak_mem_segments": [], "displacement": {},
@@ -222,6 +245,7 @@ def main():
     n_trainable = count_params(trainable)
     meta = {"variant": args.variant, "method": method, "lr": vcfg["lr"], "l2sp_lambda": lam,
             "trainable_params": n_trainable, "total_params": count_params(model.parameters()),
+            "loss_chunk": args.loss_chunk,
             **{k: v for k, v in vcfg.items() if k in ("r", "alpha", "k")}, **gpu_info(), **info, **overhead,
             "config": cfg}
     save_json(meta, run_dir / "meta.json")
@@ -240,7 +264,7 @@ def main():
             ids, attn, labels = data.batch(idx_all[m * mb:(m + 1) * mb], tok.pad_token_id)
             ids, attn, labels = ids.to(device), attn.to(device), labels.to(device)
             with torch.autocast(device_type=device, dtype=torch.float16, enabled=amp):
-                ls = sum_ce_loss(model, ids, attn, labels)
+                ls = sum_ce_loss(model, ids, attn, labels, args.loss_chunk)
             scaler.scale(ls / n_tok).backward()
             loss_sum += ls.item()
         sft = loss_sum / n_tok
@@ -251,7 +275,7 @@ def main():
             with torch.no_grad():
                 sq = torch.zeros((), device=device, dtype=torch.float32)
                 for p, p0 in zip(ps, theta0):
-                    d = p.detach() - p0
+                    d = p.detach() - p0.to(p.device, non_blocking=True)  # no-op when theta0 is on the GPU
                     sq += d.pow(2).sum()
                     p.grad.add_(d, alpha=lam)  # d/dθ [λ/2 ||θ-θ0||²] = λ(θ-θ0); clipped jointly with SFT grad
                 omega = 0.5 * sq.item()

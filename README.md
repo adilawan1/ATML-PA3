@@ -70,6 +70,16 @@ python -m task3.live && python -m task3.live --summarize   # GPU
 python -m task3.analyze
 ```
 
+### Running on Kaggle (2 x T4, background runs)
+`notebooks/kaggle/` has one notebook per session, driven by `scripts/kaggle_run.py` (regenerate with
+`python scripts/make_kaggle_notebooks.py`). Each runs as a *Save & Run All (Commit)* version, so it continues with
+the browser closed, uses both GPUs in parallel, and pushes `results/` to GitHub (secret `GITHUB_TOKEN`).
+Order: `pa3_t1_check` → `pa3_t1_fullft` and `pa3_t1_lora` → `pa3_t1_final` (attach the earlier notebooks'
+outputs as inputs) and, independently, `pa3_t2`. Before training, `task1.memcheck` runs two updates on the
+largest micro-batches of the real schedule; if the default settings would not fit in 16 GB, training uses the
+chunked LM-head loss (`--loss_chunk 1024`, same objective) and, for L2-SP, a host-memory reference copy
+(`--theta0_device cpu`). The settings used are saved in `results/task1/kaggle/` and in each run's `meta.json`.
+
 ### Smoke tests (CPU, no real models)
 Every pipeline was checked end to end with a tiny random Qwen3 and synthetic data. Use `configs/*_smoke.yaml` with `PA3_OUT=outputs/smoke PA3_RESULTS=outputs/smoke/results`, `scripts/make_fake_t2_data.py` and `scripts/make_fake_t3_data.py`.
 

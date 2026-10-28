@@ -18,6 +18,12 @@ All three tasks have complete pipelines that run end to end in CPU smoke tests: 
 - On resume, `train_log.jsonl` (and the Task 2 `dev_log.jsonl`) are trimmed to the checkpoint's update, so updates are never logged twice.
 - Notebooks set `PA3_RESULTS` to Drive (`MyDrive/ATML-PA3/results`), seeded from the committed `results/`; the save cell rsyncs Drive → repo before committing. A disconnect therefore loses at most the training since the last checkpoint and the condition being evaluated.
 
+## Kaggle runs (added 2026-10-28)
+Colab Pro L4 sessions kept disconnecting, so Task 1 and Task 2 move to Kaggle (2 x T4, background "Save & Run All" versions, 12 h limit, ~30 GPU h/week). See `notebooks/kaggle/` and `scripts/kaggle_run.py`.
+- All Task 1 training and evaluation runs on the same GPU type (T4), so timings stay comparable. Two runs share a session, one per GPU; note this in the resources discussion.
+- New memory options in `task1/train.py` (defaults unchanged): `--loss_chunk` (LM head + CE in checkpointed blocks; verified identical loss/gradients on a tiny model up to float rounding) and `--theta0_device cpu` (L2-SP reference in pinned host memory; penalty time then includes the host-to-GPU copy). `task1.memcheck` picks the cheapest setting that fits per variant; the choice is saved in `results/task1/kaggle/memory_<variant>.json`. Report whichever was used.
+- Only what later steps need is kept in `/kaggle/working/outputs` (weights at 625/1,250, adapters, bases, logs). Optimizer state stays on scratch disk, so a Kaggle run cannot be resumed in a later session; each session fits in 12 h instead.
+
 ## GPU run plan (Colab Pro; use one GPU type for all timed runs, ideally L4)
 Times are rough estimates for an L4, not measurements.
 | Order | Job | Notebook cell | Est. time | Notes |
