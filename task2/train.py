@@ -105,8 +105,17 @@ def param_groups(vlm, stage, wd):
     return groups
 
 
+def _norm(gs):
+    return float(sum((g.float().norm() ** 2).item() for g in gs if g is not None) ** 0.5)
+
+
 def interface_checks(vlm, trainable):
-    """Frozen-parameter sets and gradient flow at the first update of each stage."""
+    """Frozen-parameter sets and gradient flow (run after unscaling, before the optimizer step).
+
+    Non-finite gradients are not a failure here: with FP16 dynamic loss scaling the first updates can overflow,
+    and the GradScaler then skips the update and lowers the scale. The caller repeats the check on the next
+    update until the gradients are finite, so gradient flow is always verified on a real update.
+    """
     ids = {id(p) for p in trainable}
     lora_ids = {id(p) for m in L.lora_modules(vlm.llm).values() for p in (m.A, m.B)}
     backbone = [p for p in vlm.llm.parameters() if id(p) not in lora_ids]
@@ -115,12 +124,23 @@ def interface_checks(vlm, trainable):
     out = {"backbone_params_requiring_grad": sum(p.requires_grad for p in backbone),
            "backbone_params_with_grad": sum(p.grad is not None for p in backbone),
            "trainable_tensors_in_optimizer": len(ids),
-           "connector_grad_norm": float(sum((g.float().norm() ** 2).item() for g in conn_g if g is not None) ** 0.5),
+           "connector_grad_norm": _norm(conn_g),
            "connector_params_without_grad": sum(g is None for g in conn_g),
-           "lora_grad_norm": float(sum((g.float().norm() ** 2).item() for g in lora_g if g is not None) ** 0.5),
+           "lora_grad_norm": _norm(lora_g),
+           "lora_params_without_grad": sum(g is None for g in lora_g),
            "lora_tensors": len(lora_g)}
-    assert out["backbone_params_requiring_grad"] == 0 and out["backbone_params_with_grad"] == 0
-    assert out["connector_grad_norm"] > 0 and out["connector_params_without_grad"] == 0
+    out["grads_finite"] = bool(np.isfinite(out["connector_grad_norm"]) and np.isfinite(out["lora_grad_norm"]))
+    problems = []
+    if out["backbone_params_requiring_grad"] or out["backbone_params_with_grad"]:
+        problems.append("frozen LLM parameters require or received gradients")
+    if out["connector_params_without_grad"]:
+        problems.append("some connector parameters received no gradient")
+    if lora_g and out["lora_params_without_grad"]:
+        problems.append("some LoRA parameters received no gradient")
+    if out["grads_finite"] and out["connector_grad_norm"] == 0:
+        problems.append("connector gradient is exactly zero (no gradient flow from the loss to the visual tokens)")
+    if problems:
+        raise RuntimeError(f"interface check failed: {problems}; values: {out}")
     return out
 
 
@@ -194,6 +214,7 @@ def main():
         dropped += truncate_jsonl(rd / "dev_log.jsonl", "update", st["update"])
         print(f"resumed at update {st['update']}; dropped {dropped} log lines past the checkpoint", flush=True)
     opt = sched = None
+    run_skips = 0
     vlm.train()
     u = st["update"]
     while u < end:
@@ -232,9 +253,16 @@ def main():
             scaler.scale(loss).backward()
             loss_tot += loss.item()
         scaler.unscale_(opt)
-        if s_step == 0:
-            st.setdefault("checks", {})[stage["name"]] = interface_checks(vlm, trainable)
-            print("checks:", st["checks"][stage["name"]], flush=True)
+        if stage["name"] not in st.get("checks", {}):
+            chk = interface_checks(vlm, trainable)
+            if chk["grads_finite"]:
+                chk["verified_at_update"] = u + 1
+                st.setdefault("checks", {})[stage["name"]] = chk
+                print("checks:", chk, flush=True)
+            else:
+                print(f"u{u + 1} [{stage['name']}]: non-finite gradients (FP16 overflow, loss {loss_tot:.4f}); the "
+                      f"loss scaler skips this update and lowers the scale; interface check repeated next update",
+                      flush=True)
         gn = torch.nn.utils.clip_grad_norm_(trainable, tc["clip"]).item()
         lrs = {g["name"]: g["lr"] for g in opt.param_groups}
         sb = scaler.get_scale() if amp else 1.0
@@ -252,6 +280,10 @@ def main():
             mc[kk] = mc.get(kk, 0) + v
         if skipped:
             st["skipped"].append(u)
+        run_skips = run_skips + 1 if skipped else 0
+        if run_skips >= 30:
+            raise RuntimeError(f"{run_skips} consecutive skipped updates (non-finite gradients) up to update {u}, "
+                               f"last loss {loss_tot}: training is not progressing in FP16")
         append_jsonl({"update": u, "stage": stage["name"], "loss": loss_tot, "grad_norm": gn, "lr": lrs,
                       "skipped": bool(skipped), "draws": dict(counts), "step_time_s": dt}, rd / "train_log.jsonl")
         if u % 50 == 0 or u == 1:
