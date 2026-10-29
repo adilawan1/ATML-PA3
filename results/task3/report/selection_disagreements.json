@@ -1,0 +1,224 @@
+{
+  "math": [
+    {
+      "qid": "test:2460",
+      "sc_answer": "58",
+      "sc_correct": false,
+      "rwc_K_answer": "154",
+      "rwc_K_correct": true,
+      "votes": {
+        "13": 1,
+        "154": 11,
+        "346": 1,
+        "45": 1,
+        "50": 1,
+        "58": 11,
+        "80": 1,
+        "90": 1,
+        "98": 1,
+        "NO_ANSWER": 3
+      },
+      "gold": "154"
+    },
+    {
+      "qid": "test:2892",
+      "sc_answer": "1",
+      "sc_correct": false,
+      "rwc_K_answer": "0",
+      "rwc_K_correct": false,
+      "votes": {
+        "-1": 1,
+        "-162": 1,
+        "-167": 1,
+        "-2": 1,
+        "-391": 1,
+        "-429": 1,
+        "-49": 1,
+        "-55": 1,
+        "-708": 1,
+        "-87": 1,
+        "0": 4,
+        "1": 4,
+        "113": 1,
+        "1600": 1,
+        "162": 1,
+        "23": 2,
+        "263": 1,
+        "280": 1,
+        "36": 1,
+        "360": 1,
+        "44": 1,
+        "4713": 1,
+        "561": 1,
+        "88": 1,
+        "NO_ANSWER": 1
+      },
+      "gold": "-71"
+    },
+    {
+      "qid": "test:2948",
+      "sc_answer": "1",
+      "sc_correct": false,
+      "rwc_K_answer": "2 + \\sqrt{3}, 2 - \\sqrt{3}, \\frac{3 + \\sqrt{13 + 4\\sqrt{3}}}{2}, \\frac{3 - \\sqrt{13 + 4\\sqrt{3}}}{2}, \\frac{3 + \\sqrt{13 - 4\\sqrt{3}}}{2}, \\frac{3 - \\sqrt{13 - 4\\sqrt{3}}}{2}",
+      "rwc_K_correct": false,
+      "votes": {
+        "-1": 1,
+        "-1, -0.171, -0.49, 3.118": 1,
+        "-1, 2": 1,
+        "-1, \\sqrt{3}": 1,
+        "-\\sqrt{2}, \\sqrt{2}": 1,
+        "0": 2,
+        "0 \\text{ and } 2": 1,
+        "0 \\text{ and } 3": 1,
+        "0 \\text{ and } 4": 1,
+        "0, 3, \\frac{3 + \\sqrt{17}}{2}, \\frac{3 - \\sqrt{17}}{2}": 1,
+        "1": 5,
+        "1 \\text{ and } 2": 4,
+        "1, -1, 1 + \\sqrt{2}, 1 - \\sqrt{2}": 1,
+        "2 + \\sqrt{3}, 2 - \\sqrt{3}": 3,
+        "2 + \\sqrt{3}, 2 - \\sqrt{3}, \\frac{3 + \\sqrt{13 + 4\\sqrt{3}}}{2}, \\frac{3 - \\sqrt{13 + 4\\sqrt{3}}}{2}, \\frac{3 + \\sqrt{13 - 4\\sqrt{3}}}{2}, \\frac{3 - \\sqrt{13 - 4\\sqrt{3}}}{2}": 3,
+        "3": 1,
+        "4, -1, 0, 3": 1,
+        "\\frac{3 + \\sqrt{13 + 4\\sqrt{2}}}{2}, \\frac{3 - \\sqrt{13 + 4\\sqrt{2}}}{2}, \\frac{3 + \\sqrt{13 - 4\\sqrt{2}}}{2}, \\frac{3 - \\sqrt{13 - 4\\sqrt{2}}}{2}": 1,
+        "NO_ANSWER": 2
+      },
+      "gold": "1+\\sqrt 2,\\ 1-\\sqrt 2,\\ 2+\\sqrt 3,\\ 2-\\sqrt 3"
+    },
+    {
+      "qid": "test:4516",
+      "sc_answer": "8.5\\sqrt{10}",
+      "sc_correct": false,
+      "rwc_K_answer": "4\\sqrt{10}",
+      "rwc_K_correct": false,
+      "votes": {
+        "10": 1,
+        "10\\sqrt{5}": 1,
+        "15\\sqrt{6}": 1,
+        "18": 1,
+        "20": 1,
+        "48\\sqrt{3}": 1,
+        "4\\sqrt{10}": 9,
+        "8.5\\sqrt{10}": 15,
+        "NO_ANSWER": 2
+      },
+      "gold": "\\frac{25 \\sqrt{10}}{4}"
+    },
+    {
+      "qid": "test:1903",
+      "sc_answer": "75",
+      "sc_correct": false,
+      "rwc_K_answer": "80",
+      "rwc_K_correct": true,
+      "votes": {
+        "100": 2,
+        "120": 2,
+        "140": 1,
+        "180": 2,
+        "20": 1,
+        "30": 1,
+        "55": 3,
+        "60": 3,
+        "75": 7,
+        "80": 7,
+        "90": 2,
+        "NO_ANSWER": 1
+      },
+      "gold": "80"
+    }
+  ],
+  "mathvista": [
+    {
+      "qid": "552",
+      "sc_answer": "4",
+      "sc_correct": true,
+      "rwc_VisConf_answer": "2",
+      "rwc_VisConf_correct": false,
+      "votes": {
+        "2": 9,
+        "3": 9,
+        "4": 14
+      },
+      "gold": "4"
+    },
+    {
+      "qid": "643",
+      "sc_answer": "C",
+      "sc_correct": false,
+      "rwc_VisConf_answer": "A",
+      "rwc_VisConf_correct": true,
+      "votes": {
+        "A": 10,
+        "C": 11,
+        "D": 3,
+        "NO_ANSWER": 8
+      },
+      "gold": "A"
+    },
+    {
+      "qid": "542",
+      "sc_answer": "2",
+      "sc_correct": true,
+      "rwc_VisConf_answer": "3",
+      "rwc_VisConf_correct": false,
+      "votes": {
+        "1": 2,
+        "10": 1,
+        "2": 12,
+        "3": 11,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "NO_ANSWER": 1
+      },
+      "gold": "2"
+    },
+    {
+      "qid": "842",
+      "sc_answer": "A",
+      "sc_correct": true,
+      "rwc_VisConf_answer": "B",
+      "rwc_VisConf_correct": false,
+      "votes": {
+        "A": 12,
+        "B": 11,
+        "C": 1,
+        "D": 2,
+        "NO_ANSWER": 6
+      },
+      "gold": "A"
+    },
+    {
+      "qid": "263",
+      "sc_answer": "33",
+      "sc_correct": false,
+      "rwc_VisConf_answer": "11",
+      "rwc_VisConf_correct": false,
+      "votes": {
+        "11": 2,
+        "133": 1,
+        "1524": 1,
+        "16": 2,
+        "17": 1,
+        "18": 1,
+        "2317": 1,
+        "27": 1,
+        "32": 2,
+        "323": 1,
+        "33": 3,
+        "34": 2,
+        "35": 2,
+        "36": 1,
+        "37": 2,
+        "42": 1,
+        "45": 2,
+        "47": 1,
+        "49": 1,
+        "50": 1,
+        "57": 1,
+        "8": 1,
+        "NO_ANSWER": 1
+      },
+      "gold": "38"
+    }
+  ]
+}

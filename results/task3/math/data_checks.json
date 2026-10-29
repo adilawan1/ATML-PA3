@@ -1,0 +1,58 @@
+{
+  "n_rows": 32000,
+  "n_questions": 1000,
+  "columns_used": {
+    "dataset": "dataset",
+    "sample_id": "sample_id",
+    "rollout_id": "rollout_id",
+    "text": "generated_text",
+    "token_ids": "generated_token_ids",
+    "n_tokens": "n_generated_text_tokens",
+    "extracted": "extracted_answer",
+    "gold": "gold_answer",
+    "question": "question_text",
+    "logp": "logp",
+    "kl": "kl_u_p",
+    "attn_image": null,
+    "attn_prompt": null,
+    "attn_generated": null,
+    "capped": "hit_max_new_tokens"
+  },
+  "logp_vs_kl_len_mismatch": 0,
+  "token_ids_minus_logp_len_counts": {
+    "0": 32000
+  },
+  "n_tokens_minus_logp_len_counts": {
+    "0": 32000
+  },
+  "readme_counts": {
+    "rows": {
+      "expected": 32000,
+      "found": 32000
+    },
+    "questions": {
+      "expected": 1000,
+      "found": 1000
+    },
+    "retained_tokens": {
+      "expected": 20742094,
+      "found": 20742094
+    },
+    "capped": {
+      "expected": 523,
+      "found": 523
+    },
+    "null_extracted": {
+      "expected": 521,
+      "found": 521
+    }
+  },
+  "readme_counts_match": true,
+  "cost_source": "n_generated_text_tokens",
+  "scorer": "math-verify 0.9.0",
+  "rollouts_per_question": 32,
+  "mean_distinct_groups_32": 5.653,
+  "no_answer_rate": 0.01628125,
+  "rollout_accuracy": 0.66315625,
+  "oracle_32": 0.919
+}

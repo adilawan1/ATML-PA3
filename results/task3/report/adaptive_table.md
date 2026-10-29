@@ -1,0 +1,8 @@
+| dataset   | policy      |   tau |   gamma |   acc |   tokens |   mean_rollouts |   stop@4 |   stop@8 |   stop@16 |   stop@32 |   incorrect_early_% |   Δacc vs fixed32 (pp) |
+|:----------|:------------|------:|--------:|------:|---------:|----------------:|---------:|---------:|----------:|----------:|--------------------:|-----------------------:|
+| math      | agreement   |   0.6 |   nan   |  73.6 |  10140.0 |            11.8 |     66.3 |      5.9 |       1.3 |      26.5 |                 8.2 |                   -0.1 |
+| math      | quality     |   0.5 |     0.0 |  73.2 |   7663.1 |             9.0 |     76.4 |      5.8 |       1.4 |      16.5 |                14.4 |                   -0.6 |
+| math      | fixed-32 SC | nan   |   nan   |  73.8 |  21347.0 |            32.0 |    nan   |    nan   |     nan   |     nan   |               nan   |                  nan   |
+| mathvista | agreement   |   0.5 |   nan   |  61.3 |   3288.9 |             9.9 |     71.4 |      7.5 |       2.0 |      19.1 |                21.7 |                   -0.4 |
+| mathvista | quality     |   0.5 |     0.0 |  61.6 |   3610.9 |            10.9 |     65.5 |      9.6 |       2.8 |      22.1 |                19.3 |                   -0.1 |
+| mathvista | fixed-32 SC | nan   |   nan   |  61.7 |   8897.8 |            32.0 |    nan   |    nan   |     nan   |     nan   |               nan   |                  nan   |

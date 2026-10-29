@@ -18,6 +18,11 @@ All three tasks have complete pipelines that run end to end in CPU smoke tests: 
 - On resume, `train_log.jsonl` (and the Task 2 `dev_log.jsonl`) are trimmed to the checkpoint's update, so updates are never logged twice.
 - Notebooks set `PA3_RESULTS` to Drive (`MyDrive/ATML-PA3/results`), seeded from the committed `results/`; the save cell rsyncs Drive → repo before committing. A disconnect therefore loses at most the training since the last checkpoint and the condition being evaluated.
 
+## Task 3 offline analysis done (2026-10-30)
+- Both pools built from the supplied zip; every README count matches (rows, questions, retained tokens, capped, null extractions). MATH scorer: math-verify 0.9.0. MathVista: metadata from the official GitHub repo (Hugging Face unreachable), 0 gold mismatches after letter mapping.
+- offline / signals / adaptive / analyze done for both datasets (`results/task3/`). Candidate rollout IDs per (question, order, N) are in `offline_coverage_rows.csv.gz`.
+- Remaining: the live run (Kaggle `pa3_t3_live`), then `python -m task3.analyze` again to add the live table.
+
 ## Task 3 data received (2026-10-30)
 - `ATML-PA3-Data` (shared Drive folder): `qwen25-math/` and `qwen25vl-mathvista/`, each 32,000 rollouts (1,000 questions × 32). Config now uses the README's folder and column names, the pinned live-model revision `aa8e7253…`, and the "\n\n" separator.
 - `task3.data` checks the README's counts (rows, questions, retained tokens, capped rollouts, null extractions) and records them in `data_checks.json` (`readme_counts_match`).

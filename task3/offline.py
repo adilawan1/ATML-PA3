@@ -35,7 +35,8 @@ def run(ds):
                 scores = candidate_scores(p, cand, kind) if N > 1 else None
                 cov.append({"qid": q, "order": o, "N": N, "oracle": bool(p["correct"][cand].any()),
                             "n_groups": len(np.unique(p["group"][cand])), "frac_correct": float(p["correct"][cand].mean()),
-                            "cost_all": int(p["ntok"][cand].sum())})
+                            "cost_all": int(p["ntok"][cand].sum()),
+                            "candidate_rollout_ids": " ".join(str(int(r)) for r in p["rollout_ids"][cand])})
                 for m in methods:
                     gsel = select(p, cand, m, scores, kind)
                     cost = int(p["ntok"][cand[0]]) if m == "first" else int(p["ntok"][cand].sum())

@@ -1,0 +1,87 @@
+{
+  "split": "eval",
+  "n_questions": 800,
+  "scores": {
+    "L": {
+      "quartile_gap_all": {
+        "mean": 0.07828125,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.13352878464818763,
+        "median": 0.125,
+        "n": 469
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.13401181953820634,
+        "median": 0.14741423681187707,
+        "n": 469
+      }
+    },
+    "K": {
+      "quartile_gap_all": {
+        "mean": 0.11984375,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.20442430703624734,
+        "median": 0.125,
+        "n": 469
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.19804108649285113,
+        "median": 0.2237019653318891,
+        "n": 469
+      }
+    },
+    "neg_length": {
+      "quartile_gap_all": {
+        "mean": 0.045625,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.07782515991471216,
+        "median": 0.125,
+        "n": 469
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.07632595054396821,
+        "median": 0.08754357470754898,
+        "n": 469
+      }
+    },
+    "length": {
+      "quartile_gap_all": {
+        "mean": -0.0459375,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": -0.07835820895522388,
+        "median": -0.125,
+        "n": 469
+      },
+      "spearman_with_correct_mixed": {
+        "mean": -0.07632595054396821,
+        "median": -0.08754357470754898,
+        "n": 469
+      }
+    }
+  },
+  "spearman_score_vs_length": {
+    "L": {
+      "mean": 0.22450990220048075,
+      "median": 0.24059030099494264,
+      "n": 800
+    },
+    "K": {
+      "mean": -0.16109595817293734,
+      "median": -0.18406205486137073,
+      "n": 800
+    }
+  },
+  "n_mixed_questions": 469
+}

@@ -87,6 +87,7 @@ Every pipeline was checked end to end with a tiny random Qwen3 and synthetic dat
 
 - **VQA answer normalization** (`task2/vqa_norm.py`): ported from the official VQA evaluation script ([GT-Vision-Lab/VQA](https://github.com/GT-Vision-Lab/VQA), `vqaEval.py`). The contraction, number and article tables and the punctuation rules are copied unchanged.
 - **MathVista answer normalization** (`task3/answers.py::normalize_mathvista`): ported from MathVista's `normalize_extracted_answer` ([lupantech/MathVista](https://github.com/lupantech/MathVista)).
+- **MathVista question metadata** (`results/task3/mathvista/mathvista_metadata.json`): the testmini records (question type, answer type, choices, precision, unit) taken from the official [lupantech/MathVista](https://github.com/lupantech/MathVista) repository, commit `c5acd37`; provenance in `mathvista_metadata_source.json`.
 - **HellaSwag preprocessing** (`task1/sample_probes.py::hellaswag_preprocess`): copied from lm-evaluation-harness `tasks/hellaswag/utils.py`.
 - **Qualitative prompts** `data/task1/first_plot_questions.yaml`: from [emergent-misalignment/emergent-misalignment](https://github.com/emergent-misalignment/emergent-misalignment) (`evaluation/first_plot_questions.yaml`).
 - **LoRA initialization** follows PEFT's default (Kaiming-uniform A, zero B). LoRA and OPLoRA themselves are implemented in `common/lora.py`; OPLoRA follows Xiong & Xie, Sections 3.2–3.3.
