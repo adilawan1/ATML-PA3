@@ -1,0 +1,27 @@
+{
+  "full_ft": {
+    "rows_in_log": 1250,
+    "rows_kept": 1250,
+    "earlier_attempt_rows_dropped": 0
+  },
+  "full_ft_l2sp": {
+    "rows_in_log": 1250,
+    "rows_kept": 1250,
+    "earlier_attempt_rows_dropped": 0
+  },
+  "lora4": {
+    "rows_in_log": 1498,
+    "rows_kept": 1250,
+    "earlier_attempt_rows_dropped": 248
+  },
+  "lora16": {
+    "rows_in_log": 1271,
+    "rows_kept": 1250,
+    "earlier_attempt_rows_dropped": 21
+  },
+  "oplora16": {
+    "rows_in_log": 1250,
+    "rows_kept": 1250,
+    "earlier_attempt_rows_dropped": 0
+  }
+}

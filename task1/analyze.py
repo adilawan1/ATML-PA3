@@ -7,6 +7,8 @@ Outputs in results/task1/report/:
   sft_loss.png, lr.png, l2sp_terms.png, benchmarks.png, diagnostics.png
 """
 import argparse
+import json
+import os
 import shutil
 
 import matplotlib
@@ -16,7 +18,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from common.utils import REPO_ROOT, load_config, load_json, out_root, read_jsonl, results_root, save_json
+from common.utils import (REPO_ROOT, final_attempt_log, load_config, load_json, out_root, read_jsonl, results_root,
+                          save_json)
 
 PRIMARY = [("gsm8k", "flexible_em", "GSM8K (flex EM)"), ("hellaswag", "acc_norm", "HellaSwag (acc_norm)"),
            ("boolq", "acc", "BoolQ (acc)"), ("arc_easy", "acc_norm", "ARC-Easy (acc_norm)")]
@@ -83,7 +86,7 @@ def training_curves(out):
         p = out_root() / "task1/runs" / v / "train_log.jsonl"
         if not p.exists():
             continue
-        log = read_jsonl(p)
+        log = final_attempt_log(read_jsonl(p))
         u = np.array([r["update"] for r in log])
         loss = [r["sft_loss"] for r in log]
         s = smooth(loss)
@@ -130,7 +133,7 @@ def resources(out):
             if k in s and s[k]:
                 r[k] = s[k] / 2**20 if k.endswith("bytes") else s[k]
         rows.append(r)
-        log = read_jsonl(out_root() / "task1/runs" / v / "train_log.jsonl")
+        log = final_attempt_log(read_jsonl(out_root() / "task1/runs" / v / "train_log.jsonl"))
         reg[v] = {"displacement": s.get("displacement"), "final_sft_loss_avg_last50": float(np.mean([r["sft_loss"] for r in log[-50:]]))}
         if v == "full_ft_l2sp":
             reg[v].update({"omega_final": log[-1]["omega"], "lambda_omega_final": log[-1]["lambda_omega"],
@@ -169,13 +172,32 @@ def diagnostics_fig(out):
 
 
 def sync_run_logs():
-    """Copy small per-run logs from $PA3_OUT into results/ so they are committed with the repo."""
+    """Copy small per-run logs from $PA3_OUT into results/ so they are committed with the repo.
+
+    The committed train_log.jsonl keeps only the final attempt's rows (see final_attempt_log); how many rows of
+    earlier from-scratch attempts were dropped is recorded in results/task1/runs/log_cleaning.json.
+    """
+    cleaning = {}
     for v in VARIANTS:
-        src = out_root() / "task1/runs" / v
+        src, dst = out_root() / "task1/runs" / v, results_root() / "task1/runs" / v
         for f in ("train_log.jsonl", "summary.json", "meta.json", "ckpt_sizes.json"):
-            if (src / f).exists():
-                (results_root() / "task1/runs" / v).mkdir(parents=True, exist_ok=True)
-                shutil.copy(src / f, results_root() / "task1/runs" / v / f)
+            if not (src / f).exists():
+                continue
+            dst.mkdir(parents=True, exist_ok=True)
+            if f == "train_log.jsonl":
+                rows = read_jsonl(src / f)
+                keep = final_attempt_log(rows)
+                tmp = dst / (f + ".tmp")
+                with open(tmp, "w", encoding="utf-8") as fh:
+                    for r in keep:
+                        fh.write(json.dumps(r) + "\n")
+                os.replace(tmp, dst / f)
+                cleaning[v] = {"rows_in_log": len(rows), "rows_kept": len(keep),
+                               "earlier_attempt_rows_dropped": len(rows) - len(keep)}
+            elif (src / f).resolve() != (dst / f).resolve():
+                shutil.copy(src / f, dst / f)
+    if cleaning:
+        save_json(cleaning, results_root() / "task1/runs/log_cleaning.json")
 
 
 def main():

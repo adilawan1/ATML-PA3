@@ -241,6 +241,11 @@ def main():
         start = s["update"]
         dropped = truncate_jsonl(run_dir / "train_log.jsonl", "update", start)
         print(f"resumed from {ck.name} (update {start}); dropped {dropped} log lines past the checkpoint", flush=True)
+    else:
+        # fresh start: discard rows from an earlier attempt that never reached a checkpoint
+        dropped = truncate_jsonl(run_dir / "train_log.jsonl", "update", 0)
+        if dropped:
+            print(f"no checkpoint: starting from update 0; dropped {dropped} log lines of an earlier attempt", flush=True)
 
     n_trainable = count_params(trainable)
     meta = {"variant": args.variant, "method": method, "lr": vcfg["lr"], "l2sp_lambda": lam,

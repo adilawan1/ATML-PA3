@@ -172,6 +172,9 @@ def main():
                               seed=cfg["seed"])
         save_json(cal, results_root() / "task2" / run / "calibration.json")
         st["calibration"] = cal
+        # fresh start: discard log rows of an earlier attempt that never reached a checkpoint
+        for f in ("train_log.jsonl", "dev_log.jsonl"):
+            truncate_jsonl(rd / f, "update", -1)
     else:
         st = resume["state"]
         vlm.connector.load_state_dict(resume["connector"])

@@ -72,6 +72,18 @@ def truncate_jsonl(path, key, max_value):
     return len(rows) - len(keep)
 
 
+def final_attempt_log(rows, key="update"):
+    """Rows of the attempt that produced the final weights: the last occurrence of each key value, in key order.
+
+    A run restarted from scratch before its first checkpoint (or written by an older trainer that did not clear
+    the log on a fresh start) repeats the early updates; later attempts always come after earlier ones in the file.
+    """
+    last = {}
+    for r in rows:
+        last[r[key]] = r
+    return [last[k] for k in sorted(last)]
+
+
 def read_jsonl(path):
     with open(path, "r", encoding="utf-8") as f:
         return [json.loads(line) for line in f if line.strip()]

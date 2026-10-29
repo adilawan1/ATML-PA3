@@ -18,6 +18,13 @@ All three tasks have complete pipelines that run end to end in CPU smoke tests: 
 - On resume, `train_log.jsonl` (and the Task 2 `dev_log.jsonl`) are trimmed to the checkpoint's update, so updates are never logged twice.
 - Notebooks set `PA3_RESULTS` to Drive (`MyDrive/ATML-PA3/results`), seeded from the committed `results/`; the save cell rsyncs Drive → repo before committing. A disconnect therefore loses at most the training since the last checkpoint and the condition being evaluated.
 
+## Task 1 completed on Colab A100 (2026-10-29)
+- All 5 trainings and all 7 evaluations ran on Colab A100-SXM4-40GB, **except the baseline evaluation, which ran on an L4** (scores unaffected in principle; GSM8K time 29.5 min vs 8–12 min on the A100). Re-run it on the A100 if evaluation times are compared.
+- LoRA-4 and LoRA-16 were each restarted from scratch before their first checkpoint (248 and 21 extra log rows). The old trainer kept those rows; committed logs now hold only the final attempt (`results/task1/runs/log_cleaning.json`), and both trainers now clear the log on a fresh start. Benchmark scores and summaries were unaffected.
+- GSM8K strict-match is 0 for every condition: the `gsm8k_cot` strict regex needs "The answer is N.", while fine-tuned models write "The answer is: N" (MetaMathQA style) and the baseline rarely uses the phrase. Report flexible-extract only, and say why.
+- BoolQ changes follow a yes/no bias shift: predicted-"yes" rate 57.7% (baseline) → 27.1% (Full FT), 42.6% (L2-SP), 54–64% (LoRA/OPLoRA); gold is 62.2%.
+- Remaining: 42-row manual annotation (`results/task1/qualitative/annotation_sheet.csv`).
+
 ## Kaggle runs (added 2026-10-28)
 Colab Pro L4 sessions kept disconnecting, so Task 1 and Task 2 move to Kaggle (2 x T4, background "Save & Run All" versions, 12 h limit, ~30 GPU h/week). See `notebooks/kaggle/` and `scripts/kaggle_run.py`.
 - All Task 1 training and evaluation runs on the same GPU type (T4), so timings stay comparable. Two runs share a session, one per GPU; note this in the resources discussion.
@@ -50,7 +57,7 @@ Times are rough estimates for an L4, not measurements.
 | Data selection `task1/prepare_data.py` | ✅ | 40,000 kept from the first 40,002 MetaMathQA rows. Excluded: 2 too long, 0 empty, 0 GSM8K-test overlaps. 9.91M tokens (7.10M supervised), mean length 248, max 1,941. Token hash `5db9ba4d…`. → `results/task1/data_selection.json` |
 | Probe set `task1/sample_probes.py` | ✅ | 32 GSM8K test + 32 HellaSwag val (seed 6304), fixed before any results. Prompt formats match lm-eval's logged prompts. → `results/task1/probe_set.json` |
 | Trainer (5 variants) `task1/train.py` | 🧪 ⏳ | Loss normalized by tokens over the effective batch; LM head applied only at supervised positions; FP16 autocast + GradScaler; unscale → L2-SP grad → clip; skipped updates logged; resume verified bit-exact. |
-| LoRA / OPLoRA `common/lora.py` | 🧪 | Deterministic per-module init, so LoRA-16 and OPLoRA-16 share initial factors. Projection done in FP32 outside autocast; constraint residual ~3e-7. |
+| LoRA / OPLoRA `common/lora.py` | 🧪 | Deterministic per-module init, so LoRA-16 and OPLoRA-16 share initial factors. Projection done in FP32 outside autocast; constraint residual ~3e-7 on CPU smoke tests, ≤1.9e-4 relative on the real A100 run (ρ_k < 1e-7). |
 | Export + merge check `task1/export_models.py` | 🧪 ⏳ | Merged vs unmerged logits plus OPLoRA constraint check → `results/task1/export/`. |
 | lm-eval runner `task1/evaluate.py` | 🧪 ⏳ | Forces `enable_thinking=False` and asserts `</think>` in the rendered prompt. gsm8k_cot 0-shot, `max_gen_toks=1024`, stock stops `["Q:","</s>","<|im_end|>"]` and filters. Per-example rows include extracted answer, generated tokens and truncation flag. |
 | Diagnostics ρ_k, η, R(z) `task1/diagnostics.py` | 🧪 ⏳ | FP32; activations cached from the starting model. Also reports input-subspace ρ and the random baseline k/d = 0.125. |
