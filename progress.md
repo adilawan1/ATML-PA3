@@ -18,6 +18,13 @@ All three tasks have complete pipelines that run end to end in CPU smoke tests: 
 - On resume, `train_log.jsonl` (and the Task 2 `dev_log.jsonl`) are trimmed to the checkpoint's update, so updates are never logged twice.
 - Notebooks set `PA3_RESULTS` to Drive (`MyDrive/ATML-PA3/results`), seeded from the committed `results/`; the save cell rsyncs Drive → repo before committing. A disconnect therefore loses at most the training since the last checkpoint and the condition being evaluated.
 
+## Task 2 completed on Colab A100 (2026-10-29)
+- vis196 and the optional vis49 run trained (4,500 updates each, ~45 min) and were evaluated on the A100.
+- FP16 overflow at the start: updates 1–5 (vis196) and 1–3 (vis49) were skipped by the GradScaler, and the interface check passed at update 6 / 4. vis49 had one more skip at update 4,411. No non-finite losses.
+- Connector scale = 0.0549 (text-embedding norm 0.870 / initial connector-output norm 15.87).
+- Feature caching took 37 s for 9,258 images; the images were already on disk, so this run did not time the download.
+- Logs re-pushed from Drive overwrote the cleaned Task 1 logs and figures (Drive still had old copies). Restored. To fix the Drive copy, run `python -m task1.analyze` once in Colab after `git pull`.
+
 ## Task 1 completed on Colab A100 (2026-10-29)
 - All 5 trainings and all 7 evaluations ran on Colab A100-SXM4-40GB, **except the baseline evaluation, which ran on an L4** (scores unaffected in principle; GSM8K time 29.5 min vs 8–12 min on the A100). Re-run it on the A100 if evaluation times are compared.
 - LoRA-4 and LoRA-16 were each restarted from scratch before their first checkpoint (248 and 21 extra log rows). The old trainer kept those rows; committed logs now hold only the final attempt (`results/task1/runs/log_cleaning.json`), and both trainers now clear the log on a fresh start. Benchmark scores and summaries were unaffected.
