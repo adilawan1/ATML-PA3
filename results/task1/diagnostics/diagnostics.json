@@ -1,0 +1,8304 @@
+{
+  "summary": [
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "rho_k": 0.1331309334416803,
+      "rho_k_input": 0.046704381766872444,
+      "eta": 0.013297872640152041,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.05205852538347244,
+      "R_math_median": 0.05202578008174896,
+      "R_nonmath_mean": 0.026397375389933586,
+      "R_nonmath_median": 0.027401909232139587,
+      "R_ratio_math_over_nonmath": 1.9721099016277397
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "rho_k": 0.14834152242603352,
+      "rho_k_input": 0.0402783139621818,
+      "eta": 0.015395039631106323,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.05702424794435501,
+      "R_math_median": 0.05703272670507431,
+      "R_nonmath_mean": 0.0303952619433403,
+      "R_nonmath_median": 0.030063163489103317,
+      "R_ratio_math_over_nonmath": 1.876090031750794
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "rho_k": 0.11553750388774173,
+      "rho_k_input": 0.05326734417212899,
+      "eta": 0.012482617115753283,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.020023375749588013,
+      "R_math_median": 0.019729046151041985,
+      "R_nonmath_mean": 0.028227634727954865,
+      "R_nonmath_median": 0.028657715767621994,
+      "R_ratio_math_over_nonmath": 0.7093536508660475
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "rho_k": 0.13285212785812447,
+      "rho_k_input": 0.046612025764924375,
+      "eta": 0.013752398246956623,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.05296745151281357,
+      "R_math_median": 0.05293791741132736,
+      "R_nonmath_mean": 0.026812441647052765,
+      "R_nonmath_median": 0.02769462764263153,
+      "R_ratio_math_over_nonmath": 1.9754803464023865
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "rho_k": 0.14833369613918626,
+      "rho_k_input": 0.04037480209570669,
+      "eta": 0.01601466754907971,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.057574011385440826,
+      "R_math_median": 0.057565465569496155,
+      "R_nonmath_mean": 0.03092171624302864,
+      "R_nonmath_median": 0.030524371191859245,
+      "R_ratio_math_over_nonmath": 1.8619280680586736
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "rho_k": 0.11486339256332923,
+      "rho_k_input": 0.05249896745299073,
+      "eta": 0.01298098401100499,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.019908113405108452,
+      "R_math_median": 0.019595395773649216,
+      "R_nonmath_mean": 0.028588149696588516,
+      "R_nonmath_median": 0.02913273312151432,
+      "R_ratio_math_over_nonmath": 0.6963764222727618
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "rho_k": 0.1320820843897504,
+      "rho_k_input": 0.04603842366876579,
+      "eta": 0.011174062496849602,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.04514843225479126,
+      "R_math_median": 0.04513590782880783,
+      "R_nonmath_mean": 0.022629108279943466,
+      "R_nonmath_median": 0.023507239297032356,
+      "R_ratio_math_over_nonmath": 1.995148535959193
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "rho_k": 0.14980093922928966,
+      "rho_k_input": 0.0386624574199341,
+      "eta": 0.013714058963547748,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.047732289880514145,
+      "R_math_median": 0.04765196889638901,
+      "R_nonmath_mean": 0.02792111225426197,
+      "R_nonmath_median": 0.027245713397860527,
+      "R_ratio_math_over_nonmath": 1.7095411330982393
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "rho_k": 0.10664757767046525,
+      "rho_k_input": 0.04245235946323029,
+      "eta": 0.007892389221873373,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.01878080517053604,
+      "R_math_median": 0.018554575741291046,
+      "R_nonmath_mean": 0.025427954271435738,
+      "R_nonmath_median": 0.02578190341591835,
+      "R_ratio_math_over_nonmath": 0.7385889155712888
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "rho_k": 0.15111030389401528,
+      "rho_k_input": 0.0434441852503523,
+      "eta": 0.009294467116154882,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.07043079286813736,
+      "R_math_median": 0.07048816978931427,
+      "R_nonmath_mean": 0.016161078587174416,
+      "R_nonmath_median": 0.017810262739658356,
+      "R_ratio_math_over_nonmath": 4.35805026800822
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "rho_k": 0.15299168078296993,
+      "rho_k_input": 0.03587692618665248,
+      "eta": 0.011050006711253696,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.08700601011514664,
+      "R_math_median": 0.08715841174125671,
+      "R_nonmath_mean": 0.017042770981788635,
+      "R_nonmath_median": 0.016421904787421227,
+      "R_ratio_math_over_nonmath": 5.10515632746098
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "rho_k": 0.10407374312614702,
+      "rho_k_input": 0.041679811821533706,
+      "eta": 0.007409204978217697,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.012271378189325333,
+      "R_math_median": 0.012273330241441727,
+      "R_nonmath_mean": 0.008887680247426033,
+      "R_nonmath_median": 0.010090064257383347,
+      "R_ratio_math_over_nonmath": 1.3807177854850543
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "rho_k": 0.14680289000195987,
+      "rho_k_input": 0.04299661442573894,
+      "eta": 0.014909416526601162,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.042634908109903336,
+      "R_math_median": 0.04274585470557213,
+      "R_nonmath_mean": 0.02164439670741558,
+      "R_nonmath_median": 0.02226211689412594,
+      "R_ratio_math_over_nonmath": 1.969789626674889
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "rho_k": 0.14974661282243204,
+      "rho_k_input": 0.038798728220207,
+      "eta": 0.01849038846357659,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.08551838994026184,
+      "R_math_median": 0.08569182455539703,
+      "R_nonmath_mean": 0.02637818083167076,
+      "R_nonmath_median": 0.026115048676729202,
+      "R_ratio_math_over_nonmath": 3.2420124225391933
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "rho_k": 0.11277448513459988,
+      "rho_k_input": 0.04385191562802219,
+      "eta": 0.01137743990654432,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.011127177625894547,
+      "R_math_median": 0.011276008561253548,
+      "R_nonmath_mean": 0.011331865563988686,
+      "R_nonmath_median": 0.011474697850644588,
+      "R_ratio_math_over_nonmath": 0.9819369602526337
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "rho_k": 1.8717075253359835e-08,
+      "rho_k_input": 8.012401292747138e-09,
+      "eta": 0.015003587816788665,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.04756250977516174,
+      "R_math_median": 0.047644004225730896,
+      "R_nonmath_mean": 0.02099207602441311,
+      "R_nonmath_median": 0.021143432706594467,
+      "R_ratio_math_over_nonmath": 2.2657363530814236
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "rho_k": 2.7042657996334064e-08,
+      "rho_k_input": 8.810918047892785e-09,
+      "eta": 0.018817994550650103,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.09013813734054565,
+      "R_math_median": 0.09035918116569519,
+      "R_nonmath_mean": 0.027351906523108482,
+      "R_nonmath_median": 0.026765527203679085,
+      "R_ratio_math_over_nonmath": 3.295497418594631
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "rho_k": 1.3152930038505877e-08,
+      "rho_k_input": 1.0948623627085195e-08,
+      "eta": 0.00955676544934012,
+      "rho_random_baseline": 0.125,
+      "R_math_mean": 0.010488025844097137,
+      "R_math_median": 0.010462441481649876,
+      "R_nonmath_mean": 0.012390379793941975,
+      "R_nonmath_median": 0.012647174298763275,
+      "R_ratio_math_over_nonmath": 0.8464652430771368
+    }
+  ],
+  "per_probe": [
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.0521751344203949
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.05274137109518051
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.052666302770376205
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.052012089639902115
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.052345529198646545
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.05232245847582817
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.051843468099832535
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.051931675523519516
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.05213440954685211
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.052118875086307526
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.05170181766152382
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.05144188553094864
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.05217759683728218
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.051936764270067215
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.051963113248348236
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.052263423800468445
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.05182785168290138
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.05191335454583168
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.05264981463551521
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.052280496805906296
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.051229264587163925
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.05202317610383034
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.05234571546316147
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.05147755891084671
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.05182233825325966
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.051930513232946396
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.05202838405966759
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.051943711936473846
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.0520884245634079
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.05227690562605858
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.05245282128453255
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.05180661380290985
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.02100168727338314
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.019727544859051704
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.027946731075644493
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.0232786163687706
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.02914264053106308
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.019531968981027603
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.01946190558373928
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.01908622495830059
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.027650337666273117
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.02813117951154709
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.026661865413188934
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.02916761301457882
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.027262799441814423
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.02726774290204048
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.02661059983074665
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.027740508317947388
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.02791789174079895
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.02746688574552536
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.02837030030786991
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.029681706801056862
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.028138097375631332
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.027336930856108665
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.02906755357980728
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.0268832016736269
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.028391961008310318
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.027146829292178154
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.02805616334080696
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.02716141752898693
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.026955673471093178
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.027719052508473396
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.026779545471072197
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.027972819283604622
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.056635815650224686
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.05721428990364075
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.056467924267053604
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.05752406269311905
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.057061634957790375
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.05646665021777153
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.057533979415893555
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.05729293450713158
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.05760270357131958
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.057498909533023834
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.05732428655028343
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.05598932504653931
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.05585017427802086
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.056820113211870193
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.05707339569926262
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.058350324630737305
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.05801629647612572
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.05810511112213135
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.05681696906685829
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.05631675943732262
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.05443931370973587
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.057965368032455444
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.057003818452358246
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.056928690522909164
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.05802565813064575
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.05816898122429848
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.05609293654561043
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.056726399809122086
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.056939058005809784
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.05536717548966408
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.05824151635169983
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.05691535770893097
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.035348936915397644
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.029396943747997284
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.03234993666410446
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.03093406930565834
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.02884199470281601
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.02605663426220417
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.02753031998872757
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.024587884545326233
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.030280962586402893
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.02866930328309536
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.029341189190745354
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.030521642416715622
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.03558489307761192
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.02857832983136177
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.024830566719174385
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.032170478254556656
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.02759501151740551
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.02827109396457672
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.03295184299349785
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.025166405364871025
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.040117889642715454
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.03339553251862526
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.034466687589883804
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.032723646610975266
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.028868550434708595
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.034105900675058365
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.03252304345369339
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.02739616483449936
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.029939847066998482
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.029162688180804253
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.030753491446375847
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.030186478048563004
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.021673426032066345
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.021033836528658867
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.019393058493733406
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.018914388492703438
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.018768226727843285
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.018764032050967216
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.020601382479071617
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.01836857572197914
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.018225746229290962
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.022812191396951675
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.01995866559445858
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.01774531789124012
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.018454791978001595
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.017580660060048103
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.017112359404563904
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.021259602159261703
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.01818961650133133
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.021545052528381348
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.02167578414082527
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.019252927973866463
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.022401656955480576
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.017552519217133522
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.022308023646473885
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.019608082249760628
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.02347077988088131
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.02054288610816002
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.01913013868033886
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.019600121304392815
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.02225111797451973
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.019890522584319115
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.022812586277723312
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.01985001005232334
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.024549048393964767
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.027074003592133522
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.027272893115878105
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.026864726096391678
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.029120128601789474
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.024755805730819702
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.02414895035326481
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.026141246780753136
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.02812907285988331
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.029868490993976593
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.02867857739329338
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.027588391676545143
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.02815532684326172
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.029925784096121788
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.031302060931921005
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.028885595500469208
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.028636854141950607
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.027230413630604744
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.028940938413143158
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.029203562065958977
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.030111858621239662
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.028755327686667442
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.028708359226584435
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.026895718649029732
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.029496723785996437
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.031011922284960747
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.030101584270596504
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.028544949367642403
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.02671561762690544
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.02806050144135952
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.029658710584044456
+    },
+    {
+      "condition": "full_ft_mid",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.028751138597726822
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.05307294428348541
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.053678009659051895
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.053567759692668915
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.05291576310992241
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.053267572075128555
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.05325188487768173
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.05273333191871643
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.05278338864445686
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.053031258285045624
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.05305124446749687
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.052577607333660126
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.05234862491488457
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.053111106157302856
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.052839238196611404
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.05288201943039894
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.053144749253988266
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.05276003107428551
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.0527879074215889
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.05356897786259651
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.05317262187600136
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.05218647047877312
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.05291453376412392
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.053282808512449265
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.052437420934438705
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.052718520164489746
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.05280694738030434
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.05296006798744202
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.05283315107226372
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.052969299256801605
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.05320966616272926
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.053369875997304916
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.05272362381219864
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.021821029484272003
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.02030034363269806
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.02902478724718094
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.024400047957897186
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.02975914627313614
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.020142916589975357
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.02005873993039131
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.019648805260658264
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.027765922248363495
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.028421171009540558
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.02703758142888546
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.029527027159929276
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.027623331174254417
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.027552703395485878
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.026897065341472626
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.028059097006917
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.02825682796537876
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.027926089242100716
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.02874794416129589
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.029966959729790688
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.028342464938759804
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.027602141723036766
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.029444994404911995
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.027035893872380257
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.028740011155605316
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.027369007468223572
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.02828945405781269
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.027456453070044518
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.027245422825217247
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.028083723038434982
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.02721969038248062
+    },
+    {
+      "condition": "full_ft",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.028231322765350342
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.05718832090497017
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.057749710977077484
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.057017069309949875
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.058114077895879745
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.057633135467767715
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.056984204798936844
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.05808185040950775
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.0578603632748127
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.05812922120094299
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.05805450305342674
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.05787131190299988
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.05652022734284401
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.056404683738946915
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.057368066161870956
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.05759965628385544
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.0589974969625473
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.058556780219078064
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.0586715005338192
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.05732980743050575
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.056877583265304565
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.05495323985815048
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.058563489466905594
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.05753127485513687
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.05749744921922684
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.058536287397146225
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.058727070689201355
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.05662447586655617
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.05727493017911911
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.05746845528483391
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.05595327913761139
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.058782462030649185
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.05744631588459015
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.03566502779722214
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.029322845861315727
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.03263141214847565
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.030718550086021423
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.029031120240688324
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.026506925001740456
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.027975721284747124
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.025498880073428154
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.031122008338570595
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.029441986232995987
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.02976103685796261
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.03129195794463158
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.03580646589398384
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.02935497835278511
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.025741318240761757
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.032380640506744385
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.028273215517401695
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.028963452205061913
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.0332721509039402
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.026074562221765518
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.040765274316072464
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.03388174623250961
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.03519551455974579
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.03333499655127525
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.029802346602082253
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.03442922234535217
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.03300581872463226
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.028150048106908798
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.030435970053076744
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.029574085026979446
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.03147287294268608
+    },
+    {
+      "condition": "full_ft",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.030612772330641747
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.021562164649367332
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.0208151675760746
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.019268888980150223
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.018777664750814438
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.018601614981889725
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.018621889874339104
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.020524151623249054
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.018223345279693604
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.018054408952593803
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.022804398089647293
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.01978624239563942
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.017645161598920822
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.018285760655999184
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.017469771206378937
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.016963578760623932
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.021257907152175903
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.01801593042910099
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.021490179002285004
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.021548358723521233
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.019118810072541237
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.022300800308585167
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.017446819692850113
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.02218659035861492
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.019438454881310463
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.02341739647090435
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.020434202626347542
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.019025027751922607
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.019474754109978676
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.02222081460058689
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.019763188436627388
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.022800156846642494
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.019716035574674606
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.02440997213125229
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.02700800634920597
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.02723127231001854
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.02664456143975258
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.029116317629814148
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.02450970560312271
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.023842066526412964
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.02601751498878002
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.028697585687041283
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.030546145513653755
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.029247822239995003
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.027849474921822548
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.028840795159339905
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.030207794159650803
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.03197228163480759
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.02962336130440235
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.029171299189329147
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.02777375839650631
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.029524901881814003
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.029623132199048996
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.030716966837644577
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.02920806221663952
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.029141683131456375
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.027279021218419075
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.030064502730965614
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.03179602697491646
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.03089030086994171
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.02922644279897213
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.026881057769060135
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.028592800721526146
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.030042368918657303
+    },
+    {
+      "condition": "full_ft",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.029123783111572266
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.04518118128180504
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.04574008658528328
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.04562556743621826
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.04509304091334343
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.0454401858150959
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.04537999629974365
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.04497125744819641
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.04500197619199753
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.04522538185119629
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.04521980136632919
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.044790808111429214
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.044569868594408035
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.045297879725694656
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.04504939541220665
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.04513043165206909
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.045260295271873474
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.04506939277052879
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.04496310278773308
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.045701753348112106
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.045317284762859344
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.044469621032476425
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.04507552087306976
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.04543537274003029
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.04468593746423721
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.044863007962703705
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.04501461237668991
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.04520537331700325
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.04500067979097366
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.04514138773083687
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.04541751369833946
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.04551224410533905
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.04489980265498161
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.017763130366802216
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.017019081860780716
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.025038981810212135
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.020951829850673676
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.02534748800098896
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.017033398151397705
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.016983022913336754
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.01625889353454113
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.023596378043293953
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.023860424757003784
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.022895807400345802
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.02473483234643936
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.023282095789909363
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.023423783481121063
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.022992324084043503
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.023589814081788063
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.02400621958076954
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.02353929914534092
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.02402273565530777
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.024905839934945107
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.02405119687318802
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.023486899212002754
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.024653838947415352
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.022843576967716217
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.024213794618844986
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.02301807887852192
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.023915207013487816
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.023288793861865997
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.02317436784505844
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.02352757938206196
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.02281486988067627
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.02389790117740631
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.04735860601067543
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.048056572675704956
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.04715321213006973
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.048255402594804764
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.04765532538294792
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.047124817967414856
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.04814515635371208
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.04819942265748978
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.04829856753349304
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.04813191667199135
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.04791368171572685
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.046718839555978775
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.04646521806716919
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.047565244138240814
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.04781176894903183
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.049191173166036606
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.04848986864089966
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.04905273765325546
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.04742640256881714
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.04707179591059685
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.045379821211099625
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.04873461276292801
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.047632016241550446
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.04764861613512039
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.048589885234832764
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.048876021057367325
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.04685356467962265
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.04755023494362831
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.04758675768971443
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.046161431819200516
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.04874208942055702
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.04759257659316063
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.0317043662071228
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.026093782857060432
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.029387323185801506
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.027142256498336792
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.02626284398138523
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.02422710508108139
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.02508264221251011
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.023234974592924118
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.0282499548047781
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.02668016217648983
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.026521433144807816
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.027625441551208496
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.032913580536842346
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.026488183066248894
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.023699209094047546
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.02913985215127468
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.025470636785030365
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.026032764464616776
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.03009483963251114
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.023582762107253075
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.03674376755952835
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.03102630190551281
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.03241216391324997
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.03060283325612545
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.027174489572644234
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.03058522567152977
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.03022761456668377
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.025103330612182617
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.02731693722307682
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.0264381505548954
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.028534963726997375
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.027675684541463852
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.02010812610387802
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.01933206245303154
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.018358366563916206
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.017910180613398552
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.017657535150647163
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.01770070753991604
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.019348183646798134
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.017489328980445862
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.01729084737598896
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.021242676302790642
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.018663352355360985
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.01684611849486828
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.017466343939304352
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.016815118491649628
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.016290584579110146
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.02002372406423092
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.017150096595287323
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.020209593698382378
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.02012036181986332
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.018096288666129112
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.02066030167043209
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.016732262447476387
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.0206135381013155
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.01846381649374962
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.021705131977796555
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.019118959084153175
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.01814321242272854
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.01852012611925602
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.020533712580800056
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.01861323043704033
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.02117285691201687
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.018589027225971222
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.022649286314845085
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.02469271793961525
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.02552844025194645
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.02427772991359234
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.026057740673422813
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.022429993376135826
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.022175081074237823
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.023944925516843796
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.02537752129137516
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.02661941386759281
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.025989845395088196
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.024924783036112785
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.02527480013668537
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.026689035817980766
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.027691980823874474
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.025831323117017746
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.02578951045870781
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.024706577882170677
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.02601979859173298
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.02635679394006729
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.02648922987282276
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.025829395279288292
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.025774698704481125
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.024487989023327827
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.02644910104572773
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.027340292930603027
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.027092792093753815
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.025497332215309143
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.024255625903606415
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.025301717221736908
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.026359912008047104
+    },
+    {
+      "condition": "full_ft_l2sp",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.025789109990000725
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.07039276510477066
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.07108184695243835
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.07052318006753922
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.07081642746925354
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.07044291496276855
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.07034637778997421
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.07108984887599945
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.07146618515253067
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.07083933800458908
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.07002633064985275
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.06914730370044708
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.06861256808042526
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.07122886925935745
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.06943956762552261
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.07006048411130905
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.07103250920772552
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.06965582072734833
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.07126957178115845
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.07136207073926926
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.07215852290391922
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.06784962862730026
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.0702807605266571
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.07113902270793915
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.06852877140045166
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.07050091028213501
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.07057655602693558
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.0697493851184845
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.07213980704545975
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.07171843945980072
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.0697428286075592
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.07047542929649353
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.07009138911962509
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.013958044350147247
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.004640958737581968
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.009076501242816448
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.013495510444045067
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.010711667127907276
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.007074594497680664
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.0054467227309942245
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.005723701789975166
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.02043869160115719
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.02132442221045494
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.018009256571531296
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.018717315047979355
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.01577981933951378
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.017900381237268448
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.019915327429771423
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.016410131007432938
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.018284156918525696
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.020135924220085144
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.021106889471411705
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.02168743871152401
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.024647971615195274
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.01875145174562931
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.01478436030447483
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.01799098588526249
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.02207612246274948
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.014439614489674568
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.01819947175681591
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.017720146104693413
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.01985645294189453
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.015611836686730385
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.016963021829724312
+    },
+    {
+      "condition": "lora4",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.01627562753856182
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.08637560904026031
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.08690936118364334
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.08806763589382172
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.08745140582323074
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.09000051766633987
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.08736269176006317
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.08730696141719818
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.0845349058508873
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.08409473299980164
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.08666719496250153
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.08706549555063248
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.08634105324745178
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.08653926104307175
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.08562646061182022
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.08746791630983353
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.08366477489471436
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.08733934164047241
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.08523745834827423
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.08720740675926208
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.08710941672325134
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.08696155995130539
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.08555255830287933
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.08853854984045029
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.0875769630074501
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.08877843618392944
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.08760043233633041
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.08936458081007004
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.08572764694690704
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.08827373385429382
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.08954878896474838
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.08665939420461655
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.0872400626540184
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.0240813959389925
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.025357218459248543
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.011394244618713856
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.007840096019208431
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.016258373856544495
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.02178107760846615
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.02400939352810383
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.02839558757841587
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.023662937805056572
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.0223948173224926
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.016797468066215515
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.019056109711527824
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.022202325984835625
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.01036195270717144
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.014709826558828354
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.01658543571829796
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.02079836279153824
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.005933266133069992
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.010557468980550766
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.011401835829019547
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.015253986231982708
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.015612723305821419
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.01619010418653488
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.016982704401016235
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.01583569496870041
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.01532923337072134
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.01761328987777233
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.019355202093720436
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.011952074244618416
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.017446205019950867
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.013990004546940327
+    },
+    {
+      "condition": "lora4",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.016228243708610535
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.011121286079287529
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.014202787540853024
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.010996992699801922
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.012921525165438652
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.012387469410896301
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.012677125632762909
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.012712515890598297
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.01282885205000639
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.012292020954191685
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.012254639528691769
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.011827199719846249
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.012880723923444748
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.012985633686184883
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.011819119565188885
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.01325604971498251
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.012783383950591087
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.01250759419053793
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.013030225411057472
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.011857906356453896
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.013145023956894875
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.011033431626856327
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.012708820402622223
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.011692496947944164
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.011994123458862305
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.011310848407447338
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.012197245843708515
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.013106023892760277
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.011984019540250301
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.011034910567104816
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.011694601736962795
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.012243255972862244
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.011196242645382881
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.0019816490821540356
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.002520362613722682
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.0038721810560673475
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.0026933897752314806
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.005672127939760685
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.0034599772188812494
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.003262680023908615
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.004004644230008125
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.010962621308863163
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.011404959484934807
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.011349941603839397
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.008522948250174522
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.011599747464060783
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.013199572451412678
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.014729966409504414
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.007806919515132904
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.011485481634736061
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.009683994576334953
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.010223949328064919
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.013394036330282688
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.009656948037445545
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.010173020884394646
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.008963153697550297
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.010207406245172024
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.012428607791662216
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.009987753815948963
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.012367082759737968
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.01048008818179369
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.0067864395678043365
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.010563503950834274
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.01095352042466402
+    },
+    {
+      "condition": "lora4",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.010007108561694622
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.04260885715484619
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.04323512688279152
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.04279879853129387
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.042356811463832855
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.0430692695081234
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.041825879365205765
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.04269291087985039
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.04137011989951134
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.04284096881747246
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.04306244105100632
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.04168146476149559
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.04080596938729286
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.04340127855539322
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.04258885234594345
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.04319446533918381
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.04252143204212189
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.043534837663173676
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.04231945425271988
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.043489329516887665
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.04280523955821991
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.0428144671022892
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.04166354238986969
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.04355783388018608
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.042295828461647034
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.041519585996866226
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.042498618364334106
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.043074727058410645
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.04290085658431053
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.042595524340867996
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.04306100308895111
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.04374220594763756
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.04238938167691231
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.019076136872172356
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.010683014057576656
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.024554604664444923
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.023947032168507576
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.025157341733574867
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.019619563594460487
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.015065357089042664
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.013242298737168312
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.01875242218375206
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.02386113628745079
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.022522466257214546
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.02316918782889843
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.020685585215687752
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.020983336493372917
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.021532954648137093
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.02372889779508114
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.021823981776833534
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.023831022903323174
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.02414964698255062
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.022697923704981804
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.02437778376042843
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.022219622507691383
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.022304611280560493
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.020674319937825203
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.026015199720859528
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.021958494558930397
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.022096402943134308
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.02448578178882599
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.02250487357378006
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.021724164485931396
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.023165279999375343
+    },
+    {
+      "condition": "lora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.02201024442911148
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.08481380343437195
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.08705423027276993
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.08355142921209335
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.0875592827796936
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.08545825630426407
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.0841873288154602
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.0859132930636406
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.08676844090223312
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.08322063833475113
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.08383787423372269
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.08688514679670334
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.08173274248838425
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.08243633806705475
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.08205701410770416
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.08654245734214783
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.0859573483467102
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.08666016161441803
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.08740299940109253
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.0847368910908699
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.08463331311941147
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.08403905481100082
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.08720371127128601
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.08845741301774979
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.0862557590007782
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.08937065303325653
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.08888143301010132
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.08468357473611832
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.08547035604715347
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.0847671702504158
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.08353185653686523
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.08653611689805984
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.08598234504461288
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.030963754281401634
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.03342956677079201
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.03448043763637543
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.024825364351272583
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.0366479717195034
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.02867632731795311
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.027320604771375656
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.031679004430770874
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.028275784105062485
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.032067324966192245
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.024577241390943527
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.025649335235357285
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.025046858936548233
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.016387486830353737
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.020603129640221596
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.026417814195156097
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.029541485011577606
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.01683763600885868
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.022787922993302345
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.02352043241262436
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.022740257903933525
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.02598191611468792
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.028182290494441986
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.032574404031038284
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.03236071765422821
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.02202054113149643
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.02622026577591896
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.02875220589339733
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.02237359993159771
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.019279487431049347
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.017870787531137466
+    },
+    {
+      "condition": "lora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.026009829714894295
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.009832088835537434
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.011031168513000011
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.0107042845338583
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.011364075355231762
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.011782637797296047
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.012253407388925552
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.011995875276625156
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.011431938037276268
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.011285509914159775
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.010234247893095016
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.010477404110133648
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.012140673585236073
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.012015213258564472
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.011391992680728436
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.013410842977464199
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.011299550533294678
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.011681565083563328
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.01126650720834732
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.009630520828068256
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.011863979510962963
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.01052880473434925
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.011798659339547157
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.010216913186013699
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.010846550576388836
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.009478447027504444
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.01023994293063879
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.011659708805382252
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.01089661754667759
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.010418206453323364
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.010979675687849522
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.011535967700183392
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.010376723483204842
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.008371968753635883
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.008892584592103958
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.010089458897709846
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.008618343621492386
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.014658141881227493
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.009161817841231823
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.00789093691855669
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.01160450465977192
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.01159323938190937
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.013873627409338951
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.012016987428069115
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.008711670525372028
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.012829792685806751
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.012257208116352558
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.01473143044859171
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.010899359360337257
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.010277233086526394
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.010979444719851017
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.01185778621584177
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.012763561680912971
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.011356156319379807
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.010992365889251232
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.010348907671868801
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.010851310566067696
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.012567805126309395
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.013010963797569275
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.0137017872184515
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.012486868537962437
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.0087087731808424
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.012992697767913342
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.012631665915250778
+    },
+    {
+      "condition": "lora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.01089128665626049
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.047662440687417984
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.04786839708685875
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.04762556403875351
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.04738627001643181
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.0474744476377964
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.04706701263785362
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.04808621481060982
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.04699676111340523
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.04794168472290039
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.04774574935436249
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.04676871746778488
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.0464366152882576
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.04829278215765953
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.0470229797065258
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.04780889302492142
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.04780515655875206
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.048050906509160995
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.04784845560789108
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.0483139306306839
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.04808653146028519
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.04658684507012367
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.04719224199652672
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.048268064856529236
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.04660875350236893
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.04738035425543785
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.04788203909993172
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.0470358207821846
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.04819301888346672
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.04754781723022461
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.04698847606778145
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.048496972769498825
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.0475304052233696
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.023338235914707184
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.014840529300272465
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.02595015987753868
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.013733869418501854
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.020216191187500954
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.02485211193561554
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.02299494482576847
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.011957448907196522
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.019109180197119713
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.021922996267676353
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.02205764502286911
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.021875828504562378
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.020456412807106972
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.020054923370480537
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.020497512072324753
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.022686176002025604
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.02005399577319622
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.021046599373221397
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.022364415228366852
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.02269946224987507
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.022702740505337715
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.021156517788767815
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.02113034762442112
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.02066127024590969
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.02464289963245392
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.023097116500139236
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.02078661136329174
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.022917747497558594
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.01982198655605316
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.020634392276406288
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.02163938619196415
+    },
+    {
+      "condition": "oplora16",
+      "layer": 0,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.019846808165311813
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.09025118499994278
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.09095180779695511
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.08864665776491165
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.09209611266851425
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.08973613381385803
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.08861374109983444
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.09096334874629974
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.09072111546993256
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.08787380903959274
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.0893075242638588
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.0910666435956955
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.08691581338644028
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.08749932050704956
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.0873274877667427
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.09012695401906967
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.09020675718784332
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.0917726457118988
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.09109669923782349
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.08978594094514847
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.0896446630358696
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.08853915333747864
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.09089652448892593
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.09213818609714508
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.09054046869277954
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.09345154464244843
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.0924392119050026
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.08955356478691101
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.09052204340696335
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.0904671847820282
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.08919315040111542
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.09133415669202805
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.09074081480503082
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.026829520240426064
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.03650243580341339
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.04007827490568161
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.027871886268258095
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.03960919752717018
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.03184526413679123
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.029766559600830078
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.02914399281144142
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.0295318141579628
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.02992004156112671
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.025896675884723663
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.026701534166932106
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.02213599532842636
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.017274854704737663
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.020580081269145012
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.025215940549969673
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.03218035027384758
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.01850561983883381
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.024926602840423584
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.02526085078716278
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.026567010208964348
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.031391777098178864
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.02941202186048031
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.029174884781241417
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.02933868020772934
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.024592751637101173
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.02657143399119377
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.02871890179812908
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.021227490156888962
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.024320466443896294
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.019809868186712265
+    },
+    {
+      "condition": "oplora16",
+      "layer": 13,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.024358205497264862
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 0,
+      "R": 0.00845605880022049
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 9,
+      "R": 0.010431690141558647
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 198,
+      "R": 0.009754425846040249
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 233,
+      "R": 0.011020642705261707
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 267,
+      "R": 0.011874217540025711
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 325,
+      "R": 0.011462679132819176
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 335,
+      "R": 0.010936659760773182
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 365,
+      "R": 0.011412314139306545
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 474,
+      "R": 0.011360456235706806
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 502,
+      "R": 0.00892099179327488
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 554,
+      "R": 0.009783480316400528
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 568,
+      "R": 0.0119309788569808
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 672,
+      "R": 0.011403185315430164
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 769,
+      "R": 0.010319721885025501
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 778,
+      "R": 0.01275051198899746
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 788,
+      "R": 0.010493192821741104
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 811,
+      "R": 0.01104623544961214
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 816,
+      "R": 0.010334819555282593
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 821,
+      "R": 0.009333929978311062
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 871,
+      "R": 0.011425117030739784
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 876,
+      "R": 0.0096442187204957
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 929,
+      "R": 0.01189413107931614
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1094,
+      "R": 0.009750292636454105
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1118,
+      "R": 0.010418406687676907
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1179,
+      "R": 0.008639135397970676
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1182,
+      "R": 0.009621510282158852
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1218,
+      "R": 0.01122849527746439
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1232,
+      "R": 0.009474066086113453
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1242,
+      "R": 0.008331727236509323
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1264,
+      "R": 0.010882789269089699
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1302,
+      "R": 0.011009782552719116
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "math",
+      "doc_id": 1314,
+      "R": 0.010270972736179829
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 385,
+      "R": 0.009685617871582508
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 426,
+      "R": 0.012081160210072994
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 751,
+      "R": 0.012857425957918167
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 895,
+      "R": 0.01240614429116249
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 1424,
+      "R": 0.016734732314944267
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2194,
+      "R": 0.00973428413271904
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2402,
+      "R": 0.008659969083964825
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 2674,
+      "R": 0.013175220228731632
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3539,
+      "R": 0.012387918308377266
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3540,
+      "R": 0.013720745220780373
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 3620,
+      "R": 0.012932581827044487
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4011,
+      "R": 0.010087316855788231
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4219,
+      "R": 0.012950445525348186
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4353,
+      "R": 0.013350356370210648
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 4864,
+      "R": 0.015061335638165474
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5143,
+      "R": 0.011038338765501976
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5396,
+      "R": 0.011264075525105
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5426,
+      "R": 0.011474004946649075
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 5429,
+      "R": 0.012486155144870281
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6139,
+      "R": 0.014105649664998055
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 6176,
+      "R": 0.012808194383978844
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7469,
+      "R": 0.011631258763372898
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 7732,
+      "R": 0.010819569230079651
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8497,
+      "R": 0.01171307172626257
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8549,
+      "R": 0.012846825644373894
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8657,
+      "R": 0.013062692247331142
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8751,
+      "R": 0.015093975700438023
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 8935,
+      "R": 0.01316870003938675
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9299,
+      "R": 0.009565567597746849
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9364,
+      "R": 0.013708463869988918
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9663,
+      "R": 0.014217614196240902
+    },
+    {
+      "condition": "oplora16",
+      "layer": 27,
+      "set": "nonmath",
+      "doc_id": 9856,
+      "R": 0.011662737466394901
+    }
+  ]
+}

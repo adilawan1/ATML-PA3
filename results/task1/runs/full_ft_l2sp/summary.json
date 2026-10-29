@@ -1,0 +1,81 @@
+{
+  "variant": "full_ft_l2sp",
+  "method": "full",
+  "lr": 2e-05,
+  "l2sp_lambda": 0.001,
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "loss_chunk": 0,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_mem_gb": 39.49,
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "theta0_copy_s": 0.019714112999736244,
+  "theta0_bytes": 2384199680,
+  "theta0_device": "gpu",
+  "examples_seen": 40000,
+  "train_time_s": 6808.116863410996,
+  "penalty_time_s": 105.13704133693318,
+  "skipped_updates": [],
+  "peak_mem_segments": [
+    {
+      "peak_alloc_gb": 15.496201038360596,
+      "peak_reserved_gb": 21.69921875
+    },
+    {
+      "peak_alloc_gb": 15.496201038360596,
+      "peak_reserved_gb": 21.69921875
+    },
+    {
+      "peak_alloc_gb": 15.496201038360596,
+      "peak_reserved_gb": 21.69921875
+    },
+    {
+      "peak_alloc_gb": 15.496201038360596,
+      "peak_reserved_gb": 21.69921875
+    },
+    {
+      "peak_alloc_gb": 8.883790016174316,
+      "peak_reserved_gb": 8.884765625
+    }
+  ],
+  "displacement": {
+    "625": 6.44420430041799,
+    "1250": 6.276481430785485
+  },
+  "setup_time_s": 1.4622649480006658,
+  "resumes": 1,
+  "peak_alloc_gb": 15.496201038360596,
+  "peak_reserved_gb": 21.69921875,
+  "completed_updates": 1250,
+  "ckpt_sizes": {
+    "312": {
+      "model_bytes": 2384236599,
+      "state_bytes": 4768678401,
+      "keep_model": false,
+      "total_bytes": 7152915000,
+      "save_time_s": 23.727912088001176
+    },
+    "625": {
+      "model_bytes": 2384236599,
+      "state_bytes": 4768678465,
+      "keep_model": true,
+      "total_bytes": 7152915064,
+      "save_time_s": 22.592240801001026
+    },
+    "937": {
+      "model_bytes": 2384236599,
+      "state_bytes": 4768678465,
+      "keep_model": false,
+      "total_bytes": 7152915064,
+      "save_time_s": 23.856834255999274
+    },
+    "1250": {
+      "model_bytes": 2384236599,
+      "state_bytes": 4768678529,
+      "keep_model": true,
+      "total_bytes": 7152915128,
+      "save_time_s": 24.489563255003304
+    }
+  }
+}

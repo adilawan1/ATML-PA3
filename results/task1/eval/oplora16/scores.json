@@ -1,0 +1,54 @@
+{
+  "gsm8k": {
+    "flexible_em": 0.621683093252464,
+    "strict_em": 0.0,
+    "flexible_em_stderr": 0.013358407831777108,
+    "n": 1319,
+    "truncation_rate": 0.004548900682335102,
+    "mean_gen_tokens": 137.5018953752843,
+    "unextracted_rate": 0.0,
+    "time_s": 518.0880503700009,
+    "backend": "hf",
+    "task_config": {
+      "do_sample": false,
+      "until": [
+        "Q:",
+        "</s>",
+        "<|im_end|>"
+      ],
+      "max_gen_toks": 1024
+    }
+  },
+  "hellaswag": {
+    "acc": 0.377912766381199,
+    "acc_norm": 0.46932881896036643,
+    "acc_stderr": 0.004838747305783286,
+    "acc_norm_stderr": 0.004980384575535353,
+    "n": 10042
+  },
+  "boolq": {
+    "acc": 0.7238532110091743,
+    "acc_norm": null,
+    "acc_stderr": 0.007819658575594904,
+    "acc_norm_stderr": null,
+    "n": 3270
+  },
+  "arc_easy": {
+    "acc": 0.6641414141414141,
+    "acc_norm": 0.6292087542087542,
+    "acc_stderr": 0.009691180932083652,
+    "acc_norm_stderr": 0.009911292822056893,
+    "n": 2376
+  },
+  "likelihood_time_s": 201.18329094399996,
+  "meta": {
+    "condition": "oplora16",
+    "model_dir": "/content/merged/oplora16",
+    "lm_eval_version": "0.4.13",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_total_mem_gb": 39.49,
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "limit": null
+  }
+}

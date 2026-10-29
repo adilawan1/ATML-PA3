@@ -1,0 +1,30 @@
+{
+  "312": {
+    "model_bytes": 2384236599,
+    "state_bytes": 4768678401,
+    "keep_model": false,
+    "total_bytes": 7152915000,
+    "save_time_s": 23.727912088001176
+  },
+  "625": {
+    "model_bytes": 2384236599,
+    "state_bytes": 4768678465,
+    "keep_model": true,
+    "total_bytes": 7152915064,
+    "save_time_s": 22.592240801001026
+  },
+  "937": {
+    "model_bytes": 2384236599,
+    "state_bytes": 4768678465,
+    "keep_model": false,
+    "total_bytes": 7152915064,
+    "save_time_s": 23.856834255999274
+  },
+  "1250": {
+    "model_bytes": 2384236599,
+    "state_bytes": 4768678529,
+    "keep_model": true,
+    "total_bytes": 7152915128,
+    "save_time_s": 24.489563255003304
+  }
+}

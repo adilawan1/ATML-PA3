@@ -1,0 +1,88 @@
+{
+  "variant": "oplora16",
+  "method": "oplora",
+  "lr": 0.0002,
+  "l2sp_lambda": 0.0,
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "loss_chunk": 0,
+  "r": 16,
+  "alpha": 32,
+  "k": 128,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_mem_gb": 39.49,
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "basis_time_s": 16.89610460899985,
+  "basis_bytes": 322961408,
+  "n_matrices": 196,
+  "basis_file_bytes": 323078645,
+  "examples_seen": 40000,
+  "train_time_s": 12702.871291746971,
+  "penalty_time_s": 0.0,
+  "skipped_updates": [],
+  "peak_mem_segments": [
+    {
+      "peak_alloc_gb": 5.117640495300293,
+      "peak_reserved_gb": 12.041015625
+    },
+    {
+      "peak_alloc_gb": 5.117640495300293,
+      "peak_reserved_gb": 12.041015625
+    },
+    {
+      "peak_alloc_gb": 5.117640495300293,
+      "peak_reserved_gb": 12.041015625
+    },
+    {
+      "peak_alloc_gb": 4.694521903991699,
+      "peak_reserved_gb": 15.056640625
+    },
+    {
+      "peak_alloc_gb": 4.694521903991699,
+      "peak_reserved_gb": 15.056640625
+    }
+  ],
+  "displacement": {},
+  "setup_time_s": 18.85511230999873,
+  "resumes": 1,
+  "export_time_s": 0.0934502350000912,
+  "export_bytes": 40370960,
+  "peak_alloc_gb": 5.117640495300293,
+  "peak_reserved_gb": 15.056640625,
+  "completed_updates": 1250,
+  "ckpt_sizes": {
+    "312": {
+      "model_bytes": 40493863,
+      "state_bytes": 81083101,
+      "keep_model": false,
+      "effective_bytes": 40556251,
+      "total_bytes": 162133215,
+      "save_time_s": 0.7297081050019187
+    },
+    "625": {
+      "model_bytes": 40493863,
+      "state_bytes": 81083165,
+      "keep_model": true,
+      "effective_bytes": 40556251,
+      "total_bytes": 162133279,
+      "save_time_s": 0.7315523090001079
+    },
+    "937": {
+      "model_bytes": 40493863,
+      "state_bytes": 81083165,
+      "keep_model": false,
+      "effective_bytes": 40556251,
+      "total_bytes": 162133279,
+      "save_time_s": 0.7310169140000653
+    },
+    "1250": {
+      "model_bytes": 40493863,
+      "state_bytes": 81083293,
+      "keep_model": true,
+      "effective_bytes": 40556251,
+      "total_bytes": 162133407,
+      "save_time_s": 0.7850806649994411
+    }
+  }
+}

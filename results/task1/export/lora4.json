@@ -1,0 +1,13 @@
+{
+  "condition": "lora4",
+  "merge_time_s": 4.715718164999998,
+  "logit_check": {
+    "max_abs_diff": 0.138671875,
+    "mean_abs_diff": 0.007877010852098465,
+    "argmax_agreement": 0.9999999403953552,
+    "n_positions": 107
+  },
+  "export_total_time_s": 9.861821794000207,
+  "merged_dir_bytes": 1203564093,
+  "path": "/content/merged/lora4"
+}

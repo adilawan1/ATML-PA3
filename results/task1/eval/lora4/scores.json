@@ -1,0 +1,54 @@
+{
+  "gsm8k": {
+    "flexible_em": 0.5966641394996209,
+    "strict_em": 0.0,
+    "flexible_em_stderr": 0.013512654781814699,
+    "n": 1319,
+    "truncation_rate": 0.00530705079605762,
+    "mean_gen_tokens": 137.4412433661865,
+    "unextracted_rate": 0.0,
+    "time_s": 580.3301405189995,
+    "backend": "hf",
+    "task_config": {
+      "do_sample": false,
+      "until": [
+        "Q:",
+        "</s>",
+        "<|im_end|>"
+      ],
+      "max_gen_toks": 1024
+    }
+  },
+  "hellaswag": {
+    "acc": 0.37731527584146585,
+    "acc_norm": 0.4720175263891655,
+    "acc_stderr": 0.004837242015190988,
+    "acc_norm_stderr": 0.004981961097591234,
+    "n": 10042
+  },
+  "boolq": {
+    "acc": 0.6932721712538227,
+    "acc_norm": null,
+    "acc_stderr": 0.00806530905177175,
+    "acc_norm_stderr": null,
+    "n": 3270
+  },
+  "arc_easy": {
+    "acc": 0.6611952861952862,
+    "acc_norm": 0.6296296296296297,
+    "acc_stderr": 0.009711980224301807,
+    "acc_norm_stderr": 0.009908978578665758,
+    "n": 2376
+  },
+  "likelihood_time_s": 201.97330784800033,
+  "meta": {
+    "condition": "lora4",
+    "model_dir": "/content/merged/lora4",
+    "lm_eval_version": "0.4.13",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_total_mem_gb": 39.49,
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "limit": null
+  }
+}

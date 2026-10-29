@@ -1,0 +1,83 @@
+{
+  "variant": "lora16",
+  "method": "lora",
+  "lr": 0.0002,
+  "l2sp_lambda": 0.0,
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "loss_chunk": 0,
+  "r": 16,
+  "alpha": 32,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_mem_gb": 39.49,
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "examples_seen": 40000,
+  "train_time_s": 9272.290174036048,
+  "penalty_time_s": 0.0,
+  "skipped_updates": [],
+  "peak_mem_segments": [
+    {
+      "peak_alloc_gb": 4.812739372253418,
+      "peak_reserved_gb": 11.74609375
+    },
+    {
+      "peak_alloc_gb": 4.812739372253418,
+      "peak_reserved_gb": 11.74609375
+    },
+    {
+      "peak_alloc_gb": 4.812739372253418,
+      "peak_reserved_gb": 11.74609375
+    },
+    {
+      "peak_alloc_gb": 4.812739372253418,
+      "peak_reserved_gb": 11.74609375
+    },
+    {
+      "peak_alloc_gb": 4.812739372253418,
+      "peak_reserved_gb": 11.74609375
+    }
+  ],
+  "displacement": {},
+  "setup_time_s": 1.4827967760002139,
+  "resumes": 0,
+  "export_time_s": 0.048156862998439465,
+  "export_bytes": 40370960,
+  "peak_alloc_gb": 4.812739372253418,
+  "peak_reserved_gb": 11.74609375,
+  "completed_updates": 1250,
+  "ckpt_sizes": {
+    "312": {
+      "model_bytes": 40493863,
+      "state_bytes": 81083101,
+      "keep_model": false,
+      "effective_bytes": 40556251,
+      "total_bytes": 162133215,
+      "save_time_s": 0.6915483329994458
+    },
+    "625": {
+      "model_bytes": 40493863,
+      "state_bytes": 81083165,
+      "keep_model": true,
+      "effective_bytes": 40556251,
+      "total_bytes": 162133279,
+      "save_time_s": 0.6714095260012982
+    },
+    "937": {
+      "model_bytes": 40493863,
+      "state_bytes": 81083165,
+      "keep_model": false,
+      "effective_bytes": 40556251,
+      "total_bytes": 162133279,
+      "save_time_s": 0.6796250860006694
+    },
+    "1250": {
+      "model_bytes": 40493863,
+      "state_bytes": 81083229,
+      "keep_model": true,
+      "effective_bytes": 40556251,
+      "total_bytes": 162133343,
+      "save_time_s": 0.6991588110013254
+    }
+  }
+}

@@ -1,0 +1,6 @@
+method,trainable_params_M,train_time_min,peak_alloc_GB,peak_reserved_GB,weights_ckpt_MB,recovery_ckpt_MB,skipped_updates,gpu,resumes,theta0_bytes,theta0_copy_s,penalty_time_s,export_time_s,basis_time_s,basis_bytes
+Full FT,596.050,117.492,13.256,19.627,2273.785,6821.551,0,NVIDIA A100-SXM4-40GB,1,2273.750,1.597,,,,
+Full FT + L2-SP,596.050,113.469,15.496,21.699,2273.785,6821.551,0,NVIDIA A100-SXM4-40GB,1,2273.750,0.020,105.137,,,
+LoRA-4,2.523,153.643,4.700,14.633,9.743,39.122,0,NVIDIA A100-SXM4-40GB,1,,,,0.017,,
+LoRA-16,10.093,154.538,4.813,11.746,38.618,154.622,0,NVIDIA A100-SXM4-40GB,0,,,,0.048,,
+OPLoRA-16,10.093,211.715,5.118,15.057,38.618,154.622,0,NVIDIA A100-SXM4-40GB,1,,,,0.093,16.896,308.000

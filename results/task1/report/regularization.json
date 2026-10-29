@@ -1,0 +1,32 @@
+{
+  "full_ft": {
+    "displacement": {
+      "625": 10.006177049041886,
+      "1250": 10.64145000981814
+    },
+    "final_sft_loss_avg_last50": 0.18414318000035518
+  },
+  "full_ft_l2sp": {
+    "displacement": {
+      "625": 6.44420430041799,
+      "1250": 6.276481430785485
+    },
+    "final_sft_loss_avg_last50": 0.18443007408448453,
+    "omega_final": 19.697107315063477,
+    "lambda_omega_final": 0.019697107315063477,
+    "lambda_omega_max": 0.020802326202392578,
+    "lambda_omega_over_sft_final": 0.11984221451321642
+  },
+  "lora4": {
+    "displacement": {},
+    "final_sft_loss_avg_last50": 0.21146367767177815
+  },
+  "lora16": {
+    "displacement": {},
+    "final_sft_loss_avg_last50": 0.19870660931515147
+  },
+  "oplora16": {
+    "displacement": {},
+    "final_sft_loss_avg_last50": 0.1999127408526797
+  }
+}

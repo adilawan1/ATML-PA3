@@ -1,0 +1,17 @@
+{
+  "condition": "oplora16",
+  "merge_time_s": 2.8881561670004885,
+  "logit_check": {
+    "max_abs_diff": 0.14453125,
+    "mean_abs_diff": 0.007451069541275501,
+    "argmax_agreement": 0.9999999403953552,
+    "n_positions": 107
+  },
+  "oplora_constraints": {
+    "max_rel_UkT_Btilde": 0.00012830051127821207,
+    "max_rel_Atilde_Vk": 0.00018748751608654857
+  },
+  "export_total_time_s": 7.115536154999063,
+  "merged_dir_bytes": 1203564093,
+  "path": "/content/merged/oplora16"
+}

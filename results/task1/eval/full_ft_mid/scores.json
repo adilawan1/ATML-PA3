@@ -1,0 +1,54 @@
+{
+  "gsm8k": {
+    "flexible_em": 0.5708870356330553,
+    "strict_em": 0.0,
+    "flexible_em_stderr": 0.013633369425647239,
+    "n": 1319,
+    "truncation_rate": 0.011372251705837756,
+    "mean_gen_tokens": 142.97877179681578,
+    "unextracted_rate": 0.0,
+    "time_s": 709.5192591530003,
+    "backend": "hf",
+    "task_config": {
+      "do_sample": false,
+      "until": [
+        "Q:",
+        "</s>",
+        "<|im_end|>"
+      ],
+      "max_gen_toks": 1024
+    }
+  },
+  "hellaswag": {
+    "acc": 0.3712407886875124,
+    "acc_norm": 0.45727942640908187,
+    "acc_stderr": 0.004821492994081968,
+    "acc_norm_stderr": 0.004971534874390047,
+    "n": 10042
+  },
+  "boolq": {
+    "acc": 0.6100917431192661,
+    "acc_norm": null,
+    "acc_stderr": 0.00853043797286279,
+    "acc_norm_stderr": null,
+    "n": 3270
+  },
+  "arc_easy": {
+    "acc": 0.6628787878787878,
+    "acc_norm": 0.6292087542087542,
+    "acc_stderr": 0.009700146509129846,
+    "acc_norm_stderr": 0.009911292822056893,
+    "n": 2376
+  },
+  "likelihood_time_s": 225.66082008500052,
+  "meta": {
+    "condition": "full_ft_mid",
+    "model_dir": "/content/merged/full_ft_mid",
+    "lm_eval_version": "0.4.13",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_total_mem_gb": 39.49,
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "limit": null
+  }
+}

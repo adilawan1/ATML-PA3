@@ -1,0 +1,81 @@
+{
+  "variant": "full_ft",
+  "method": "full",
+  "lr": 2e-05,
+  "l2sp_lambda": 0.0,
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "loss_chunk": 0,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_mem_gb": 39.49,
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "theta0_copy_s": 1.5967856849997588,
+  "theta0_bytes": 2384199680,
+  "theta0_device": "cpu",
+  "examples_seen": 40000,
+  "train_time_s": 7049.512029884975,
+  "penalty_time_s": 0.0,
+  "skipped_updates": [],
+  "peak_mem_segments": [
+    {
+      "peak_alloc_gb": 13.255668640136719,
+      "peak_reserved_gb": 19.626953125
+    },
+    {
+      "peak_alloc_gb": 13.255668640136719,
+      "peak_reserved_gb": 19.626953125
+    },
+    {
+      "peak_alloc_gb": 13.255668640136719,
+      "peak_reserved_gb": 19.626953125
+    },
+    {
+      "peak_alloc_gb": 13.255668640136719,
+      "peak_reserved_gb": 19.626953125
+    },
+    {
+      "peak_alloc_gb": 6.662842750549316,
+      "peak_reserved_gb": 6.6640625
+    }
+  ],
+  "displacement": {
+    "625": 10.006177049041886,
+    "1250": 10.64145000981814
+  },
+  "setup_time_s": 3.040033373999904,
+  "resumes": 1,
+  "peak_alloc_gb": 13.255668640136719,
+  "peak_reserved_gb": 19.626953125,
+  "completed_updates": 1250,
+  "ckpt_sizes": {
+    "312": {
+      "model_bytes": 2384236599,
+      "state_bytes": 4768678401,
+      "keep_model": false,
+      "total_bytes": 7152915000,
+      "save_time_s": 22.370798754000134
+    },
+    "625": {
+      "model_bytes": 2384236599,
+      "state_bytes": 4768678465,
+      "keep_model": true,
+      "total_bytes": 7152915064,
+      "save_time_s": 23.85286927800007
+    },
+    "937": {
+      "model_bytes": 2384236599,
+      "state_bytes": 4768678465,
+      "keep_model": false,
+      "total_bytes": 7152915064,
+      "save_time_s": 25.454073709999648
+    },
+    "1250": {
+      "model_bytes": 2384236599,
+      "state_bytes": 4768678529,
+      "keep_model": true,
+      "total_bytes": 7152915128,
+      "save_time_s": 24.86814940199838
+    }
+  }
+}
