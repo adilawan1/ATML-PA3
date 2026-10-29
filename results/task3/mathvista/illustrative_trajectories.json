@@ -1,0 +1,65 @@
+{
+  "rule": "first questions in split order where max-VisConf and max-K disagree at N=32 (order 0)",
+  "examples": [
+    {
+      "qid": "379",
+      "selector": "max VisConf",
+      "rollout": 29,
+      "answer": "B",
+      "correct": false,
+      "T": 116,
+      "mean_c": 0.38875472916061693,
+      "mean_v": 0.05470571666955948
+    },
+    {
+      "qid": "379",
+      "selector": "max self-certainty",
+      "rollout": 17,
+      "answer": "A",
+      "correct": true,
+      "T": 330,
+      "mean_c": 0.5244551462777964,
+      "mean_v": 0.03110506385564804
+    },
+    {
+      "qid": "358",
+      "selector": "max VisConf",
+      "rollout": 18,
+      "answer": "D",
+      "correct": false,
+      "T": 277,
+      "mean_c": 0.4569964800340628,
+      "mean_v": 0.05070992931723595
+    },
+    {
+      "qid": "358",
+      "selector": "max self-certainty",
+      "rollout": 19,
+      "answer": "E",
+      "correct": false,
+      "T": 478,
+      "mean_c": 0.5509311120503635,
+      "mean_v": 0.03575020283460617
+    },
+    {
+      "qid": "204",
+      "selector": "max VisConf",
+      "rollout": 18,
+      "answer": "6",
+      "correct": false,
+      "T": 76,
+      "mean_c": 0.32658299970710764,
+      "mean_v": 0.06795665621757507
+    },
+    {
+      "qid": "204",
+      "selector": "max self-certainty",
+      "rollout": 14,
+      "answer": "NO_ANSWER",
+      "correct": false,
+      "T": 1871,
+      "mean_c": 0.5777492479454733,
+      "mean_v": 0.023735221475362778
+    }
+  ]
+}

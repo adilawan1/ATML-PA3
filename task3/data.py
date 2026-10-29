@@ -164,7 +164,10 @@ def build(cfg, ds, workers):
                         for g in part]
         checks["scorer"] = f"math-verify {version('math-verify')}"
     else:
-        meta_file = os.environ.get("PA3_T3_META")  # optional local JSON {pid: record} (tests / offline use)
+        # metadata source: PA3_T3_META (tests), else the committed file (from the official MathVista repo, see
+        # mathvista_metadata_source.json), else the Hugging Face dataset
+        committed = results_root() / "task3" / ds / "mathvista_metadata.json"
+        meta_file = os.environ.get("PA3_T3_META") or (str(committed) if committed.exists() else None)
         if meta_file:
             meta = {str(k): v for k, v in load_json(meta_file).items()}
         else:
@@ -180,8 +183,12 @@ def build(cfg, ds, workers):
         grouped = [A.group_mathvista(a, meta[q]) for a, q in zip(answers, qids)]
         gcorrect = [A.grade_groups(reps, None, "mathvista", meta=meta[q]) for (_, reps), q in zip(grouped, qids)]
         checks["scorer"] = "MathVista normalize_extracted_answer (ported), MC as letters, exact match"
+        # supplied gold is the option letter for multiple choice; compare after the grader's letter mapping
         checks["gold_vs_metadata_mismatch"] = int(sum(
-            str(g).strip() != str(meta[q]["answer"]).strip() for g, q in zip(golds, qids)))
+            str(g).strip() != A.gold_mathvista(meta[q]) for g, q in zip(golds, qids)))
+        checks["gold_vs_metadata_mismatch_examples"] = [
+            {"pid": q, "supplied": str(g), "metadata_graded_as": A.gold_mathvista(meta[q])}
+            for g, q in zip(golds, qids) if str(g).strip() != A.gold_mathvista(meta[q])][:10]
 
     pool = {}
     for qi, q in enumerate(qids):

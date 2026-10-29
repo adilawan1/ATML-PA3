@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/lupantech/MathVista",
+  "commit": "c5acd37d75a8c8f9756cb66c78fe2e54fa2c31fb",
+  "file": "results/random/output_random_guess.json (testmini, 1,000 records; only the metadata fields kept)",
+  "fields": [
+    "pid",
+    "question",
+    "choices",
+    "answer",
+    "question_type",
+    "answer_type",
+    "precision",
+    "unit"
+  ],
+  "note": "Used instead of the AI4Math/MathVista Hugging Face dataset (same testmini records); task3.data cross-checks every gold answer against the supplied gold_answer column."
+}

@@ -1,0 +1,193 @@
+{
+  "split": "eval",
+  "n_questions": 800,
+  "scores": {
+    "L": {
+      "quartile_gap_all": {
+        "mean": 0.01625,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.02050473186119874,
+        "median": 0.0,
+        "n": 634
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.029326817431301985,
+        "median": 0.03262525886518632,
+        "n": 634
+      }
+    },
+    "K": {
+      "quartile_gap_all": {
+        "mean": 0.03515625,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.04436119873817035,
+        "median": 0.0,
+        "n": 634
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.04805782129642657,
+        "median": 0.07392280226707586,
+        "n": 634
+      }
+    },
+    "neg_length": {
+      "quartile_gap_all": {
+        "mean": 0.04078125,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.0514589905362776,
+        "median": 0.0,
+        "n": 634
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.05044298552442478,
+        "median": 0.052276298937457305,
+        "n": 634
+      }
+    },
+    "length": {
+      "quartile_gap_all": {
+        "mean": -0.03953125,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": -0.04988170347003155,
+        "median": 0.0,
+        "n": 634
+      },
+      "spearman_with_correct_mixed": {
+        "mean": -0.05044298552442478,
+        "median": -0.052276298937457305,
+        "n": 634
+      }
+    },
+    "V": {
+      "quartile_gap_all": {
+        "mean": 0.03796875,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.047910094637223975,
+        "median": 0.0,
+        "n": 634
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.04110625686413337,
+        "median": 0.044439653953802866,
+        "n": 634
+      }
+    },
+    "C": {
+      "quartile_gap_all": {
+        "mean": 0.03859375,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.048698738170347006,
+        "median": 0.0,
+        "n": 634
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.04887742863509134,
+        "median": 0.06789018121944006,
+        "n": 634
+      }
+    },
+    "VisConf": {
+      "quartile_gap_all": {
+        "mean": 0.074375,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.09384858044164038,
+        "median": 0.125,
+        "n": 634
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.08915933764729869,
+        "median": 0.10354740904141627,
+        "n": 634
+      }
+    },
+    "Ztok": {
+      "quartile_gap_all": {
+        "mean": 0.0728125,
+        "median": 0.0,
+        "n": 800
+      },
+      "quartile_gap_mixed": {
+        "mean": 0.0918769716088328,
+        "median": 0.125,
+        "n": 634
+      },
+      "spearman_with_correct_mixed": {
+        "mean": 0.08063803399917933,
+        "median": 0.09351578879114052,
+        "n": 634
+      }
+    }
+  },
+  "spearman_score_vs_length": {
+    "L": {
+      "mean": 0.32898145589581074,
+      "median": 0.37726856729240527,
+      "n": 795
+    },
+    "K": {
+      "mean": 0.3493333584506632,
+      "median": 0.3772339856371429,
+      "n": 795
+    },
+    "V": {
+      "mean": -0.6857520445845515,
+      "median": -0.7947214076246334,
+      "n": 795
+    },
+    "C": {
+      "mean": 0.34690601446077507,
+      "median": 0.369168730356271,
+      "n": 795
+    },
+    "VisConf": {
+      "mean": -0.2750367811900654,
+      "median": -0.34570616953918926,
+      "n": 795
+    },
+    "Ztok": {
+      "mean": -0.32180257067151957,
+      "median": -0.411220109050299,
+      "n": 795
+    }
+  },
+  "n_mixed_questions": 634,
+  "confidence_vision_corr": {
+    "per_question_mean": {
+      "mean": -0.21099388014225517,
+      "median": -0.2115446329693679,
+      "n": 800
+    },
+    "rollouts_correct": {
+      "mean": -0.20198102240863028,
+      "median": -0.18672304125598144,
+      "n": 13752
+    },
+    "rollouts_incorrect": {
+      "mean": -0.22077503964749684,
+      "median": -0.23236584540197935,
+      "n": 11820
+    },
+    "max_abs_cov_identity_error": 1.7508198217608406e-08
+  }
+}

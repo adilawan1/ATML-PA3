@@ -1,0 +1,63 @@
+{
+  "n_rows": 32000,
+  "n_questions": 1000,
+  "columns_used": {
+    "dataset": "dataset",
+    "sample_id": "sample_id",
+    "rollout_id": "rollout_id",
+    "text": "generated_text",
+    "token_ids": "generated_token_ids",
+    "n_tokens": "n_generated_text_tokens",
+    "extracted": "extracted_answer",
+    "gold": "gold_answer",
+    "question": "question_text",
+    "logp": "logp",
+    "kl": "kl_u_p",
+    "attn_image": "img_attn_total",
+    "attn_prompt": "prompt_text_attn_total",
+    "attn_generated": "generated_text_attn_total",
+    "capped": "hit_max_new_tokens"
+  },
+  "logp_vs_kl_len_mismatch": 0,
+  "token_ids_minus_logp_len_counts": {
+    "0": 32000
+  },
+  "n_tokens_minus_logp_len_counts": {
+    "0": 32000
+  },
+  "attn_image_len_mismatch": 0,
+  "attn_prompt_len_mismatch": 0,
+  "attn_generated_len_mismatch": 0,
+  "readme_counts": {
+    "rows": {
+      "expected": 32000,
+      "found": 32000
+    },
+    "questions": {
+      "expected": 1000,
+      "found": 1000
+    },
+    "retained_tokens": {
+      "expected": 8961703,
+      "found": 8961703
+    },
+    "capped": {
+      "expected": 487,
+      "found": 487
+    },
+    "null_extracted": {
+      "expected": 3032,
+      "found": 3032
+    }
+  },
+  "readme_counts_match": true,
+  "cost_source": "n_generated_text_tokens",
+  "scorer": "MathVista normalize_extracted_answer (ported), MC as letters, exact match",
+  "gold_vs_metadata_mismatch": 0,
+  "gold_vs_metadata_mismatch_examples": [],
+  "rollouts_per_question": 32,
+  "mean_distinct_groups_32": 3.989,
+  "no_answer_rate": 0.1534375,
+  "rollout_accuracy": 0.53671875,
+  "oracle_32": 0.894
+}
