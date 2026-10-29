@@ -27,6 +27,12 @@ OUT = results_root() / "task3/live"
 
 
 def problems():
+    """(qid, problem text, gold) for the live split: from the committed live_problems.json, else the built pool."""
+    lp = results_root() / "task3/math/live_problems.json"
+    if lp.exists():
+        d = load_json(lp)
+        assert [p["qid"] for p in d["problems"]] == load_json(results_root() / "task3/math/splits.json")["live"]
+        return [(p["qid"], p["question"], p["gold"]) for p in d["problems"]]
     import pickle
 
     splits = load_json(results_root() / "task3/math/splits.json")

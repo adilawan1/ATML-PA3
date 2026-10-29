@@ -135,6 +135,18 @@ def build(cfg, ds, workers):
         for f in ("attn_image", "attn_prompt", "attn_generated"):
             assert col[f], f"missing attention column {f}"
             checks[f"{f}_len_mismatch"] = int((df[col[f]].map(len) != n_lp).sum())
+    # README-stated counts for the export (fail loudly if the data or the join is not the documented one)
+    exp = dcfg.get("expected")
+    if exp:
+        got = {"rows": len(df), "questions": len(qids),
+               "retained_tokens": int(df[col["n_tokens"]].sum()) if col["n_tokens"] else None,
+               "capped": int(df[col["capped"]].sum()) if col["capped"] else None,
+               "null_extracted": int(df[col["extracted"]].map(A.is_missing).sum())}
+        checks["readme_counts"] = {k: {"expected": exp[k], "found": got[k]} for k in exp}
+        bad = {k: v for k, v in checks["readme_counts"].items() if v["found"] is not None and v["found"] != v["expected"]}
+        if bad:
+            print("WARNING: counts differ from README.MD:", bad, flush=True)
+        checks["readme_counts_match"] = not bad
     # generated-token cost: supplied retained count if present, else token-measurement length
     cost = df[col["n_tokens"]].to_numpy() if col["n_tokens"] else n_lp.to_numpy()
     checks["cost_source"] = col["n_tokens"] or "len(logp)"
@@ -219,6 +231,11 @@ def build(cfg, ds, workers):
     save_json(splits, rd / "splits.json")
     np.savez_compressed(rd / "orders.npz", qids=np.array(qids), orders=orders)
     save_json(checks, rd / "data_checks.json")
+    if ds == "math" and col["question"]:
+        # the 50 live-run problems, committed so the live run needs only the repo (no rollout files)
+        save_json({"source": "supplied generations.parquet question_text / gold_answer", "split": "live",
+                   "problems": [{"qid": q, "question": pool[q]["question"], "gold": pool[q]["gold"]}
+                                for q in splits["live"]]}, rd / "live_problems.json")
     # per-question group table for auditing grouping/grading
     save_json({q: {"reps": pool[q]["reps"], "group_correct": pool[q]["group_correct"].tolist(), "gold": pool[q]["gold"],
                    "counts": np.bincount(pool[q]["group"], minlength=len(pool[q]["reps"])).tolist()} for q in qids},

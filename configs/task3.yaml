@@ -1,35 +1,38 @@
 # Task 3: test-time compute (offline analysis on supplied rollouts + small live MATH run)
 seed: 6304
 data_root: data/ATML-PA3-Data      # set PA3_T3_DATA to override; folders below are relative to it
-datasets:
+datasets:                           # folders and expected counts from the supplied README.MD
   math:
-    folder: MATH                    # VERIFY against the supplied README.MD
+    folder: qwen25-math             # Qwen2.5-3B-Instruct on a 1,000-question MATH test subset
     kind: llm
     grader: math_verify
+    expected: {rows: 32000, questions: 1000, retained_tokens: 20742094, capped: 523, null_extracted: 521}
   mathvista:
-    folder: MathVista               # VERIFY against the supplied README.MD
+    folder: qwen25vl-mathvista      # Qwen2.5-VL-3B-Instruct on MathVista testmini
     kind: vlm
+    expected: {rows: 32000, questions: 1000, retained_tokens: 8961703, capped: 487, null_extracted: 3032}
     grader: mathvista
     metadata: AI4Math/MathVista     # HF dataset with question_type / answer_type / precision / choices
     metadata_split: testmini
 
-# Column names are resolved from these candidates (first match wins). Run `python -m task3.inspect_data`
-# and edit if the supplied files use different names.
+# Column names are resolved from these candidates (first match wins); the first entry of each list is the
+# name used by the supplied files (README.MD). `python -m task3.data --dataset math --inspect` prints the schemas.
 columns:
   dataset: [dataset]
   sample_id: [sample_id]
   rollout_id: [rollout_id]
-  text: [response, text, generation, output, completion]
-  token_ids: [token_ids, output_token_ids, generated_token_ids]
-  n_tokens: [num_tokens, n_tokens, num_generated_tokens, length, output_length, gen_length]
+  text: [generated_text, response, text, generation, output, completion]
+  token_ids: [generated_token_ids, token_ids, output_token_ids]
+  n_tokens: [n_generated_text_tokens, num_tokens, n_tokens, num_generated_tokens, length, output_length]
   extracted: [extracted_answer, pred_answer, extracted, prediction]
   gold: [gold_answer, answer, gold, ground_truth]
-  question: [problem, question, prompt_text, query]
+  question: [question_text, problem, question, prompt_text, query]
   logp: [logp, token_logp, logprobs]
   kl: [kl_u_p, kl_uniform]
-  attn_image: [attn_image, image_attention, image_attn, attention_image]
-  attn_prompt: [attn_prompt, prompt_attention, prompt_text_attention, attn_prompt_text, attention_prompt]
-  attn_generated: [attn_generated, generated_attention, generated_text_attention, attn_generated_text, attention_generated]
+  attn_image: [img_attn_total, attn_image, image_attention, image_attn]
+  attn_prompt: [prompt_text_attn_total, attn_prompt, prompt_attention, attn_prompt_text]
+  attn_generated: [generated_text_attn_total, attn_generated, generated_attention, attn_generated_text]
+  capped: [hit_max_new_tokens]
 
 split:
   n_dev: 200
@@ -50,10 +53,10 @@ adaptive:
 
 live:
   model: Qwen/Qwen2.5-3B-Instruct
-  revision: null                    # SET to the revision hash listed in the supplied README.MD
+  revision: aa8e72537993ba99e69dfaafa59ed015b17504d1   # pinned in the supplied README.MD
   system: "You are a helpful assistant."
   instruction: "Think step by step inside <think> </think> tags, then give your final answer inside \\boxed{}."
-  separator: "\n\n"                 # VERIFY: how the instruction is appended to the problem in README.MD
+  separator: "\n\n"                 # README.MD: "the problem followed by two newlines and" the instruction
   review: "Review the solution above. Identify and correct any errors; if it is correct, retain its answer. Give your final answer inside \\boxed{}."
   temperature: 0.7
   top_p: 0.8

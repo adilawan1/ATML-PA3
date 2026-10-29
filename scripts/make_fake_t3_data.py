@@ -9,10 +9,10 @@ import pandas as pd
 root = Path(sys.argv[1])
 rng = np.random.default_rng(0)
 nq, nr = int(sys.argv[2]) if len(sys.argv) > 2 else 40, 32
-for ds, folder, vlm in [("math", "MATH", False), ("mathvista", "MathVista", True)]:
+for ds, folder, vlm in [("math", "qwen25-math", False), ("mathvista", "qwen25vl-mathvista", True)]:
     gen, prob, att, meta = [], [], [], {}
     for q in range(nq):
-        sid = f"{q}" if not vlm else str(q + 1)
+        sid = f"test:{3 * q}" if not vlm else str(q + 1)   # README: MATH "test:<row>", MathVista pid
         if vlm:
             mc = q % 2 == 0
             choices = ["red", "blue", "green", "yellow"] if mc else None
@@ -31,14 +31,19 @@ for ds, folder, vlm in [("math", "MATH", False), ("mathvista", "MathVista", True
             T = int(rng.integers(20, 300))
             lp = (-np.abs(rng.normal(0.3 if right else 0.5, 0.3, T))).tolist()
             kl = np.abs(rng.normal(8 if right else 7, 2, T)).tolist()
-            gen.append({"dataset": ds, "sample_id": sid, "rollout_id": r, "response": f"... \boxed{{{ans}}}",
-                        "token_ids": list(range(T + 1)), "num_tokens": T, "extracted_answer": ans,
-                        "gold_answer": gold, "problem": f"Problem {sid}"})
+            gen.append({"dataset": ds, "sample_id": sid, "rollout_id": r, "model": "fake",
+                        "question_text": f"Problem {sid}", "generated_text": f"... \\boxed{{{ans}}}",
+                        "generated_token_ids": list(range(T)), "n_generated_text_tokens": T,
+                        "hit_max_new_tokens": bool(rng.random() < 0.02), "gold_answer": gold, "extracted_answer": ans})
             prob.append({"dataset": ds, "sample_id": sid, "rollout_id": r, "logp": lp, "kl_u_p": kl})
             if vlm:
-                att.append({"dataset": ds, "sample_id": sid, "rollout_id": r,
-                            "attn_image": rng.uniform(0.05, 0.3, T).tolist(), "attn_prompt": rng.uniform(0.1, 0.3, T).tolist(),
-                            "attn_generated": rng.uniform(0.3, 0.6, T).tolist()})
+                g = rng.uniform(0.3, 0.6, T)
+                g[0] = 0.0   # README: the first prediction has zero generated-text attention
+                att.append({"dataset": ds, "sample_id": sid, "rollout_id": r, "n_image_tokens": 256,
+                            "n_prompt_text_tokens": 60, "img_attn_total": rng.uniform(0.05, 0.3, T).tolist(),
+                            "prompt_text_attn_total": rng.uniform(0.1, 0.3, T).tolist(),
+                            "generated_text_attn_total": g.tolist(),
+                            "n_generated_text_tokens": list(range(T))})   # README: a list here, a scalar in generations
     d = root / folder
     d.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(gen).to_parquet(d / "generations.parquet")

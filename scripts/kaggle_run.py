@@ -72,7 +72,7 @@ def n_gpus():
 
 
 LANE = None  # --lane: run only this lane index (to split a session in two)
-NEED_GB = {"t1-fullft": 36, "t1-check": 8, "t1-lora": 8, "t1-final": 8, "t2": 15}  # transient scratch disk per session
+NEED_GB = {"t1-fullft": 36, "t1-check": 8, "t1-lora": 8, "t1-final": 8, "t2": 15, "t3-live": 10}  # transient scratch disk per session
 NEED_GB_ONE_FULL_LANE = 18  # one Full FT run holds up to 3 checkpoints at once (incl. FP32 optimizer state)
 
 
@@ -310,7 +310,7 @@ def t2_train(run_name, n_vis):
 def main():
     global DRY, LANE
     ap = argparse.ArgumentParser()
-    ap.add_argument("session", choices=["t1-check", "t1-fullft", "t1-lora", "t1-final", "t2"])
+    ap.add_argument("session", choices=["t1-check", "t1-fullft", "t1-lora", "t1-final", "t2", "t3-live"])
     ap.add_argument("--no_vis49", action="store_true", help="t2: skip the optional 49-token run")
     ap.add_argument("--dry_run", action="store_true", help="print the plan to the logs without running anything")
     ap.add_argument("--lane", type=int, choices=[0, 1], default=None, help="run only one GPU lane of the session")
@@ -356,6 +356,20 @@ def main():
         if "gpu0_vis196" not in errors:
             run([sys.executable, "-m", "task2.analyze", "--run", "vis196"]
                 + ([] if args.no_vis49 or "gpu1_vis49" in errors else ["--compare", "vis49"]), alog, lane_env(None))
+    elif args.session == "t3-live":
+        # needs only the committed results/task3/math/{splits,live_problems}.json; resumes from saved calls
+        if not (results_root() / "task3/math/live_problems.json").exists() and not DRY:
+            raise SystemExit("STOP: results/task3/math/live_problems.json missing: run task3.data --dataset math "
+                             "(Colab, with the rollout data) and push the results first")
+        log = LOG_DIR / "t3_live.log"
+        env = lane_env(0 if n_gpus() else None)
+        try:
+            run([sys.executable, "-m", "task3.live"], log, env)
+        finally:  # summarize whatever has been generated, even after an interruption
+            try:
+                run([sys.executable, "-m", "task3.live", "--summarize"], log, env)
+            except RuntimeError as e:
+                errors["summarize"] = repr(e)
     print(f"session {args.session} finished in {hours():.2f} h" + (f" with FAILED lanes: {list(errors)}" if errors else ""),
           flush=True)
     if errors:

@@ -26,6 +26,12 @@ SESSIONS = {
            "Downloads the 9.3k selected COCO images, caches SigLIP features, trains the 196-token run on GPU 0 and "
            "the optional 49-token run on GPU 1 at the same time, then evaluates and analyzes both. "
            "Set `EXTRA = '--no_vis49'` to skip the optional run."),
+    "t3_live": ("t3-live", "Task 3 · live MATH run: single vs parallel vs refinement (~2–5 h, one T4)",
+                "Runs Qwen2.5-3B-Instruct (pinned revision, FP16, batch size 1) on the 50 live questions: one "
+                "3,072-token response, three 1,024-token responses with self-consistency, and a critique-and-revision "
+                "of the first parallel response. Needs only the repo: `results/task3/math/live_problems.json` must "
+                "already be pushed (from `task3.data` on Colab). Every call is saved; if the session stops, run a new "
+                "version and it continues from the saved calls. Uses one GPU (T4 x2 or T4 x1 both fine)."),
 }
 
 SETTINGS_MD = """## Before you click *Save Version → Save & Run All (Commit)*

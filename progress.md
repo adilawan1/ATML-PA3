@@ -18,6 +18,12 @@ All three tasks have complete pipelines that run end to end in CPU smoke tests: 
 - On resume, `train_log.jsonl` (and the Task 2 `dev_log.jsonl`) are trimmed to the checkpoint's update, so updates are never logged twice.
 - Notebooks set `PA3_RESULTS` to Drive (`MyDrive/ATML-PA3/results`), seeded from the committed `results/`; the save cell rsyncs Drive → repo before committing. A disconnect therefore loses at most the training since the last checkpoint and the condition being evaluated.
 
+## Task 3 data received (2026-10-30)
+- `ATML-PA3-Data` (shared Drive folder): `qwen25-math/` and `qwen25vl-mathvista/`, each 32,000 rollouts (1,000 questions × 32). Config now uses the README's folder and column names, the pinned live-model revision `aa8e7253…`, and the "\n\n" separator.
+- `task3.data` checks the README's counts (rows, questions, retained tokens, capped rollouts, null extractions) and records them in `data_checks.json` (`readme_counts_match`).
+- `task3.data --dataset math` also writes `results/task3/math/live_problems.json` (50 live problems), so the live run needs only the repo: Kaggle notebook `pa3_t3_live` (free T4).
+- Attention file has a list column `n_generated_text_tokens` with the same name as the scalar in generations; the join keeps the scalar (cost = retained length), as intended.
+
 ## Task 2 completed on Colab A100 (2026-10-29)
 - vis196 and the optional vis49 run trained (4,500 updates each, ~45 min) and were evaluated on the A100.
 - FP16 overflow at the start: updates 1–5 (vis196) and 1–3 (vis49) were skipped by the GradScaler, and the interface check passed at update 6 / 4. vis49 had one more skip at update 4,411. No non-finite losses.
