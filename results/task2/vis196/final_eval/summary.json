@@ -1,0 +1,570 @@
+{
+  "weights": "stage3_weights.pt",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_mem_gb": 39.49,
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "grounding_test": {
+    "conditions": {
+      "correct": {
+        "acc": {
+          "mean": 0.6875,
+          "ci_low": 0.59375,
+          "ci_high": 0.78125
+        },
+        "pair_acc": {
+          "mean": 0.546875,
+          "ci_low": 0.421875,
+          "ci_high": 0.671875
+        },
+        "identical": {
+          "mean": 0.21875,
+          "ci_low": 0.125,
+          "ci_high": 0.328125
+        },
+        "empty": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "nll": {
+          "mean": 0.8348093471440734,
+          "ci_low": 0.5937957497969591,
+          "ci_high": 1.0964566418901314
+        },
+        "follow": {
+          "mean": 0.140625,
+          "ci_low": 0.0859375,
+          "ci_high": 0.203125
+        },
+        "time_per_answer_s": 0.023075316726554718,
+        "by_type": {
+          "counting": {
+            "acc": 0.453125,
+            "em": 0.453125,
+            "nll": 1.471181488755974,
+            "n_questions": 64
+          },
+          "presence": {
+            "acc": 0.921875,
+            "em": 0.921875,
+            "nll": 0.1984372055321728,
+            "n_questions": 64
+          }
+        }
+      },
+      "complementary": {
+        "acc": {
+          "mean": 0.140625,
+          "ci_low": 0.0859375,
+          "ci_high": 0.203125
+        },
+        "pair_acc": {
+          "mean": 0.015625,
+          "ci_low": 0.0,
+          "ci_high": 0.046875
+        },
+        "identical": {
+          "mean": 0.21875,
+          "ci_low": 0.125,
+          "ci_high": 0.328125
+        },
+        "empty": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "nll": {
+          "mean": 3.431489033609978,
+          "ci_low": 3.0641877709735126,
+          "ci_high": 3.7974053481939336
+        },
+        "follow": {
+          "mean": 0.6875,
+          "ci_low": 0.59375,
+          "ci_high": 0.78125
+        },
+        "time_per_answer_s": 0.01862189444531026,
+        "by_type": {
+          "counting": {
+            "acc": 0.203125,
+            "em": 0.203125,
+            "nll": 3.183339684357634,
+            "n_questions": 64
+          },
+          "presence": {
+            "acc": 0.078125,
+            "em": 0.078125,
+            "nll": 3.679638382862322,
+            "n_questions": 64
+          }
+        }
+      },
+      "mismatched": {
+        "acc": {
+          "mean": 0.328125,
+          "ci_low": 0.2578125,
+          "ci_high": 0.390625
+        },
+        "pair_acc": {
+          "mean": 0.03125,
+          "ci_low": 0.0,
+          "ci_high": 0.078125
+        },
+        "identical": {
+          "mean": 0.75,
+          "ci_low": 0.640625,
+          "ci_high": 0.84375
+        },
+        "empty": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "nll": {
+          "mean": 2.122230766960911,
+          "ci_low": 1.8797527942970873,
+          "ci_high": 2.3708028945506614
+        },
+        "follow": {
+          "mean": 0.3125,
+          "ci_low": 0.25,
+          "ci_high": 0.375
+        },
+        "time_per_answer_s": 0.018816591921876125,
+        "by_type": {
+          "counting": {
+            "acc": 0.15625,
+            "em": 0.15625,
+            "nll": 2.6159265390015207,
+            "n_questions": 64
+          },
+          "presence": {
+            "acc": 0.5,
+            "em": 0.5,
+            "nll": 1.628534994920301,
+            "n_questions": 64
+          }
+        }
+      },
+      "none": {
+        "acc": {
+          "mean": 0.40625,
+          "ci_low": 0.3515625,
+          "ci_high": 0.453125
+        },
+        "pair_acc": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "identical": {
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "empty": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "nll": {
+          "mean": 1.2456036354415119,
+          "ci_low": 1.129867716183071,
+          "ci_high": 1.3665498384507373
+        },
+        "follow": {
+          "mean": 0.40625,
+          "ci_low": 0.3515625,
+          "ci_high": 0.453125
+        },
+        "time_per_answer_s": 0.01789698840622833,
+        "by_type": {
+          "counting": {
+            "acc": 0.3125,
+            "em": 0.3125,
+            "nll": 1.6690637087449431,
+            "n_questions": 64
+          },
+          "presence": {
+            "acc": 0.5,
+            "em": 0.5,
+            "nll": 0.8221435621380806,
+            "n_questions": 64
+          }
+        }
+      }
+    },
+    "correct_image_advantage": {
+      "complementary": {
+        "acc_advantage": {
+          "mean": 0.546875,
+          "ci_low": 0.40625,
+          "ci_high": 0.6796875
+        },
+        "nll_advantage": {
+          "mean": 2.5966796864659045,
+          "ci_low": 2.0616729777862473,
+          "ci_high": 3.129153434849536
+        },
+        "by_type": {
+          "counting": {
+            "acc_advantage": 0.25,
+            "nll_advantage": 1.7121581956016598
+          },
+          "presence": {
+            "acc_advantage": 0.84375,
+            "nll_advantage": 3.481201177330149
+          }
+        }
+      },
+      "mismatched": {
+        "acc_advantage": {
+          "mean": 0.359375,
+          "ci_low": 0.265625,
+          "ci_high": 0.4453125
+        },
+        "nll_advantage": {
+          "mean": 1.2874214198168374,
+          "ci_low": 1.0426682053629293,
+          "ci_high": 1.5269081062728105
+        },
+        "by_type": {
+          "counting": {
+            "acc_advantage": 0.296875,
+            "nll_advantage": 1.1447450502455467
+          },
+          "presence": {
+            "acc_advantage": 0.421875,
+            "nll_advantage": 1.4300977893881281
+          }
+        }
+      },
+      "none": {
+        "acc_advantage": {
+          "mean": 0.28125,
+          "ci_low": 0.1875,
+          "ci_high": 0.3671875
+        },
+        "nll_advantage": {
+          "mean": 0.41079428829743847,
+          "ci_low": 0.20320459084755385,
+          "ci_high": 0.6066187881555835
+        },
+        "by_type": {
+          "counting": {
+            "acc_advantage": 0.140625,
+            "nll_advantage": 0.19788221998896915
+          },
+          "presence": {
+            "acc_advantage": 0.421875,
+            "nll_advantage": 0.6237063566059078
+          }
+        }
+      }
+    },
+    "n_pairs": 64
+  },
+  "vqa_test": {
+    "conditions": {
+      "correct": {
+        "acc": {
+          "mean": 0.5447916666666667,
+          "ci_low": 0.4755208333333334,
+          "ci_high": 0.6145833333333334
+        },
+        "pair_acc": {
+          "mean": 0.2916666666666667,
+          "ci_low": 0.20833333333333334,
+          "ci_high": 0.3854166666666667
+        },
+        "identical": {
+          "mean": 0.4375,
+          "ci_low": 0.3333333333333333,
+          "ci_high": 0.53125
+        },
+        "empty": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "nll": {
+          "mean": 1.3618275701207192,
+          "ci_low": 1.0748796987481606,
+          "ci_high": 1.6808293321967314
+        },
+        "follow": {
+          "mean": 0.2682291666666667,
+          "ci_low": 0.2114583333333333,
+          "ci_high": 0.32864583333333336
+        },
+        "time_per_answer_s": 0.02618959188542173,
+        "by_type": {
+          "number": {
+            "acc": 0.56875,
+            "em": 0.5625,
+            "nll": 1.4960592653575684,
+            "n_questions": 48
+          },
+          "other": {
+            "acc": 0.4666666666666667,
+            "em": 0.4583333333333333,
+            "nll": 1.8847371782984637,
+            "n_questions": 72
+          },
+          "yes/no": {
+            "acc": 0.6069444444444445,
+            "em": 0.5694444444444444,
+            "nll": 0.7494301651184085,
+            "n_questions": 72
+          }
+        }
+      },
+      "complementary": {
+        "acc": {
+          "mean": 0.2682291666666667,
+          "ci_low": 0.2114583333333333,
+          "ci_high": 0.32864583333333336
+        },
+        "pair_acc": {
+          "mean": 0.041666666666666664,
+          "ci_low": 0.010416666666666666,
+          "ci_high": 0.08333333333333333
+        },
+        "identical": {
+          "mean": 0.4375,
+          "ci_low": 0.3333333333333333,
+          "ci_high": 0.53125
+        },
+        "empty": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "nll": {
+          "mean": 2.8284949872177094,
+          "ci_low": 2.420234274462564,
+          "ci_high": 3.268309436929606
+        },
+        "follow": {
+          "mean": 0.5447916666666667,
+          "ci_low": 0.4755208333333334,
+          "ci_high": 0.6145833333333334
+        },
+        "time_per_answer_s": 0.02587246828125463,
+        "by_type": {
+          "number": {
+            "acc": 0.15208333333333332,
+            "em": 0.14583333333333334,
+            "nll": 3.559932944520066,
+            "n_questions": 48
+          },
+          "other": {
+            "acc": 0.15555555555555556,
+            "em": 0.1388888888888889,
+            "nll": 3.8925907508366637,
+            "n_questions": 72
+          },
+          "yes/no": {
+            "acc": 0.4583333333333333,
+            "em": 0.4166666666666667,
+            "nll": 1.2767739187305172,
+            "n_questions": 72
+          }
+        }
+      },
+      "mismatched": {
+        "acc": {
+          "mean": 0.2916666666666667,
+          "ci_low": 0.23645833333333333,
+          "ci_high": 0.34843749999999996
+        },
+        "pair_acc": {
+          "mean": 0.020833333333333332,
+          "ci_low": 0.0,
+          "ci_high": 0.052083333333333336
+        },
+        "identical": {
+          "mean": 0.625,
+          "ci_low": 0.53125,
+          "ci_high": 0.71875
+        },
+        "empty": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "nll": {
+          "mean": 2.575389485262955,
+          "ci_low": 2.18043850537797,
+          "ci_high": 3.0517034364951545
+        },
+        "follow": {
+          "mean": 0.3104166666666667,
+          "ci_low": 0.253125,
+          "ci_high": 0.3671875
+        },
+        "time_per_answer_s": 0.023060648604167493,
+        "by_type": {
+          "number": {
+            "acc": 0.16666666666666666,
+            "em": 0.16666666666666666,
+            "nll": 3.152894014492631,
+            "n_questions": 48
+          },
+          "other": {
+            "acc": 0.175,
+            "em": 0.16666666666666666,
+            "nll": 3.6801341184311442,
+            "n_questions": 72
+          },
+          "yes/no": {
+            "acc": 0.49166666666666664,
+            "em": 0.4583333333333333,
+            "nll": 1.0856418326083157,
+            "n_questions": 72
+          }
+        }
+      },
+      "none": {
+        "acc": {
+          "mean": 0.3,
+          "ci_low": 0.24791666666666667,
+          "ci_high": 0.3526041666666666
+        },
+        "pair_acc": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "identical": {
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "empty": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "nll": {
+          "mean": 2.4466798066860065,
+          "ci_low": 2.0668070672894827,
+          "ci_high": 2.8721907936414937
+        },
+        "follow": {
+          "mean": 0.3,
+          "ci_low": 0.24791666666666667,
+          "ci_high": 0.3526041666666666
+        },
+        "time_per_answer_s": 0.0217281737604272,
+        "by_type": {
+          "number": {
+            "acc": 0.31666666666666665,
+            "em": 0.2916666666666667,
+            "nll": 2.2214657391111055,
+            "n_questions": 48
+          },
+          "other": {
+            "acc": 0.16527777777777775,
+            "em": 0.1527777777777778,
+            "nll": 3.6450388767860002,
+            "n_questions": 72
+          },
+          "yes/no": {
+            "acc": 0.4236111111111111,
+            "em": 0.4027777777777778,
+            "nll": 1.3984634483026133,
+            "n_questions": 72
+          }
+        }
+      }
+    },
+    "correct_image_advantage": {
+      "complementary": {
+        "acc_advantage": {
+          "mean": 0.2765625,
+          "ci_low": 0.17395833333333335,
+          "ci_high": 0.37656249999999997
+        },
+        "nll_advantage": {
+          "mean": 1.4666674170969902,
+          "ci_low": 1.0840652095218124,
+          "ci_high": 1.860532292815242
+        },
+        "by_type": {
+          "number": {
+            "acc_advantage": 0.41666666666666663,
+            "nll_advantage": 2.063873679162498
+          },
+          "other": {
+            "acc_advantage": 0.3111111111111111,
+            "nll_advantage": 2.0078535725382
+          },
+          "yes/no": {
+            "acc_advantage": 0.1486111111111112,
+            "nll_advantage": 0.5273437536121086
+          }
+        }
+      },
+      "mismatched": {
+        "acc_advantage": {
+          "mean": 0.253125,
+          "ci_low": 0.1645703125,
+          "ci_high": 0.340625
+        },
+        "nll_advantage": {
+          "mean": 1.213561915142236,
+          "ci_low": 0.8724065137523136,
+          "ci_high": 1.5853626181780938
+        },
+        "by_type": {
+          "number": {
+            "acc_advantage": 0.40208333333333335,
+            "nll_advantage": 1.6568347491350626
+          },
+          "other": {
+            "acc_advantage": 0.2916666666666667,
+            "nll_advantage": 1.7953969401326806
+          },
+          "yes/no": {
+            "acc_advantage": 0.11527777777777787,
+            "nll_advantage": 0.33621166748990716
+          }
+        }
+      },
+      "none": {
+        "acc_advantage": {
+          "mean": 0.24479166666666666,
+          "ci_low": 0.16509114583333334,
+          "ci_high": 0.3239583333333333
+        },
+        "nll_advantage": {
+          "mean": 1.0848522365652873,
+          "ci_low": 0.772719319985913,
+          "ci_high": 1.4039879040742336
+        },
+        "by_type": {
+          "number": {
+            "acc_advantage": 0.2520833333333333,
+            "nll_advantage": 0.7254064737535371
+          },
+          "other": {
+            "acc_advantage": 0.30138888888888893,
+            "nll_advantage": 1.7603016984875366
+          },
+          "yes/no": {
+            "acc_advantage": 0.1833333333333334,
+            "nll_advantage": 0.6490332831842047
+          }
+        }
+      }
+    },
+    "n_pairs": 96
+  },
+  "peak_mem_gb": 1.8984832763671875,
+  "trainable_params": {
+    "connector": 1837056,
+    "lora": 4587520
+  }
+}

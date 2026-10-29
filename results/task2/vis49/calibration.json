@@ -1,0 +1,7 @@
+{
+  "rule": "mean ||text token embedding|| / mean ||connector(feature)|| at init (training data only)",
+  "text_embedding_norm": 0.8703540563583374,
+  "connector_output_norm_at_init": 11.414266586303711,
+  "scale": 0.07625142183052733,
+  "n_examples": 256
+}

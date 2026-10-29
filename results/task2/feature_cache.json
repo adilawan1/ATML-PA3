@@ -1,0 +1,37 @@
+{
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_mem_gb": 39.49,
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "vision": "google/siglip-base-patch16-224",
+  "train2014_download": {
+    "downloaded": 0,
+    "download_time_s": 4.430499984664493e-05
+  },
+  "val2014_download": {
+    "downloaded": 0,
+    "download_time_s": 2.834900033121812e-05
+  },
+  "preprocessing": {
+    "do_normalize": "True",
+    "do_rescale": "True",
+    "image_mean": "(0.5, 0.5, 0.5)",
+    "image_std": "(0.5, 0.5, 0.5)",
+    "resample": "3",
+    "rescale_factor": "0.00392156862745098",
+    "size": "{'height': 224, 'width': 224}"
+  },
+  "hidden_states_last_equals_output": false,
+  "post_layernorm_check_max_abs_diff": 0.0,
+  "train2014_cache": {
+    "n_images": 8730,
+    "time_s": 32.213589727,
+    "bytes": 2628219008
+  },
+  "val2014_cache": {
+    "n_images": 528,
+    "time_s": 4.544429887000206,
+    "bytes": 158957696
+  },
+  "peak_mem_gb": 1.364882469177246
+}

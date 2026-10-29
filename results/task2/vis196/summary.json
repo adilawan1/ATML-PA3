@@ -1,0 +1,95 @@
+{
+  "run": "vis196",
+  "n_visual_tokens": 196,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_mem_gb": 39.49,
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "update": 4500,
+  "stage_time_s": {
+    "caption_alignment": 1090.0156176839919,
+    "visual_instruction": 1102.489597696997,
+    "natural_vqa": 551.2383146749926
+  },
+  "stage_peak_mem": {
+    "caption_alignment": 1.5500764846801758,
+    "visual_instruction": 1.5341777801513672,
+    "natural_vqa": 1.5538663864135742
+  },
+  "mixture_counts": {
+    "caption_alignment": {
+      "caption": 36000
+    },
+    "visual_instruction": {
+      "counting": 2975,
+      "caption": 3006,
+      "presence": 6019
+    },
+    "natural_vqa": {
+      "vqa": 4225,
+      "counting": 549,
+      "caption": 625,
+      "presence": 601
+    }
+  },
+  "skipped": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "trainable_params": {
+    "caption_alignment": 1837056,
+    "visual_instruction": 6424576,
+    "natural_vqa": 6424576
+  },
+  "calibration": {
+    "rule": "mean ||text token embedding|| / mean ||connector(feature)|| at init (training data only)",
+    "text_embedding_norm": 0.8703540563583374,
+    "connector_output_norm_at_init": 15.86761474609375,
+    "scale": 0.05485096974468699,
+    "n_examples": 256
+  },
+  "checks": {
+    "caption_alignment": {
+      "backbone_params_requiring_grad": 0,
+      "backbone_params_with_grad": 0,
+      "trainable_tensors_in_optimizer": 4,
+      "connector_grad_norm": 159.6291640253108,
+      "connector_params_without_grad": 0,
+      "lora_grad_norm": 0.0,
+      "lora_params_without_grad": 0,
+      "lora_tensors": 0,
+      "grads_finite": true,
+      "verified_at_update": 6
+    },
+    "visual_instruction": {
+      "backbone_params_requiring_grad": 0,
+      "backbone_params_with_grad": 0,
+      "trainable_tensors_in_optimizer": 228,
+      "connector_grad_norm": 3.338687951400277,
+      "connector_params_without_grad": 0,
+      "lora_grad_norm": 22.88265843891444,
+      "lora_params_without_grad": 0,
+      "lora_tensors": 224,
+      "grads_finite": true,
+      "verified_at_update": 2251
+    },
+    "natural_vqa": {
+      "backbone_params_requiring_grad": 0,
+      "backbone_params_with_grad": 0,
+      "trainable_tensors_in_optimizer": 228,
+      "connector_grad_norm": 2.7720668562574455,
+      "connector_params_without_grad": 0,
+      "lora_grad_norm": 8.815518887900472,
+      "lora_params_without_grad": 0,
+      "lora_tensors": 224,
+      "grads_finite": true,
+      "verified_at_update": 3751
+    }
+  },
+  "total_train_time_s": 2743.7435300559814,
+  "completed_updates": 4500,
+  "example_presentations": 72000
+}

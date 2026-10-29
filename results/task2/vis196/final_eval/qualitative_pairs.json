@@ -1,0 +1,397 @@
+{
+  "rule": "first 2 pairs per question type in each test suite (saved order)",
+  "examples": [
+    {
+      "suite": "grounding_test",
+      "qtype": "counting",
+      "pair": 32,
+      "question": "How many donuts can you see?",
+      "slots": [
+        {
+          "image_id": 99481,
+          "reference": "2",
+          "answers": null,
+          "pred_correct": "1",
+          "pred_complementary": "1",
+          "pred_mismatched": "1",
+          "pred_none": "1"
+        },
+        {
+          "image_id": 448837,
+          "reference": "1",
+          "answers": null,
+          "pred_correct": "1",
+          "pred_complementary": "1",
+          "pred_mismatched": "1",
+          "pred_none": "1"
+        }
+      ]
+    },
+    {
+      "suite": "grounding_test",
+      "qtype": "counting",
+      "pair": 33,
+      "question": "How many traffic lights can you see?",
+      "slots": [
+        {
+          "image_id": 145700,
+          "reference": "3",
+          "answers": null,
+          "pred_correct": "2",
+          "pred_complementary": "3",
+          "pred_mismatched": "0",
+          "pred_none": "1"
+        },
+        {
+          "image_id": 427876,
+          "reference": "4",
+          "answers": null,
+          "pred_correct": "3",
+          "pred_complementary": "2",
+          "pred_mismatched": "1",
+          "pred_none": "1"
+        }
+      ]
+    },
+    {
+      "suite": "grounding_test",
+      "qtype": "presence",
+      "pair": 0,
+      "question": "Does this image contain a bear?",
+      "slots": [
+        {
+          "image_id": 366508,
+          "reference": "yes",
+          "answers": null,
+          "pred_correct": "yes",
+          "pred_complementary": "no",
+          "pred_mismatched": "no",
+          "pred_none": "no"
+        },
+        {
+          "image_id": 50149,
+          "reference": "no",
+          "answers": null,
+          "pred_correct": "no",
+          "pred_complementary": "yes",
+          "pred_mismatched": "no",
+          "pred_none": "no"
+        }
+      ]
+    },
+    {
+      "suite": "grounding_test",
+      "qtype": "presence",
+      "pair": 1,
+      "question": "Does this image contain a dog?",
+      "slots": [
+        {
+          "image_id": 532693,
+          "reference": "yes",
+          "answers": null,
+          "pred_correct": "yes",
+          "pred_complementary": "no",
+          "pred_mismatched": "yes",
+          "pred_none": "yes"
+        },
+        {
+          "image_id": 365485,
+          "reference": "no",
+          "answers": null,
+          "pred_correct": "no",
+          "pred_complementary": "yes",
+          "pred_mismatched": "no",
+          "pred_none": "yes"
+        }
+      ]
+    },
+    {
+      "suite": "vqa_test",
+      "qtype": "number",
+      "pair": 36,
+      "question": "How many people in this photo?",
+      "slots": [
+        {
+          "image_id": 328433,
+          "reference": "0",
+          "answers": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "pred_correct": "0",
+          "pred_complementary": "1",
+          "pred_mismatched": "0",
+          "pred_none": "1"
+        },
+        {
+          "image_id": 542423,
+          "reference": "1",
+          "answers": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "pred_correct": "1",
+          "pred_complementary": "0",
+          "pred_mismatched": "0",
+          "pred_none": "1"
+        }
+      ]
+    },
+    {
+      "suite": "vqa_test",
+      "qtype": "number",
+      "pair": 37,
+      "question": "How many women are there?",
+      "slots": [
+        {
+          "image_id": 420525,
+          "reference": "2",
+          "answers": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "pred_correct": "2",
+          "pred_complementary": "0",
+          "pred_mismatched": "0",
+          "pred_none": "1"
+        },
+        {
+          "image_id": 231568,
+          "reference": "0",
+          "answers": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "pred_correct": "0",
+          "pred_complementary": "2",
+          "pred_mismatched": "0",
+          "pred_none": "1"
+        }
+      ]
+    },
+    {
+      "suite": "vqa_test",
+      "qtype": "other",
+      "pair": 60,
+      "question": "Is this man using a bike or a motorcycle?",
+      "slots": [
+        {
+          "image_id": 37209,
+          "reference": "motorcycle",
+          "answers": [
+            "motorcycle",
+            "motorcycle",
+            "motorcycle",
+            "bike",
+            "motorcycle",
+            "motorcycle",
+            "motorcycle",
+            "yes",
+            "motorcycle",
+            "motorcycle"
+          ],
+          "pred_correct": "motorcycle",
+          "pred_complementary": "bike",
+          "pred_mismatched": "bike",
+          "pred_none": "bike"
+        },
+        {
+          "image_id": 315564,
+          "reference": "bike",
+          "answers": [
+            "bike",
+            "bike",
+            "bike",
+            "bike",
+            "bike",
+            "bike",
+            "bike",
+            "bike",
+            "bike",
+            "bike"
+          ],
+          "pred_correct": "bike",
+          "pred_complementary": "motorcycle",
+          "pred_mismatched": "motorcycle",
+          "pred_none": "bike"
+        }
+      ]
+    },
+    {
+      "suite": "vqa_test",
+      "qtype": "other",
+      "pair": 61,
+      "question": "What shape is the mirror?",
+      "slots": [
+        {
+          "image_id": 74743,
+          "reference": "oval",
+          "answers": [
+            "oval",
+            "oval",
+            "oval",
+            "oval",
+            "oval",
+            "oval",
+            "oval",
+            "oval",
+            "oval",
+            "oval"
+          ],
+          "pred_correct": "square",
+          "pred_complementary": "square",
+          "pred_mismatched": "mirror",
+          "pred_none": "circle"
+        },
+        {
+          "image_id": 395124,
+          "reference": "square",
+          "answers": [
+            "square",
+            "triangle",
+            "square",
+            "square",
+            "square",
+            "square",
+            "square",
+            "square",
+            "square",
+            "square"
+          ],
+          "pred_correct": "square",
+          "pred_complementary": "square",
+          "pred_mismatched": "square",
+          "pred_none": "circle"
+        }
+      ]
+    },
+    {
+      "suite": "vqa_test",
+      "qtype": "yes/no",
+      "pair": 0,
+      "question": "Are the two bananas arranged in the same way?",
+      "slots": [
+        {
+          "image_id": 263178,
+          "reference": "no",
+          "answers": [
+            "no",
+            "no, there are 3 pictured",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "yes",
+            "no",
+            "no"
+          ],
+          "pred_correct": "no",
+          "pred_complementary": "yes",
+          "pred_mismatched": "no",
+          "pred_none": "yes"
+        },
+        {
+          "image_id": 466787,
+          "reference": "yes",
+          "answers": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "pred_correct": "yes",
+          "pred_complementary": "no",
+          "pred_mismatched": "no",
+          "pred_none": "yes"
+        }
+      ]
+    },
+    {
+      "suite": "vqa_test",
+      "qtype": "yes/no",
+      "pair": 1,
+      "question": "Is this car clean?",
+      "slots": [
+        {
+          "image_id": 123469,
+          "reference": "no",
+          "answers": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "pred_correct": "no",
+          "pred_complementary": "yes",
+          "pred_mismatched": "no",
+          "pred_none": "clean"
+        },
+        {
+          "image_id": 357578,
+          "reference": "yes",
+          "answers": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "pred_correct": "yes",
+          "pred_complementary": "no",
+          "pred_mismatched": "no",
+          "pred_none": "clean"
+        }
+      ]
+    }
+  ]
+}

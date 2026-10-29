@@ -1,0 +1,8 @@
+| suite                        | control       | Δacc (pp) [95% CI]   | ΔNLL [95% CI]   |   Δacc counting (pp) |   Δacc presence (pp) |   Δacc number (pp) |   Δacc other (pp) |   Δacc yes/no (pp) |
+|:-----------------------------|:--------------|:---------------------|:----------------|---------------------:|---------------------:|-------------------:|------------------:|-------------------:|
+| Annotation-derived grounding | complementary | 54.7 [40.6, 68.0]    | 2.6 [2.1, 3.1]  |                 25.0 |                 84.4 |              nan   |             nan   |              nan   |
+| Annotation-derived grounding | mismatched    | 35.9 [26.6, 44.5]    | 1.3 [1.0, 1.5]  |                 29.7 |                 42.2 |              nan   |             nan   |              nan   |
+| Annotation-derived grounding | none          | 28.1 [18.8, 36.7]    | 0.4 [0.2, 0.6]  |                 14.1 |                 42.2 |              nan   |             nan   |              nan   |
+| Natural VQAv2                | complementary | 27.7 [17.4, 37.7]    | 1.5 [1.1, 1.9]  |                nan   |                nan   |               41.7 |              31.1 |               14.9 |
+| Natural VQAv2                | mismatched    | 25.3 [16.5, 34.1]    | 1.2 [0.9, 1.6]  |                nan   |                nan   |               40.2 |              29.2 |               11.5 |
+| Natural VQAv2                | none          | 24.5 [16.5, 32.4]    | 1.1 [0.8, 1.4]  |                nan   |                nan   |               25.2 |              30.1 |               18.3 |
