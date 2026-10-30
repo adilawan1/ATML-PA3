@@ -1,0 +1,101 @@
+{
+  "n_questions": 50,
+  "strategies": [
+    {
+      "strategy": "parallel",
+      "acc": 0.54,
+      "input_tokens": 325.14,
+      "output_tokens": 1857.02,
+      "time_s": 92.62223303402001,
+      "final_extraction_rate": 0.78,
+      "any_call_truncated_rate": 0.26,
+      "call_truncation_rate": 0.16666666666666666,
+      "n_calls": 150,
+      "peak_mem_gb": 5.829118728637695
+    },
+    {
+      "strategy": "refine",
+      "acc": 0.6,
+      "input_tokens": 889.62,
+      "output_tokens": 1263.02,
+      "time_s": 64.24332925290001,
+      "final_extraction_rate": 0.98,
+      "any_call_truncated_rate": 0.2,
+      "call_truncation_rate": 0.11,
+      "n_calls": 100,
+      "peak_mem_gb": 6.066558361053467
+    },
+    {
+      "strategy": "single",
+      "acc": 0.68,
+      "input_tokens": 108.38,
+      "output_tokens": 704.52,
+      "time_s": 35.33039934496002,
+      "final_extraction_rate": 0.98,
+      "any_call_truncated_rate": 0.02,
+      "call_truncation_rate": 0.02,
+      "n_calls": 50,
+      "peak_mem_gb": 5.949433326721191
+    }
+  ],
+  "per_call": [
+    {
+      "call": "parallel_1",
+      "acc": 0.56,
+      "out": 634.86,
+      "trunc": 0.2,
+      "extracted": 0.8
+    },
+    {
+      "call": "parallel_2",
+      "acc": 0.56,
+      "out": 605.22,
+      "trunc": 0.16,
+      "extracted": 0.84
+    },
+    {
+      "call": "parallel_3",
+      "acc": 0.56,
+      "out": 616.94,
+      "trunc": 0.14,
+      "extracted": 0.86
+    },
+    {
+      "call": "refine",
+      "acc": 0.6,
+      "out": 628.16,
+      "trunc": 0.02,
+      "extracted": 0.98
+    },
+    {
+      "call": "single",
+      "acc": 0.68,
+      "out": 704.52,
+      "trunc": 0.02,
+      "extracted": 0.98
+    }
+  ],
+  "refine_transitions": {
+    "W->C": 3,
+    "C->W": 1,
+    "C->C": 27,
+    "W->W": 19
+  },
+  "bootstrap": {
+    "parallel-single": {
+      "diff": -0.14,
+      "ci_low": -0.26,
+      "ci_high": -0.02
+    },
+    "refine-single": {
+      "diff": -0.08,
+      "ci_low": -0.2,
+      "ci_high": 0.04
+    },
+    "refine-parallel": {
+      "diff": 0.06,
+      "ci_low": -0.02,
+      "ci_high": 0.16
+    }
+  }
+}
