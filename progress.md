@@ -18,6 +18,10 @@ All three tasks have complete pipelines that run end to end in CPU smoke tests: 
 - On resume, `train_log.jsonl` (and the Task 2 `dev_log.jsonl`) are trimmed to the checkpoint's update, so updates are never logged twice.
 - Notebooks set `PA3_RESULTS` to Drive (`MyDrive/ATML-PA3/results`), seeded from the committed `results/`; the save cell rsyncs Drive → repo before committing. A disconnect therefore loses at most the training since the last checkpoint and the condition being evaluated.
 
+## Task 3 live run done (2026-10-30)
+- Kaggle T4, Qwen2.5-3B-Instruct at the pinned revision, FP16, batch size 1: 50 questions × 5 calls = 250 calls, one per (question, call), 250 distinct seeds. One call (test:943 parallel_1) came from a short interactive session before the background run resumed from it; same GPU type and speed (0.053 vs median 0.050 s/token).
+- `results/task3/report/live_table.md` added by `task3.analyze`. **Task 3 is complete.**
+
 ## Task 3 offline analysis done (2026-10-30)
 - Both pools built from the supplied zip; every README count matches (rows, questions, retained tokens, capped, null extractions). MATH scorer: math-verify 0.9.0. MathVista: metadata from the official GitHub repo (Hugging Face unreachable), 0 gold mismatches after letter mapping.
 - offline / signals / adaptive / analyze done for both datasets (`results/task3/`). Candidate rollout IDs per (question, order, N) are in `offline_coverage_rows.csv.gz`.
