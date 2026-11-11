@@ -1,0 +1,1484 @@
+{
+  "prompt": "Write a short caption for this image.",
+  "decoding": "greedy",
+  "max_new_tokens": 64,
+  "n_images": 96,
+  "selection_rule": "first 8 dev images in saved order",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "gpu_total_mem_gb": 14.56,
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "stages": {
+    "stage1": {
+      "lora": false,
+      "seconds_per_caption": 0.11936383835416702,
+      "n_unique_captions": 95,
+      "n_empty": 0,
+      "mean_words": 9.572916666666666,
+      "no_image_caption": "✨ Capture the magic of a sunrise on a tranquil beach. 🌅🌊",
+      "captions": [
+        {
+          "image_id": 6417,
+          "reference": "A surfer curls to balance on his board atop the foamy white crest of a wave",
+          "generated": "A man riding a surfboard on a wave."
+        },
+        {
+          "image_id": 13148,
+          "reference": "Two men standing next to each other in front of a table full of alcohol.",
+          "generated": "A man standing next to a glass of wine."
+        },
+        {
+          "image_id": 14773,
+          "reference": "A hotdog is sitting with fries in a paper car on a plate.",
+          "generated": "A red and white plate with a hot dog and fries on it."
+        },
+        {
+          "image_id": 23821,
+          "reference": "A red motorcycle is parked in between white lines.",
+          "generated": "A red motorcycle parked on a street."
+        },
+        {
+          "image_id": 31000,
+          "reference": "Many oranges have been placed inside a bowl.",
+          "generated": "A bowl of oranges and apples."
+        },
+        {
+          "image_id": 38929,
+          "reference": "A large jet sitting on top of an airport tarmac.",
+          "generated": "A large airplane is parked on a runway."
+        },
+        {
+          "image_id": 48795,
+          "reference": "a close up of a box wit ha sign on it on a bench",
+          "generated": "A wooden bench with a plastic bag on top."
+        },
+        {
+          "image_id": 53015,
+          "reference": "A baby grabs for a bite of pizza that a man is eating.",
+          "generated": "A man is eating a pizza while a child is sitting next to him."
+        },
+        {
+          "image_id": 59455,
+          "reference": "People on corner with cars on street and stoplight with building",
+          "generated": "A man is standing next to a traffic light."
+        },
+        {
+          "image_id": 63848,
+          "reference": "A meal on a plate is sitting on a table.",
+          "generated": "A plate with a piece of bread and a piece of meat."
+        },
+        {
+          "image_id": 79357,
+          "reference": "A busy city street filled with people walling and street signs.",
+          "generated": "A street with a lot of buildings and a street sign."
+        },
+        {
+          "image_id": 82259,
+          "reference": "a couple of men are standing on a snowy mountain",
+          "generated": "A group of people skiing on a snowy mountain."
+        },
+        {
+          "image_id": 86249,
+          "reference": "A BABY BEING HELD WITH A TOY IN HIS MOUTH",
+          "generated": "A baby holding a toy in a baby's mouth"
+        },
+        {
+          "image_id": 87429,
+          "reference": "Traffic is stopped on the road because of a red light.",
+          "generated": "A city street with traffic lights and a clock."
+        },
+        {
+          "image_id": 92093,
+          "reference": "Hundreds of people gathered around looking at motorcycles.",
+          "generated": "Two men are standing next to each other on a motorcycle."
+        },
+        {
+          "image_id": 110560,
+          "reference": "A bathroom sink under a mirror in a bathroom.",
+          "generated": "A bathroom sink with a mirror and a toilet."
+        },
+        {
+          "image_id": 118638,
+          "reference": "A baseball player swinging a bat at a ball.",
+          "generated": "A baseball player swinging a bat at a baseball game."
+        },
+        {
+          "image_id": 124277,
+          "reference": "A train that is going through a city.",
+          "generated": "A train tracks and a train station."
+        },
+        {
+          "image_id": 126098,
+          "reference": "A young boy tossing a soccer ball across a field.",
+          "generated": "A young boy playing soccer in a soccer field."
+        },
+        {
+          "image_id": 127880,
+          "reference": "A girl playing with a toy on a room floor.",
+          "generated": "A little girl holding a flower in her hand."
+        },
+        {
+          "image_id": 127910,
+          "reference": "a white plate of food and a drink on the side",
+          "generated": "A plate with a cake and a cup of coffee."
+        },
+        {
+          "image_id": 130826,
+          "reference": "Two men sitting next to each other on a wooden bench.",
+          "generated": "Two men sitting on a bench with a woman next to them."
+        },
+        {
+          "image_id": 131453,
+          "reference": "A family of elephants walking through tall grass.",
+          "generated": "Three elephants are standing in a field."
+        },
+        {
+          "image_id": 134863,
+          "reference": "A couple of traffic lights hanging over a city street.",
+          "generated": "A street with traffic lights and a street sign."
+        },
+        {
+          "image_id": 142248,
+          "reference": "A living room area with a number of couches",
+          "generated": "A living room with a couch and a table."
+        },
+        {
+          "image_id": 146099,
+          "reference": "A view of a sheep staring at the camera, its flock is behind it.",
+          "generated": "A group of sheep standing in a field."
+        },
+        {
+          "image_id": 146568,
+          "reference": "A little boy is standing near a lot of toys.",
+          "generated": "A baby standing in a room with toys and a chair."
+        },
+        {
+          "image_id": 147415,
+          "reference": "A woman is taking notes in front of her laptop",
+          "generated": "A person sitting on a desk with a laptop and a book on the table."
+        },
+        {
+          "image_id": 148034,
+          "reference": "a fake sheep on green grass and flowers in the background",
+          "generated": "A large sheep standing in a green field."
+        },
+        {
+          "image_id": 158563,
+          "reference": "A man standing next to a yellow fire hydrant.",
+          "generated": "A man with a fire hydrant in his hand."
+        },
+        {
+          "image_id": 162021,
+          "reference": "Three people in white shirts and ties on skateboards.",
+          "generated": "A group of people riding skateboards in a park."
+        },
+        {
+          "image_id": 163253,
+          "reference": "A laptop is on a shelf above a stove with a pot on it.",
+          "generated": "A small kitchen with a stove and a coffee machine."
+        },
+        {
+          "image_id": 164095,
+          "reference": "A zebra and an elephant investigating each other in a grassy area.",
+          "generated": "A giraffe and a zebra are standing next to each other in a field."
+        },
+        {
+          "image_id": 169166,
+          "reference": "A couple of people walking down a sidewalk with stars.",
+          "generated": "A street with a lot of buildings and a lot of people walking."
+        },
+        {
+          "image_id": 174123,
+          "reference": "A huge plate of yummy food with fork to eat.",
+          "generated": "A person holding a fork and eating a pizza."
+        },
+        {
+          "image_id": 185250,
+          "reference": "A woman standing next to a  brown and white dog.",
+          "generated": "A man with a dog on a grass field."
+        },
+        {
+          "image_id": 185598,
+          "reference": "there is a female surfer that is riding a wave",
+          "generated": "A woman riding a wave on a surfboard."
+        },
+        {
+          "image_id": 190705,
+          "reference": "A towel that is on a rack in a bathroom.",
+          "generated": "A bathroom with a sink and toilet."
+        },
+        {
+          "image_id": 197420,
+          "reference": "A train traveling down train tracks next to a small building.",
+          "generated": "A train is parked on a track."
+        },
+        {
+          "image_id": 207826,
+          "reference": "A woman holds up a book as she attempts to read in bed.",
+          "generated": "A person reading a book from a bookshelf."
+        },
+        {
+          "image_id": 218388,
+          "reference": "A large red sign on a metal pole.",
+          "generated": "A stop sign with a red sign on it."
+        },
+        {
+          "image_id": 222724,
+          "reference": "A highway scene with focus on an exit sign.",
+          "generated": "A street with a sign and a lot of cars."
+        },
+        {
+          "image_id": 223714,
+          "reference": "A table is cluttered with plates of food.",
+          "generated": "A table with plates and cups of coffee."
+        },
+        {
+          "image_id": 224358,
+          "reference": "A female professional tennis player engaged in competition.",
+          "generated": "A woman is playing tennis on a court."
+        },
+        {
+          "image_id": 234387,
+          "reference": "Three donuts in a box that is open and on a bike.",
+          "generated": "A bicycle with a pizza and donuts on it"
+        },
+        {
+          "image_id": 235203,
+          "reference": "A cat sitting on top of a mans lap next to a keyboard.",
+          "generated": "A person and a cat are sitting on a couch."
+        },
+        {
+          "image_id": 236426,
+          "reference": "A man swinging a tennis racquet at a ball on a court.",
+          "generated": "A man on a tennis court is playing a tennis match."
+        },
+        {
+          "image_id": 236607,
+          "reference": "Bunches of bananas hanging from the ceiling of a produce market.",
+          "generated": "A man is standing in front of a market with a bunch of fruits."
+        },
+        {
+          "image_id": 237230,
+          "reference": "A couple vases of flowers on a counter next to a bar.",
+          "generated": "A man standing in front of a glass room with a lot of flowers."
+        },
+        {
+          "image_id": 238603,
+          "reference": "A man flying a kite in a blue sky.",
+          "generated": "A man flying a kite in the sky."
+        },
+        {
+          "image_id": 267224,
+          "reference": "Blue pickup truck traveling on a city street.",
+          "generated": "A blue truck is parked on a street."
+        },
+        {
+          "image_id": 268378,
+          "reference": "A group of people eating a meal at a table.",
+          "generated": "A group of people sitting at a table with food."
+        },
+        {
+          "image_id": 273469,
+          "reference": "A table with two boxes of pizza and beer cans",
+          "generated": "A pizza on a table with a glass of wine."
+        },
+        {
+          "image_id": 276284,
+          "reference": "A motorcycle is parked in a parking lot.",
+          "generated": "A motorcycle parked on a street."
+        },
+        {
+          "image_id": 279259,
+          "reference": "Man in shorts running with a necktie on top",
+          "generated": "A man walking through a forest."
+        },
+        {
+          "image_id": 302089,
+          "reference": "A red fire hydrant next to a h sign",
+          "generated": "A red fire hydrant with a sign next to it."
+        },
+        {
+          "image_id": 305677,
+          "reference": "A person standing on a rocky hillside next to the ocean.",
+          "generated": "A person walking on a beach with a boat in the distance."
+        },
+        {
+          "image_id": 315974,
+          "reference": "A finger pointing to a blemish on a green piece of fruit",
+          "generated": "A bunch of bananas on a table."
+        },
+        {
+          "image_id": 320350,
+          "reference": "THERE ARE PEOPLE THAT ARE ON THE SKIS WITH HIS DOG",
+          "generated": "A woman and a dog standing on skis in the snow."
+        },
+        {
+          "image_id": 327780,
+          "reference": "A fork cutting into a piece of cake",
+          "generated": "A white plate with a white cake and a white fork."
+        },
+        {
+          "image_id": 342770,
+          "reference": "Young man on side of the road pointing at a truck.",
+          "generated": "A man and a truck are standing in the road."
+        },
+        {
+          "image_id": 343481,
+          "reference": "a bunch of sheep all chillin together in a bin",
+          "generated": "A group of sheep standing in a barn."
+        },
+        {
+          "image_id": 344059,
+          "reference": "Two tall giraffes standing next to each other by trees.",
+          "generated": "Two giraffes standing next to each other."
+        },
+        {
+          "image_id": 358195,
+          "reference": "A little girl wearing pajamas is riding on a skateboard.",
+          "generated": "A girl wearing a pink dress and a blue shirt is riding a skateboard."
+        },
+        {
+          "image_id": 360346,
+          "reference": "A small propeller airplane taking off from a runway.",
+          "generated": "A small plane flying over a field."
+        },
+        {
+          "image_id": 366137,
+          "reference": "A woman standing in front of a doorway under a window.",
+          "generated": "A woman sitting at a desk with a computer."
+        },
+        {
+          "image_id": 368565,
+          "reference": "A couple of kids with some food on a couch.",
+          "generated": "A couple of children are eating a cake."
+        },
+        {
+          "image_id": 379554,
+          "reference": "a toilet that has some bubbles coming out of it",
+          "generated": "A toilet with a white toilet paper and a white toilet seat."
+        },
+        {
+          "image_id": 391539,
+          "reference": "A woman stands next to a fridge that has several glasses on top.",
+          "generated": "A man is sitting on a counter with a refrigerator and a bottle of beer."
+        },
+        {
+          "image_id": 397518,
+          "reference": "Two brown bears are standing on the rocks.",
+          "generated": "Two bears standing on a rock."
+        },
+        {
+          "image_id": 404191,
+          "reference": "A refrigerator freezer sitting in a yellow kitchen.",
+          "generated": "A refrigerator with a large number of stickers on it."
+        },
+        {
+          "image_id": 407150,
+          "reference": "A pile of garbage sitting next to a trash can.",
+          "generated": "A large pile of garbage on a street."
+        },
+        {
+          "image_id": 430791,
+          "reference": "Red ties hanging like nooses in a museum.",
+          "generated": "A person walking in front of a red and blue wall."
+        },
+        {
+          "image_id": 451038,
+          "reference": "A person cutting up a piece of fruit with a knife.",
+          "generated": "A person cutting a piece of bread with a knife."
+        },
+        {
+          "image_id": 452611,
+          "reference": "A man riding a skateboard on a street.",
+          "generated": "A man wearing a black jacket and a black skateboard."
+        },
+        {
+          "image_id": 462324,
+          "reference": "a male skateboarder in a white shirt is doing a trick",
+          "generated": "A man riding a skateboard on a ramp."
+        },
+        {
+          "image_id": 462329,
+          "reference": "A brown horse standing on the side of a road.",
+          "generated": "A horse standing on a road next to a bridge."
+        },
+        {
+          "image_id": 481911,
+          "reference": "Two cats, brown  and black cats on a bench",
+          "generated": "A cat sitting on a bench with two other cats."
+        },
+        {
+          "image_id": 484414,
+          "reference": "a boy jumping his skateboard over a red box",
+          "generated": "A person riding a skateboard on a sidewalk."
+        },
+        {
+          "image_id": 501142,
+          "reference": "there is a cow standing in the water by a boat",
+          "generated": "A cow standing on a dock next to a boat."
+        },
+        {
+          "image_id": 502318,
+          "reference": "A man with a TV in the middle of no where.",
+          "generated": "A man is cooking in a field."
+        },
+        {
+          "image_id": 512151,
+          "reference": "A man sits in a train with many pieces of luggage on the seat across from him.",
+          "generated": "A man is sitting on a bench with a suitcase and a backpack."
+        },
+        {
+          "image_id": 513096,
+          "reference": "two men standing by a display of military items",
+          "generated": "A group of military personnel standing in front of a military equipment display."
+        },
+        {
+          "image_id": 520979,
+          "reference": "A black and white image of a vehicle that is decorated like a dog.",
+          "generated": "A group of people are sitting on a picnic blanket."
+        },
+        {
+          "image_id": 524263,
+          "reference": "a couple of black bears are in the grass",
+          "generated": "Two dogs standing next to a tree."
+        },
+        {
+          "image_id": 528411,
+          "reference": "A teenager in a bathroom looking at a stand alone shower.",
+          "generated": "A man is sitting in a bathroom with a toilet and a sink."
+        },
+        {
+          "image_id": 530731,
+          "reference": "A woman kneels taking a picture of a large ram.",
+          "generated": "A sheep walking on a hill."
+        },
+        {
+          "image_id": 532408,
+          "reference": "a white bed in a large hotel room",
+          "generated": "A room with a television and a computer."
+        },
+        {
+          "image_id": 561923,
+          "reference": "People flying kites, one of the kites is an American flag.",
+          "generated": "A group of people flying a kite in the sky."
+        },
+        {
+          "image_id": 564123,
+          "reference": "A large cathedral with a clock towards the top of it.",
+          "generated": "A clock tower with a large red light on top."
+        },
+        {
+          "image_id": 565395,
+          "reference": "A man in glasses sitting next to a woman and holding up a red frisbee that says \"Cheese Shop\" on it.",
+          "generated": "A man and a woman are standing next to each other."
+        },
+        {
+          "image_id": 569960,
+          "reference": "This pizza is square and has pepperoni and mushrooms.",
+          "generated": "A pizza with a lot of toppings on it."
+        },
+        {
+          "image_id": 570788,
+          "reference": "A group of horses are drinking from a river",
+          "generated": "A group of horses walking through a field of grass."
+        },
+        {
+          "image_id": 577526,
+          "reference": "A black and white cat is laying on a green pillow on top of a desk.",
+          "generated": "A cat laying on a bed with a cat on top of it."
+        },
+        {
+          "image_id": 578221,
+          "reference": "a close up of a street sign with a mountain in the background",
+          "generated": "A sign on a pole in a field."
+        },
+        {
+          "image_id": 580983,
+          "reference": "there is a man on a skate board doing a trick",
+          "generated": "A man riding a skateboard on a ramp."
+        }
+      ]
+    },
+    "stage2": {
+      "lora": true,
+      "seconds_per_caption": 0.18048262902083323,
+      "n_unique_captions": 96,
+      "n_empty": 0,
+      "mean_words": 10.28125,
+      "no_image_caption": "✨ Discover the magic of nature in every corner! 🌿",
+      "captions": [
+        {
+          "image_id": 6417,
+          "reference": "A surfer curls to balance on his board atop the foamy white crest of a wave",
+          "generated": "A man riding a surfboard on a wave."
+        },
+        {
+          "image_id": 13148,
+          "reference": "Two men standing next to each other in front of a table full of alcohol.",
+          "generated": "A man standing next to a woman holding a glass of wine."
+        },
+        {
+          "image_id": 14773,
+          "reference": "A hotdog is sitting with fries in a paper car on a plate.",
+          "generated": "A plate of food sits on a table next to a car."
+        },
+        {
+          "image_id": 23821,
+          "reference": "A red motorcycle is parked in between white lines.",
+          "generated": "A red motorcycle parked on a street."
+        },
+        {
+          "image_id": 31000,
+          "reference": "Many oranges have been placed inside a bowl.",
+          "generated": "A bowl of oranges and some other fruits."
+        },
+        {
+          "image_id": 38929,
+          "reference": "A large jet sitting on top of an airport tarmac.",
+          "generated": "A large airplane sitting on a runway."
+        },
+        {
+          "image_id": 48795,
+          "reference": "a close up of a box wit ha sign on it on a bench",
+          "generated": "A wooden bench with a small plastic bag on top."
+        },
+        {
+          "image_id": 53015,
+          "reference": "A baby grabs for a bite of pizza that a man is eating.",
+          "generated": "A man is sitting at a table with a pizza and a drink."
+        },
+        {
+          "image_id": 59455,
+          "reference": "People on corner with cars on street and stoplight with building",
+          "generated": "A man is standing next to a traffic light."
+        },
+        {
+          "image_id": 63848,
+          "reference": "A meal on a plate is sitting on a table.",
+          "generated": "A plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a"
+        },
+        {
+          "image_id": 79357,
+          "reference": "A busy city street filled with people walling and street signs.",
+          "generated": "A street with a sign and a sign that says \"Bike Stop\""
+        },
+        {
+          "image_id": 82259,
+          "reference": "a couple of men are standing on a snowy mountain",
+          "generated": "A group of people on a ski slope."
+        },
+        {
+          "image_id": 86249,
+          "reference": "A BABY BEING HELD WITH A TOY IN HIS MOUTH",
+          "generated": "A baby is holding a toy in a baby's mouth."
+        },
+        {
+          "image_id": 87429,
+          "reference": "Traffic is stopped on the road because of a red light.",
+          "generated": "A large city street with a traffic light and a clock."
+        },
+        {
+          "image_id": 92093,
+          "reference": "Hundreds of people gathered around looking at motorcycles.",
+          "generated": "A group of people standing around a motorcycle parked in front of a building."
+        },
+        {
+          "image_id": 110560,
+          "reference": "A bathroom sink under a mirror in a bathroom.",
+          "generated": "A bathroom sink with a mirror and a toilet."
+        },
+        {
+          "image_id": 118638,
+          "reference": "A baseball player swinging a bat at a ball.",
+          "generated": "A baseball player swinging a bat at a pitch."
+        },
+        {
+          "image_id": 124277,
+          "reference": "A train that is going through a city.",
+          "generated": "A train tracks on a bridge over a river."
+        },
+        {
+          "image_id": 126098,
+          "reference": "A young boy tossing a soccer ball across a field.",
+          "generated": "A young boy playing soccer with a ball."
+        },
+        {
+          "image_id": 127880,
+          "reference": "A girl playing with a toy on a room floor.",
+          "generated": "A little girl holding a flower in her hand."
+        },
+        {
+          "image_id": 127910,
+          "reference": "a white plate of food and a drink on the side",
+          "generated": "A plate with a cake and a cup of coffee."
+        },
+        {
+          "image_id": 130826,
+          "reference": "Two men sitting next to each other on a wooden bench.",
+          "generated": "A couple of men sitting on a bench with their hats on."
+        },
+        {
+          "image_id": 131453,
+          "reference": "A family of elephants walking through tall grass.",
+          "generated": "Three elephants are standing in a field."
+        },
+        {
+          "image_id": 134863,
+          "reference": "A couple of traffic lights hanging over a city street.",
+          "generated": "A street with traffic lights and a street sign."
+        },
+        {
+          "image_id": 142248,
+          "reference": "A living room area with a number of couches",
+          "generated": "A living room with a couch and a table."
+        },
+        {
+          "image_id": 146099,
+          "reference": "A view of a sheep staring at the camera, its flock is behind it.",
+          "generated": "A group of sheep standing in a field."
+        },
+        {
+          "image_id": 146568,
+          "reference": "A little boy is standing near a lot of toys.",
+          "generated": "A baby standing in front of a table full of toys."
+        },
+        {
+          "image_id": 147415,
+          "reference": "A woman is taking notes in front of her laptop",
+          "generated": "A person sitting at a laptop computer."
+        },
+        {
+          "image_id": 148034,
+          "reference": "a fake sheep on green grass and flowers in the background",
+          "generated": "A sheep standing in a green area with flowers."
+        },
+        {
+          "image_id": 158563,
+          "reference": "A man standing next to a yellow fire hydrant.",
+          "generated": "A man with a fire hydrant in his hand."
+        },
+        {
+          "image_id": 162021,
+          "reference": "Three people in white shirts and ties on skateboards.",
+          "generated": "A group of people wearing helmets and shorts riding skateboards."
+        },
+        {
+          "image_id": 163253,
+          "reference": "A laptop is on a shelf above a stove with a pot on it.",
+          "generated": "A stove with a small oven and a coffee mug."
+        },
+        {
+          "image_id": 164095,
+          "reference": "A zebra and an elephant investigating each other in a grassy area.",
+          "generated": "A giraffe and a zebra are standing next to each other in a field."
+        },
+        {
+          "image_id": 169166,
+          "reference": "A couple of people walking down a sidewalk with stars.",
+          "generated": "A street with a building and a street light."
+        },
+        {
+          "image_id": 174123,
+          "reference": "A huge plate of yummy food with fork to eat.",
+          "generated": "A person is holding a fork and eating a pizza."
+        },
+        {
+          "image_id": 185250,
+          "reference": "A woman standing next to a  brown and white dog.",
+          "generated": "A man with a dog on a grassy field."
+        },
+        {
+          "image_id": 185598,
+          "reference": "there is a female surfer that is riding a wave",
+          "generated": "A woman riding a wave on a surfboard."
+        },
+        {
+          "image_id": 190705,
+          "reference": "A towel that is on a rack in a bathroom.",
+          "generated": "A bathroom with a toilet, sink, and mirror."
+        },
+        {
+          "image_id": 197420,
+          "reference": "A train traveling down train tracks next to a small building.",
+          "generated": "A train is sitting on a track in a field."
+        },
+        {
+          "image_id": 207826,
+          "reference": "A woman holds up a book as she attempts to read in bed.",
+          "generated": "A person is reading a book while sitting on a bed."
+        },
+        {
+          "image_id": 218388,
+          "reference": "A large red sign on a metal pole.",
+          "generated": "A stop sign with a graffiti on it"
+        },
+        {
+          "image_id": 222724,
+          "reference": "A highway scene with focus on an exit sign.",
+          "generated": "A street with a sign and a lot of cars."
+        },
+        {
+          "image_id": 223714,
+          "reference": "A table is cluttered with plates of food.",
+          "generated": "A table with plates and cups of coffee."
+        },
+        {
+          "image_id": 224358,
+          "reference": "A female professional tennis player engaged in competition.",
+          "generated": "A tennis player is about to serve a tennis ball."
+        },
+        {
+          "image_id": 234387,
+          "reference": "Three donuts in a box that is open and on a bike.",
+          "generated": "A bicycle with some donuts on it"
+        },
+        {
+          "image_id": 235203,
+          "reference": "A cat sitting on top of a mans lap next to a keyboard.",
+          "generated": "A person is sitting on a couch with a computer."
+        },
+        {
+          "image_id": 236426,
+          "reference": "A man swinging a tennis racquet at a ball on a court.",
+          "generated": "A man on a tennis court serves a ball."
+        },
+        {
+          "image_id": 236607,
+          "reference": "Bunches of bananas hanging from the ceiling of a produce market.",
+          "generated": "A man is standing in front of a market with lots of fruits."
+        },
+        {
+          "image_id": 237230,
+          "reference": "A couple vases of flowers on a counter next to a bar.",
+          "generated": "A man standing in front of a glass room with a lot of flowers."
+        },
+        {
+          "image_id": 238603,
+          "reference": "A man flying a kite in a blue sky.",
+          "generated": "A man flying a kite in the sky."
+        },
+        {
+          "image_id": 267224,
+          "reference": "Blue pickup truck traveling on a city street.",
+          "generated": "A blue truck is driving down the street."
+        },
+        {
+          "image_id": 268378,
+          "reference": "A group of people eating a meal at a table.",
+          "generated": "A group of people sitting around a table with food."
+        },
+        {
+          "image_id": 273469,
+          "reference": "A table with two boxes of pizza and beer cans",
+          "generated": "A pizza sitting on a table with some drinks and food."
+        },
+        {
+          "image_id": 276284,
+          "reference": "A motorcycle is parked in a parking lot.",
+          "generated": "A motorcycle parked on a street."
+        },
+        {
+          "image_id": 279259,
+          "reference": "Man in shorts running with a necktie on top",
+          "generated": "A man walking in the woods with a dog."
+        },
+        {
+          "image_id": 302089,
+          "reference": "A red fire hydrant next to a h sign",
+          "generated": "A red fire hydrant with a sign next to it."
+        },
+        {
+          "image_id": 305677,
+          "reference": "A person standing on a rocky hillside next to the ocean.",
+          "generated": "A person walking on a beach with a boat in the distance."
+        },
+        {
+          "image_id": 315974,
+          "reference": "A finger pointing to a blemish on a green piece of fruit",
+          "generated": "A person is holding a bunch of bananas."
+        },
+        {
+          "image_id": 320350,
+          "reference": "THERE ARE PEOPLE THAT ARE ON THE SKIS WITH HIS DOG",
+          "generated": "A woman and a dog standing on skis in the snow."
+        },
+        {
+          "image_id": 327780,
+          "reference": "A fork cutting into a piece of cake",
+          "generated": "A white plate with a white and black chocolate cake."
+        },
+        {
+          "image_id": 342770,
+          "reference": "Young man on side of the road pointing at a truck.",
+          "generated": "A man and woman are standing in the road next to a truck."
+        },
+        {
+          "image_id": 343481,
+          "reference": "a bunch of sheep all chillin together in a bin",
+          "generated": "A group of sheep standing on a trailer."
+        },
+        {
+          "image_id": 344059,
+          "reference": "Two tall giraffes standing next to each other by trees.",
+          "generated": "Two giraffes standing next to each other."
+        },
+        {
+          "image_id": 358195,
+          "reference": "A little girl wearing pajamas is riding on a skateboard.",
+          "generated": "A girl wearing a pink dress and a blue top is riding a skateboard."
+        },
+        {
+          "image_id": 360346,
+          "reference": "A small propeller airplane taking off from a runway.",
+          "generated": "A small plane flying over a field."
+        },
+        {
+          "image_id": 366137,
+          "reference": "A woman standing in front of a doorway under a window.",
+          "generated": "A woman sitting at a desk with a remote control."
+        },
+        {
+          "image_id": 368565,
+          "reference": "A couple of kids with some food on a couch.",
+          "generated": "A couple of children are eating a cake."
+        },
+        {
+          "image_id": 379554,
+          "reference": "a toilet that has some bubbles coming out of it",
+          "generated": "A toilet with a white towel and a white towel on top of it."
+        },
+        {
+          "image_id": 391539,
+          "reference": "A woman stands next to a fridge that has several glasses on top.",
+          "generated": "A man is sitting in a kitchen with a refrigerator and a bottle of beer."
+        },
+        {
+          "image_id": 397518,
+          "reference": "Two brown bears are standing on the rocks.",
+          "generated": "Two bears standing on a rock."
+        },
+        {
+          "image_id": 404191,
+          "reference": "A refrigerator freezer sitting in a yellow kitchen.",
+          "generated": "A refrigerator with a large number of stickers on it."
+        },
+        {
+          "image_id": 407150,
+          "reference": "A pile of garbage sitting next to a trash can.",
+          "generated": "A pile of trash on the sidewalk with a large umbrella."
+        },
+        {
+          "image_id": 430791,
+          "reference": "Red ties hanging like nooses in a museum.",
+          "generated": "A person walking with a red tie on"
+        },
+        {
+          "image_id": 451038,
+          "reference": "A person cutting up a piece of fruit with a knife.",
+          "generated": "A person cutting a piece of bread with a knife."
+        },
+        {
+          "image_id": 452611,
+          "reference": "A man riding a skateboard on a street.",
+          "generated": "A man wearing a skateboard with a backpack on."
+        },
+        {
+          "image_id": 462324,
+          "reference": "a male skateboarder in a white shirt is doing a trick",
+          "generated": "A man riding a skateboard on a ramp."
+        },
+        {
+          "image_id": 462329,
+          "reference": "A brown horse standing on the side of a road.",
+          "generated": "A horse standing on a road in the distance."
+        },
+        {
+          "image_id": 481911,
+          "reference": "Two cats, brown  and black cats on a bench",
+          "generated": "A cat sitting on a bench with two other cats."
+        },
+        {
+          "image_id": 484414,
+          "reference": "a boy jumping his skateboard over a red box",
+          "generated": "A person riding a skateboard on a sidewalk with a suitcase."
+        },
+        {
+          "image_id": 501142,
+          "reference": "there is a cow standing in the water by a boat",
+          "generated": "A cow standing on a dock in a body of water."
+        },
+        {
+          "image_id": 502318,
+          "reference": "A man with a TV in the middle of no where.",
+          "generated": "A man is cooking food in a grill."
+        },
+        {
+          "image_id": 512151,
+          "reference": "A man sits in a train with many pieces of luggage on the seat across from him.",
+          "generated": "A man is sitting on a seat with a suitcase and some other items."
+        },
+        {
+          "image_id": 513096,
+          "reference": "two men standing by a display of military items",
+          "generated": "A group of military personnel standing in front of a large display of equipment."
+        },
+        {
+          "image_id": 520979,
+          "reference": "A black and white image of a vehicle that is decorated like a dog.",
+          "generated": "A large crowd of people are gathered around a large tent."
+        },
+        {
+          "image_id": 524263,
+          "reference": "a couple of black bears are in the grass",
+          "generated": "Two dogs playing with a tree trunk."
+        },
+        {
+          "image_id": 528411,
+          "reference": "A teenager in a bathroom looking at a stand alone shower.",
+          "generated": "A man is sitting in a bathroom with a TV."
+        },
+        {
+          "image_id": 530731,
+          "reference": "A woman kneels taking a picture of a large ram.",
+          "generated": "A sheep walking on a hillside."
+        },
+        {
+          "image_id": 532408,
+          "reference": "a white bed in a large hotel room",
+          "generated": "A room with a television and a bed."
+        },
+        {
+          "image_id": 561923,
+          "reference": "People flying kites, one of the kites is an American flag.",
+          "generated": "A kite flying over a field with a flag in the sky."
+        },
+        {
+          "image_id": 564123,
+          "reference": "A large cathedral with a clock towards the top of it.",
+          "generated": "A clock tower with a large building in the background."
+        },
+        {
+          "image_id": 565395,
+          "reference": "A man in glasses sitting next to a woman and holding up a red frisbee that says \"Cheese Shop\" on it.",
+          "generated": "A man and a woman holding a red frisbee."
+        },
+        {
+          "image_id": 569960,
+          "reference": "This pizza is square and has pepperoni and mushrooms.",
+          "generated": "A pizza on a plate with some cheese and toppings."
+        },
+        {
+          "image_id": 570788,
+          "reference": "A group of horses are drinking from a river",
+          "generated": "A herd of horses walking through a field of grass."
+        },
+        {
+          "image_id": 577526,
+          "reference": "A black and white cat is laying on a green pillow on top of a desk.",
+          "generated": "A cat laying on a bed with a towel."
+        },
+        {
+          "image_id": 578221,
+          "reference": "a close up of a street sign with a mountain in the background",
+          "generated": "A sign that is on a pole in a field."
+        },
+        {
+          "image_id": 580983,
+          "reference": "there is a man on a skate board doing a trick",
+          "generated": "A skateboarder is riding a skateboard down a ramp."
+        }
+      ]
+    },
+    "stage3": {
+      "lora": true,
+      "seconds_per_caption": 0.2054802536458329,
+      "n_unique_captions": 96,
+      "n_empty": 0,
+      "mean_words": 10.635416666666666,
+      "no_image_caption": "✨ Discover the magic of nature in every corner! 🌿",
+      "captions": [
+        {
+          "image_id": 6417,
+          "reference": "A surfer curls to balance on his board atop the foamy white crest of a wave",
+          "generated": "A man surfing on a wave in the ocean."
+        },
+        {
+          "image_id": 13148,
+          "reference": "Two men standing next to each other in front of a table full of alcohol.",
+          "generated": "A man standing next to a woman holding wine glasses."
+        },
+        {
+          "image_id": 14773,
+          "reference": "A hotdog is sitting with fries in a paper car on a plate.",
+          "generated": "A plate of food sitting on a table next to a toy car."
+        },
+        {
+          "image_id": 23821,
+          "reference": "A red motorcycle is parked in between white lines.",
+          "generated": "A red motorcycle parked on a street."
+        },
+        {
+          "image_id": 31000,
+          "reference": "Many oranges have been placed inside a bowl.",
+          "generated": "A bowl of oranges and other fruits."
+        },
+        {
+          "image_id": 38929,
+          "reference": "A large jet sitting on top of an airport tarmac.",
+          "generated": "A plane parked on a runway."
+        },
+        {
+          "image_id": 48795,
+          "reference": "a close up of a box wit ha sign on it on a bench",
+          "generated": "A wooden bench with a small plastic bag on top of it."
+        },
+        {
+          "image_id": 53015,
+          "reference": "A baby grabs for a bite of pizza that a man is eating.",
+          "generated": "A man is sitting at a table with a pizza and a drink."
+        },
+        {
+          "image_id": 59455,
+          "reference": "People on corner with cars on street and stoplight with building",
+          "generated": "A man standing next to a parked car."
+        },
+        {
+          "image_id": 63848,
+          "reference": "A meal on a plate is sitting on a table.",
+          "generated": "A plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a plate with a"
+        },
+        {
+          "image_id": 79357,
+          "reference": "A busy city street filled with people walling and street signs.",
+          "generated": "A street with a sign and a motorcycle."
+        },
+        {
+          "image_id": 82259,
+          "reference": "a couple of men are standing on a snowy mountain",
+          "generated": "A group of people skiing down a snowy mountain."
+        },
+        {
+          "image_id": 86249,
+          "reference": "A BABY BEING HELD WITH A TOY IN HIS MOUTH",
+          "generated": "A baby is holding a green toy."
+        },
+        {
+          "image_id": 87429,
+          "reference": "Traffic is stopped on the road because of a red light.",
+          "generated": "A large city street with a large clock tower."
+        },
+        {
+          "image_id": 92093,
+          "reference": "Hundreds of people gathered around looking at motorcycles.",
+          "generated": "A group of people standing in front of a motorcycle."
+        },
+        {
+          "image_id": 110560,
+          "reference": "A bathroom sink under a mirror in a bathroom.",
+          "generated": "A bathroom sink with a mirror and a toilet."
+        },
+        {
+          "image_id": 118638,
+          "reference": "A baseball player swinging a bat at a ball.",
+          "generated": "A baseball player holding a bat in a game."
+        },
+        {
+          "image_id": 124277,
+          "reference": "A train that is going through a city.",
+          "generated": "A train tracks and a bridge over a river."
+        },
+        {
+          "image_id": 126098,
+          "reference": "A young boy tossing a soccer ball across a field.",
+          "generated": "A young boy playing soccer on a soccer field."
+        },
+        {
+          "image_id": 127880,
+          "reference": "A girl playing with a toy on a room floor.",
+          "generated": "A little girl holding a flower in her hand."
+        },
+        {
+          "image_id": 127910,
+          "reference": "a white plate of food and a drink on the side",
+          "generated": "A plate with a cake and a cup of coffee."
+        },
+        {
+          "image_id": 130826,
+          "reference": "Two men sitting next to each other on a wooden bench.",
+          "generated": "Two men sitting on a bench with a woman next to them."
+        },
+        {
+          "image_id": 131453,
+          "reference": "A family of elephants walking through tall grass.",
+          "generated": "A herd of elephants walking through a grassy field."
+        },
+        {
+          "image_id": 134863,
+          "reference": "A couple of traffic lights hanging over a city street.",
+          "generated": "A street with traffic lights and a streetlight."
+        },
+        {
+          "image_id": 142248,
+          "reference": "A living room area with a number of couches",
+          "generated": "A living room with a couch and a table."
+        },
+        {
+          "image_id": 146099,
+          "reference": "A view of a sheep staring at the camera, its flock is behind it.",
+          "generated": "A group of sheep standing in a field."
+        },
+        {
+          "image_id": 146568,
+          "reference": "A little boy is standing near a lot of toys.",
+          "generated": "A child standing in front of a table full of toys."
+        },
+        {
+          "image_id": 147415,
+          "reference": "A woman is taking notes in front of her laptop",
+          "generated": "A person is sitting at a laptop computer."
+        },
+        {
+          "image_id": 148034,
+          "reference": "a fake sheep on green grass and flowers in the background",
+          "generated": "A sheep standing in a garden with flowers."
+        },
+        {
+          "image_id": 158563,
+          "reference": "A man standing next to a yellow fire hydrant.",
+          "generated": "A man with a fire hydrant in his yard."
+        },
+        {
+          "image_id": 162021,
+          "reference": "Three people in white shirts and ties on skateboards.",
+          "generated": "A group of people wearing skateboards and sunglasses."
+        },
+        {
+          "image_id": 163253,
+          "reference": "A laptop is on a shelf above a stove with a pot on it.",
+          "generated": "A large oven with a stove and a tea kettle."
+        },
+        {
+          "image_id": 164095,
+          "reference": "A zebra and an elephant investigating each other in a grassy area.",
+          "generated": "A giraffe and a zebra are standing next to each other."
+        },
+        {
+          "image_id": 169166,
+          "reference": "A couple of people walking down a sidewalk with stars.",
+          "generated": "A street with a building and a streetlight."
+        },
+        {
+          "image_id": 174123,
+          "reference": "A huge plate of yummy food with fork to eat.",
+          "generated": "A person holding a fork and eating a pizza."
+        },
+        {
+          "image_id": 185250,
+          "reference": "A woman standing next to a  brown and white dog.",
+          "generated": "A man with a dog on a grassy field."
+        },
+        {
+          "image_id": 185598,
+          "reference": "there is a female surfer that is riding a wave",
+          "generated": "A woman surfing on a wave."
+        },
+        {
+          "image_id": 190705,
+          "reference": "A towel that is on a rack in a bathroom.",
+          "generated": "A bathroom with a toilet and sink."
+        },
+        {
+          "image_id": 197420,
+          "reference": "A train traveling down train tracks next to a small building.",
+          "generated": "A train that is sitting on a track."
+        },
+        {
+          "image_id": 207826,
+          "reference": "A woman holds up a book as she attempts to read in bed.",
+          "generated": "A person reading a book from a bookshelf."
+        },
+        {
+          "image_id": 218388,
+          "reference": "A large red sign on a metal pole.",
+          "generated": "A stop sign with a graffiti on it."
+        },
+        {
+          "image_id": 222724,
+          "reference": "A highway scene with focus on an exit sign.",
+          "generated": "A street with a sign and a lot of cars."
+        },
+        {
+          "image_id": 223714,
+          "reference": "A table is cluttered with plates of food.",
+          "generated": "A table with plates and cups."
+        },
+        {
+          "image_id": 224358,
+          "reference": "A female professional tennis player engaged in competition.",
+          "generated": "A tennis player is preparing for a serve."
+        },
+        {
+          "image_id": 234387,
+          "reference": "Three donuts in a box that is open and on a bike.",
+          "generated": "A bicycle with a pizza and donuts on it"
+        },
+        {
+          "image_id": 235203,
+          "reference": "A cat sitting on top of a mans lap next to a keyboard.",
+          "generated": "A person and a cat laying on a couch."
+        },
+        {
+          "image_id": 236426,
+          "reference": "A man swinging a tennis racquet at a ball on a court.",
+          "generated": "A man on a tennis court serves a ball."
+        },
+        {
+          "image_id": 236607,
+          "reference": "Bunches of bananas hanging from the ceiling of a produce market.",
+          "generated": "A man is standing in front of a market with lots of fruits."
+        },
+        {
+          "image_id": 237230,
+          "reference": "A couple vases of flowers on a counter next to a bar.",
+          "generated": "A man standing in a wine bar with a bunch of flowers."
+        },
+        {
+          "image_id": 238603,
+          "reference": "A man flying a kite in a blue sky.",
+          "generated": "A man flying a kite in the sky."
+        },
+        {
+          "image_id": 267224,
+          "reference": "Blue pickup truck traveling on a city street.",
+          "generated": "A blue and green truck is driving down the street."
+        },
+        {
+          "image_id": 268378,
+          "reference": "A group of people eating a meal at a table.",
+          "generated": "A group of people sitting at a table with food."
+        },
+        {
+          "image_id": 273469,
+          "reference": "A table with two boxes of pizza and beer cans",
+          "generated": "A pizza and a bag of chips sitting on a table."
+        },
+        {
+          "image_id": 276284,
+          "reference": "A motorcycle is parked in a parking lot.",
+          "generated": "A motorcycle parked on a street in the evening"
+        },
+        {
+          "image_id": 279259,
+          "reference": "Man in shorts running with a necktie on top",
+          "generated": "A man walking in the woods with a dog."
+        },
+        {
+          "image_id": 302089,
+          "reference": "A red fire hydrant next to a h sign",
+          "generated": "A red fire hydrant with a sign next to it."
+        },
+        {
+          "image_id": 305677,
+          "reference": "A person standing on a rocky hillside next to the ocean.",
+          "generated": "A person walking on a beach with a wave."
+        },
+        {
+          "image_id": 315974,
+          "reference": "A finger pointing to a blemish on a green piece of fruit",
+          "generated": "A person holding a bunch of green bananas."
+        },
+        {
+          "image_id": 320350,
+          "reference": "THERE ARE PEOPLE THAT ARE ON THE SKIS WITH HIS DOG",
+          "generated": "A woman and a man standing on a snowy hill."
+        },
+        {
+          "image_id": 327780,
+          "reference": "A fork cutting into a piece of cake",
+          "generated": "A plate with a white and blue plate with a white and blue cake."
+        },
+        {
+          "image_id": 342770,
+          "reference": "Young man on side of the road pointing at a truck.",
+          "generated": "A man and woman standing in the road next to a truck."
+        },
+        {
+          "image_id": 343481,
+          "reference": "a bunch of sheep all chillin together in a bin",
+          "generated": "A group of sheep standing on a wooden frame."
+        },
+        {
+          "image_id": 344059,
+          "reference": "Two tall giraffes standing next to each other by trees.",
+          "generated": "Two giraffes standing next to each other."
+        },
+        {
+          "image_id": 358195,
+          "reference": "A little girl wearing pajamas is riding on a skateboard.",
+          "generated": "A girl wearing a pink top and shorts is holding a skateboard."
+        },
+        {
+          "image_id": 360346,
+          "reference": "A small propeller airplane taking off from a runway.",
+          "generated": "A small plane flying over a field."
+        },
+        {
+          "image_id": 366137,
+          "reference": "A woman standing in front of a doorway under a window.",
+          "generated": "A woman sitting at a desk with a remote control."
+        },
+        {
+          "image_id": 368565,
+          "reference": "A couple of kids with some food on a couch.",
+          "generated": "A couple of people are sitting on a couch with a cake and a plate."
+        },
+        {
+          "image_id": 379554,
+          "reference": "a toilet that has some bubbles coming out of it",
+          "generated": "A toilet with a white towel and a white towel on top of it."
+        },
+        {
+          "image_id": 391539,
+          "reference": "A woman stands next to a fridge that has several glasses on top.",
+          "generated": "A man is sitting on a counter with a bottle of beer."
+        },
+        {
+          "image_id": 397518,
+          "reference": "Two brown bears are standing on the rocks.",
+          "generated": "Two bears standing on a rock."
+        },
+        {
+          "image_id": 404191,
+          "reference": "A refrigerator freezer sitting in a yellow kitchen.",
+          "generated": "A refrigerator with a large number of text on it."
+        },
+        {
+          "image_id": 407150,
+          "reference": "A pile of garbage sitting next to a trash can.",
+          "generated": "A black and white picture of a black and white picture of a black and white picture of a black and white picture of a black and white picture of a black and white picture of a black and white picture of a black and white picture of a black and white picture of a black and white picture of a black and white"
+        },
+        {
+          "image_id": 430791,
+          "reference": "Red ties hanging like nooses in a museum.",
+          "generated": "A person walking with a red tie and a red shoe."
+        },
+        {
+          "image_id": 451038,
+          "reference": "A person cutting up a piece of fruit with a knife.",
+          "generated": "A person holding a knife and cutting through a plate."
+        },
+        {
+          "image_id": 452611,
+          "reference": "A man riding a skateboard on a street.",
+          "generated": "A man wearing a skateboarder outfit is skateboarding down a sidewalk."
+        },
+        {
+          "image_id": 462324,
+          "reference": "a male skateboarder in a white shirt is doing a trick",
+          "generated": "A man in a pink shirt and shorts doing a trick on a skateboard."
+        },
+        {
+          "image_id": 462329,
+          "reference": "A brown horse standing on the side of a road.",
+          "generated": "A horse standing on a road in the distance."
+        },
+        {
+          "image_id": 481911,
+          "reference": "Two cats, brown  and black cats on a bench",
+          "generated": "A cat sitting on a bench with two other cats."
+        },
+        {
+          "image_id": 484414,
+          "reference": "a boy jumping his skateboard over a red box",
+          "generated": "A person in a skateboard doing a trick."
+        },
+        {
+          "image_id": 501142,
+          "reference": "there is a cow standing in the water by a boat",
+          "generated": "A cow standing on a dock in a river."
+        },
+        {
+          "image_id": 502318,
+          "reference": "A man with a TV in the middle of no where.",
+          "generated": "A man is cooking food in a grill."
+        },
+        {
+          "image_id": 512151,
+          "reference": "A man sits in a train with many pieces of luggage on the seat across from him.",
+          "generated": "A person is sitting on a bench with a suitcase and some other items."
+        },
+        {
+          "image_id": 513096,
+          "reference": "two men standing by a display of military items",
+          "generated": "A group of military personnel standing in front of a large display of equipment."
+        },
+        {
+          "image_id": 520979,
+          "reference": "A black and white image of a vehicle that is decorated like a dog.",
+          "generated": "A large crowd of people are dancing in the park."
+        },
+        {
+          "image_id": 524263,
+          "reference": "a couple of black bears are in the grass",
+          "generated": "A dog and a tree trunk are playing."
+        },
+        {
+          "image_id": 528411,
+          "reference": "A teenager in a bathroom looking at a stand alone shower.",
+          "generated": "A woman is in a bathroom with a TV."
+        },
+        {
+          "image_id": 530731,
+          "reference": "A woman kneels taking a picture of a large ram.",
+          "generated": "A sheep walking on a hillside."
+        },
+        {
+          "image_id": 532408,
+          "reference": "a white bed in a large hotel room",
+          "generated": "A large room with a television and a computer."
+        },
+        {
+          "image_id": 561923,
+          "reference": "People flying kites, one of the kites is an American flag.",
+          "generated": "A kite flying in the sky over a field."
+        },
+        {
+          "image_id": 564123,
+          "reference": "A large cathedral with a clock towards the top of it.",
+          "generated": "A clock tower in the sky with a castle in the background."
+        },
+        {
+          "image_id": 565395,
+          "reference": "A man in glasses sitting next to a woman and holding up a red frisbee that says \"Cheese Shop\" on it.",
+          "generated": "A man and a woman are standing next to each other."
+        },
+        {
+          "image_id": 569960,
+          "reference": "This pizza is square and has pepperoni and mushrooms.",
+          "generated": "A pizza on a plate with cheese and toppings."
+        },
+        {
+          "image_id": 570788,
+          "reference": "A group of horses are drinking from a river",
+          "generated": "A herd of horses walking through a field of grass."
+        },
+        {
+          "image_id": 577526,
+          "reference": "A black and white cat is laying on a green pillow on top of a desk.",
+          "generated": "A cat laying on a bed that is covered in blankets."
+        },
+        {
+          "image_id": 578221,
+          "reference": "a close up of a street sign with a mountain in the background",
+          "generated": "A sign on a pole in a field."
+        },
+        {
+          "image_id": 580983,
+          "reference": "there is a man on a skate board doing a trick",
+          "generated": "A man skateboarding on a set of rails."
+        }
+      ]
+    }
+  }
+}

@@ -1,13 +1,13 @@
 {
   "gsm8k": {
-    "flexible_em": 0.4351781652767248,
+    "flexible_em": 0.4306292645943897,
     "strict_em": 0.0,
-    "flexible_em_stderr": 0.013656253875470726,
+    "flexible_em_stderr": 0.013639285985979925,
     "n": 1319,
-    "truncation_rate": 0.006065200909780136,
-    "mean_gen_tokens": 223.84003032600455,
+    "truncation_rate": 0.009855951478392721,
+    "mean_gen_tokens": 226.17437452615619,
     "unextracted_rate": 0.0,
-    "time_s": 680.633791514,
+    "time_s": 1767.243553719,
     "backend": "hf",
     "task_config": {
       "do_sample": false,
@@ -20,33 +20,33 @@
     }
   },
   "hellaswag": {
-    "acc": 0.3752240589523999,
-    "acc_norm": 0.4736108344951205,
-    "acc_stderr": 0.004831911860478841,
-    "acc_norm_stderr": 0.004982826916687033,
+    "acc": 0.37572196773551086,
+    "acc_norm": 0.47321250746863175,
+    "acc_stderr": 0.004833189651626701,
+    "acc_norm_stderr": 0.004982615233056769,
     "n": 10042
   },
   "boolq": {
-    "acc": 0.6443425076452599,
+    "acc": 0.6434250764525994,
     "acc_norm": null,
-    "acc_stderr": 0.00837272663997743,
+    "acc_stderr": 0.00837754809941546,
     "acc_norm_stderr": null,
     "n": 3270
   },
   "arc_easy": {
-    "acc": 0.6077441077441077,
-    "acc_norm": 0.5597643097643098,
-    "acc_stderr": 0.010018744689649993,
-    "acc_norm_stderr": 0.010186228624515719,
+    "acc": 0.609006734006734,
+    "acc_norm": 0.5606060606060606,
+    "acc_stderr": 0.010012992232540683,
+    "acc_norm_stderr": 0.010184134315437384,
     "n": 2376
   },
-  "likelihood_time_s": 221.83845991099997,
+  "likelihood_time_s": 362.3500959439998,
   "meta": {
     "condition": "baseline",
     "model_dir": "/content/merged/baseline",
     "lm_eval_version": "0.4.13",
-    "gpu": "NVIDIA A100-SXM4-40GB",
-    "gpu_total_mem_gb": 39.49,
+    "gpu": "NVIDIA L4",
+    "gpu_total_mem_gb": 22.03,
     "torch": "2.11.0+cu130",
     "cuda": "13.0",
     "limit": null

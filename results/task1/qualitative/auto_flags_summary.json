@@ -8,7 +8,7 @@
     "template_n": 8,
     "mean_repeat_4gram": 0.05358258282215841,
     "responses_with_math_markers": 0,
-    "mean_gen_tokens": 100.66666666666667
+    "mean_gen_tokens": 101.0
   },
   "full_ft_mid": {
     "n": 24,
