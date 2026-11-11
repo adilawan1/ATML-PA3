@@ -1,0 +1,18 @@
+{
+  "generated_swap": {
+    "original_ref": 0.140625,
+    "partner_ref": 0.6875,
+    "neither": 0.171875
+  },
+  "vqav2_swap": {
+    "original_ref": 0.2682291666666667,
+    "partner_ref": 0.5447916666666667,
+    "neither": 0.18697916666666659
+  },
+  "vqav2_yesno": {
+    "n_questions": 72,
+    "model_correct_image": 0.6069444444444445,
+    "constant_yes": 0.5375000000000001,
+    "constant_no": 0.5333333333333333
+  }
+}

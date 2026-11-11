@@ -56,6 +56,7 @@ python -m task2.prepare_data      # COCO captions / grounding pairs / VQAv2 comp
 python -m task2.cache_features    # downloads only the selected images; SigLIP features cached in FP16
 python -m task2.train             # 4,500 updates over 3 stages (optional: --n_vis 49)
 python -m task2.evaluate && python -m task2.analyze
+python -m task2.captions          # dev-set captions after each stage (any runtime; CPU is fine)
 ```
 
 ### Task 3
@@ -68,6 +69,13 @@ python -m task3.signals  --dataset {math,mathvista}
 python -m task3.adaptive --dataset {math,mathvista}
 python -m task3.live && python -m task3.live --summarize   # GPU
 python -m task3.analyze
+```
+
+### Report-only statistics and figures
+Run from the repository root after the tasks above (CPU only, reads saved results):
+```bash
+python report/extra_stats.py    # Task 1 paired McNemar tests, Task 2 swap split / yes-no baselines, extra Task 3 deltas
+python report/make_figures.py   # results/task3/report/scaling_report.png (main-text Task 3 figure)
 ```
 
 ### Running on Kaggle (2 x T4, background runs)

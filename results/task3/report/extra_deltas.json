@@ -1,0 +1,38 @@
+{
+  "math/max_L": {
+    "n": 800,
+    "diff_pp": -9.7875,
+    "ci_low_pp": -12.3875,
+    "ci_high_pp": -7.399062500000002
+  },
+  "mathvista/max_L": {
+    "n": 800,
+    "diff_pp": -13.425,
+    "ci_low_pp": -16.413437500000004,
+    "ci_high_pp": -10.3375
+  },
+  "mathvista/max_V": {
+    "n": 800,
+    "diff_pp": -7.925,
+    "ci_low_pp": -11.100312500000001,
+    "ci_high_pp": -4.6621875
+  },
+  "mathvista/max_VisConf": {
+    "n": 800,
+    "diff_pp": -3.925,
+    "ci_low_pp": -7.012500000000001,
+    "ci_high_pp": -0.8615625000000009
+  },
+  "mathvista/max_Ztok": {
+    "n": 800,
+    "diff_pp": -5.425,
+    "ci_low_pp": -8.2378125,
+    "ci_high_pp": -2.6875000000000004
+  },
+  "mathvista/rwc_Ztok": {
+    "n": 800,
+    "diff_pp": 1.075,
+    "ci_low_pp": -0.21281249999999993,
+    "ci_high_pp": 2.5378125
+  }
+}
